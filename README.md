@@ -9,3 +9,8 @@ To report bugs please do it here https://github.com/Janda2304/Lost-in-Ages/issue
 
 ### modlist : 
 https://www.curseforge.com/minecraft/modpacks/lost-in-ages/relations/dependencies
+
+
+
+
+##### just by the way : current food count in all the foods is 103 which is appx 9% of all
