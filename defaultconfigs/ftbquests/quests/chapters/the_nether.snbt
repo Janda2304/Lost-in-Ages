@@ -1,0 +1,206 @@
+{
+	id: "61575E156D891AF1"
+	group: "3548B98E1DB8BA6A"
+	order_index: 8
+	filename: "the_nether"
+	title: "The Hell"
+	icon: "minecraft:nether_wart_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Enter the Hell"
+			icon: "tconstruct:obsidian_pane"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"enter the nether"
+				"Fire res potions come in handy here"
+			]
+			dependencies: ["104168551C58DAB2"]
+			hide: true
+			id: "45E82F80A2E57CC9"
+			tasks: [{
+				id: "10FBCF7E56DB1023"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "2EE7C9880BB5F504"
+				type: "item"
+				item: {
+					id: "minecraft:splash_potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:fire_resistance"
+					}
+				}
+			}]
+		}
+		{
+			title: "Find the nether fortress"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["45E82F80A2E57CC9"]
+			id: "4D74FBB83BA356EC"
+			tasks: [{
+				id: "329D1CA6438665EC"
+				type: "structure"
+				structure: "minecraft:fortress"
+			}]
+			rewards: [{
+				id: "4EE50FE89D005445"
+				type: "item"
+				item: "tconstruct:netherite_nugget"
+				count: 8
+			}]
+		}
+		{
+			title: "Withering away"
+			icon: "minecraft:nether_star"
+			x: 2.0d
+			y: -2.0d
+			description: ["Find some wither skeletons and smash'em down for skulls"]
+			dependencies: ["4D74FBB83BA356EC"]
+			id: "78A7A8BAE51397CA"
+			tasks: [{
+				id: "2E4229AEFFC467D1"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 3L
+			}]
+			rewards: [{
+				id: "04385240F3A637BB"
+				type: "item"
+				item: "pamhc2foodcore:chickennuggetitem"
+				count: 8
+			}]
+		}
+		{
+			title: "Kill the wither"
+			icon: "extendedcrafting:ender_star"
+			x: 3.0d
+			y: -1.0d
+			description: ["Get ready and Smash down the wither until it's dead "]
+			dependencies: ["78A7A8BAE51397CA"]
+			id: "35FC3D18DCF7CC8F"
+			tasks: [
+				{
+					id: "689F111CF0A2A875"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4L
+				}
+				{
+					id: "5CF41152FF3DBA75"
+					type: "kill"
+					entity: "minecraft:wither"
+					value: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "108E312964C56E1D"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 8
+				}
+				{
+					id: "458AEDB51C60D82A"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+				{
+					id: "2306FFFE8F133AD0"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+				}
+				{
+					id: "48F626EB7B0CD405"
+					type: "item"
+					item: "thermal:iron_plate"
+					count: 8
+				}
+				{
+					id: "226D26C8E1341153"
+					type: "random"
+					icon: "minecraft:enchanted_golden_apple"
+					table_id: 8631552099719515192L
+				}
+			]
+		}
+		{
+			title: "Blaze farmin"
+			icon: "minecraft:blaze_powder"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["78A7A8BAE51397CA"]
+			id: "1BD9EE5A55B31974"
+			tasks: [{
+				id: "0F65DAB10C467945"
+				type: "kill"
+				entity: "minecraft:blaze"
+				value: 10L
+			}]
+			rewards: [{
+				id: "7C59AE18676AF874"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 8
+			}]
+		}
+		{
+			icon: "minecraft:end_portal_frame"
+			x: 2.0d
+			y: 0.0d
+			dependencies: [
+				"45E82F80A2E57CC9"
+				"1BD9EE5A55B31974"
+			]
+			id: "432E7C8CD0DEE004"
+			tasks: [{
+				id: "7ECE5B3467A6741D"
+				type: "checkmark"
+				title: "Are you ready for the start of the end ?"
+			}]
+			rewards: [{
+				id: "4709C451826CE4C9"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:slow_falling"
+					}
+				}
+			}]
+		}
+		{
+			title: "Going deep"
+			icon: "netherite_plus:fake_netherite_block"
+			x: -3.0d
+			y: 0.0d
+			description: ["Go deep and find yourself some ancient debris"]
+			dependencies: ["45E82F80A2E57CC9"]
+			id: "22791BDE73861E5F"
+			tasks: [{
+				id: "69BF669E710AA110"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+			rewards: [{
+				id: "424D971A4B272467"
+				type: "item"
+				item: "minecraft:ancient_debris"
+				count: 2
+			}]
+		}
+	]
+}

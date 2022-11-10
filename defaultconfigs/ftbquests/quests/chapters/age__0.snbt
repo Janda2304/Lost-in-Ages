@@ -1,0 +1,218 @@
+{
+	id: "58A870CF5099610C"
+	group: ""
+	order_index: 0
+	filename: "age__0"
+	title: "Age : 0-The start"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome"
+			icon: {
+				id: "minecraft:leather_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.5d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "Lost in Ages (LiA) is a medium size pack with guided progression through all the mods, LiA is supposed to people that are familiar with mods, but hey even a newcomer playing modded for first time can play "
+			id: "5D98DE994E10BD4F"
+			tasks: [{
+				id: "36789DDAF0B7C865"
+				type: "checkmark"
+				title: "Welcome now you're lost in ages"
+			}]
+			rewards: [
+				{
+					id: "792446344C9D9CF6"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "17E272F11F0735C4"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1CB86041201B39D3"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "59DFC66614B65B7C"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Yet another adventure starts"
+			icon: "minecraft:oak_log"
+			x: -5.5d
+			y: -1.5d
+			description: ["find yourself some wood for basic gear"]
+			dependencies: ["36789DDAF0B7C865"]
+			dependency_requirement: "one_completed"
+			id: "49D9E2BEF0303CBD"
+			tasks: [{
+				id: "5329D4DAB9C2807F"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [{
+				id: "416714726DAFBCEE"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 16
+			}]
+		}
+		{
+			title: "Better crafting"
+			x: -6.0d
+			y: -0.5d
+			description: ["Upgraded crafting table that do not drop things when closed"]
+			dependencies: ["49D9E2BEF0303CBD"]
+			id: "34876430DB3A425D"
+			tasks: [{
+				id: "4753F3CE8CB48720"
+				type: "item"
+				item: "tconstruct:crafting_station"
+			}]
+			rewards: [{
+				id: "0796C56EB1A9A993"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 8
+			}]
+		}
+		{
+			title: "Ages Info"
+			icon: "immersiveengineering:powerpack"
+			x: -7.5d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"U can do most of these stages in what order you want right now but Age system will be soon replaced with tiered locked progression"
+				"Still some ages only unlocks when you progress further"
+			]
+			id: "0767EAD710503B4A"
+			tasks: [{
+				id: "129919F01BE4BBF2"
+				type: "checkmark"
+				title: "Ages"
+			}]
+		}
+		{
+			title: "will Will Smith smith Will Smith ?"
+			x: -7.5d
+			y: 5.0d
+			shape: "gear"
+			description: ["Yes Will Smith will smith Will smith."]
+			dependencies: ["183A8B8CE41147E5"]
+			hide: true
+			id: "1D8143B22F02CDFA"
+			tasks: [{
+				id: "1A44BA4CCCF99DD5"
+				type: "item"
+				item: "minecraft:smithing_table"
+			}]
+			rewards: [{
+				id: "4662C2C60565351A"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			title: "Your first tinkering"
+			icon: {
+				id: "tconstruct:tinkers_anvil"
+				Count: 1b
+				tag: {
+					texture: "tconstruct:tinkers_bronze_block"
+				}
+			}
+			x: -7.0d
+			y: -0.5d
+			description: [
+				"You've propably heard about Tinkers'construct by now but for those who didn't Tinkers Construct is a mod all about making tools that can be repaired and technically don't ever break "
+				"For starting u should make yrself some patterns and those tables to build your tools in "
+			]
+			id: "104168551C58DAB2"
+			tasks: [
+				{
+					id: "7F194847BE58FBB8"
+					type: "item"
+					title: "Tinker Station"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "728B8EC460817257"
+					type: "item"
+					title: "Part Builder"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "79B5F4ABBB248A3C"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "0D0BE2E8022AC5D1"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 4
+			}]
+		}
+	]
+}

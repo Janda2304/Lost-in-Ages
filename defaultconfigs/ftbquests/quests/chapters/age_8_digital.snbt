@@ -1,0 +1,27 @@
+{
+	id: "72B9F56016E8F4AF"
+	group: ""
+	order_index: 8
+	filename: "age_8_digital"
+	title: "Age 8: Digital"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Refined storage basics"
+		x: 0.0d
+		y: 1.0d
+		description: ["A chapter all about storing items digitally with Refined Storage"]
+		id: "7965069F22AFFF94"
+		tasks: [{
+			id: "000D3BAE41C842A0"
+			type: "item"
+			item: "refinedstorage:wrench"
+		}]
+		rewards: [{
+			id: "01284725DD05FE6F"
+			type: "item"
+			item: "refinedstorage:quartz_enriched_iron"
+			count: 16
+		}]
+	}]
+}

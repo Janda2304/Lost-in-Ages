@@ -1,0 +1,486 @@
+{
+	id: "695EA7199BC5645C"
+	group: "3548B98E1DB8BA6A"
+	order_index: 1
+	filename: "all_the_foods"
+	title: "All the foods"
+	icon: "solcarrot:food_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Food checker"
+			x: -5.0d
+			y: -1.0d
+			description: [
+				"This modpack contains the SoL:carrot mod that means every  5 different food you eat you get a heart "
+				"This modpack contains a total of 1191 different foods this page is to document them all "
+				"Why im doing this? I don't really know"
+			]
+			dependencies: ["104168551C58DAB2"]
+			hide: true
+			id: "506B7A2334709F92"
+			tasks: [{
+				id: "586EAF22E8AA3A31"
+				type: "item"
+				item: "solcarrot:food_book"
+			}]
+		}
+		{
+			title: "Vannila Foods"
+			x: -4.0d
+			y: -1.0d
+			dependencies: ["506B7A2334709F92"]
+			id: "74BE56A4406A0DD3"
+			tasks: [{
+				id: "45D264039334F603"
+				type: "item"
+				item: "minecraft:bread"
+			}]
+			rewards: [{
+				id: "6E4226DC246F500B"
+				type: "item"
+				item: "minecraft:bread"
+				count: 4
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "0177837C95165957"
+			tasks: [{
+				id: "6B32EE7BDD3C2EF3"
+				type: "item"
+				item: "minecraft:bread"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "0B5447B36500562D"
+			tasks: [{
+				id: "742261CD2C663A77"
+				type: "item"
+				item: "minecraft:apple"
+			}]
+			rewards: [{
+				id: "49AF406DA10FA478"
+				type: "item"
+				item: "minecraft:apple"
+				count: 4
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "53E0D2E74495F8C0"
+			tasks: [{
+				id: "4E4294B924CC9807"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+			rewards: [{
+				id: "180131B74529CE71"
+				type: "item"
+				item: "minecraft:golden_apple"
+				count: 4
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "66B7E81C76FC4ADB"
+			tasks: [{
+				id: "39C71B308D5CC6B4"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+			rewards: [{
+				id: "6D1D8254708778D9"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "563F947A3DE39D5D"
+			tasks: [{
+				id: "5E4D1BC492248B5E"
+				type: "item"
+				item: "minecraft:golden_carrot"
+			}]
+			rewards: [{
+				id: "23AFD8B42E49D90B"
+				type: "item"
+				item: "minecraft:golden_carrot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "482D9E936EBB4A61"
+			tasks: [{
+				id: "4D64EDAA680FB3C3"
+				type: "item"
+				item: "minecraft:potato"
+			}]
+			rewards: [{
+				id: "44231F8F2939FCD9"
+				type: "item"
+				item: "minecraft:potato"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "6E579C102573DD06"
+			tasks: [{
+				id: "33DA19A3A61F483C"
+				type: "item"
+				item: "minecraft:baked_potato"
+			}]
+			rewards: [{
+				id: "33334549942B2A4B"
+				type: "item"
+				item: "minecraft:baked_potato"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "14857AC48F4D171E"
+			tasks: [{
+				id: "72BC6754176710BB"
+				type: "item"
+				item: "minecraft:poisonous_potato"
+			}]
+			rewards: [{
+				id: "0E7A24B56FDA04DD"
+				type: "item"
+				item: "minecraft:poisonous_potato"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "79B7A46E26D71F96"
+			tasks: [{
+				id: "3CE5CA888EBB8009"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+			}]
+			rewards: [{
+				id: "0A1268055828E844"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "1226FB117720360E"
+			tasks: [{
+				id: "4804C4A01980F8F3"
+				type: "item"
+				item: "minecraft:spider_eye"
+			}]
+			rewards: [{
+				id: "175FB6E5CE3A5B88"
+				type: "item"
+				item: "minecraft:spider_eye"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "0FECB3657BDBDC7A"
+			tasks: [{
+				id: "18DDAA1D52A7D8D9"
+				type: "item"
+				item: "minecraft:beetroot"
+			}]
+			rewards: [{
+				id: "2E6F8CE039C18789"
+				type: "item"
+				item: "minecraft:beetroot"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.0d
+			description: ["gud sup"]
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "3960EC5011E9642E"
+			tasks: [{
+				id: "556788ACDFCD9C17"
+				type: "item"
+				item: "minecraft:beetroot_soup"
+			}]
+			rewards: [{
+				id: "0C3C6586B3E1BDCA"
+				type: "item"
+				item: "minecraft:beetroot_soup"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			description: [""]
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "66EA68BBF0C0BB57"
+			tasks: [{
+				id: "688F23C60FC2EB4B"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+			rewards: [{
+				id: "574CF128CF5E67B0"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "75F2CE99D4F9A0A3"
+			tasks: [{
+				id: "6DC04F403FC6AA11"
+				type: "item"
+				item: "minecraft:rabbit_stew"
+			}]
+			rewards: [{
+				id: "6CC9184D7651D79A"
+				type: "item"
+				item: "minecraft:rabbit_stew"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "25D8E6A78E05A171"
+			tasks: [{
+				id: "7A2AA96E32733704"
+				type: "item"
+				item: "minecraft:porkchop"
+			}]
+			rewards: [{
+				id: "05727CC7543A3B1F"
+				type: "item"
+				item: "minecraft:porkchop"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "5881491CCC165142"
+			tasks: [{
+				id: "6C03BA58287C8CD3"
+				type: "item"
+				item: "minecraft:cod"
+			}]
+			rewards: [{
+				id: "07B2C8CA9F17A6A3"
+				type: "item"
+				item: "minecraft:cod"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "3F28FE11EBFA163C"
+			tasks: [{
+				id: "0C7F69CEEBB31EEA"
+				type: "item"
+				item: "minecraft:salmon"
+			}]
+			rewards: [{
+				id: "6C24BCE607AEBB51"
+				type: "item"
+				item: "minecraft:salmon"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["better not wanna eat it unless you want to poison yourself"]
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "398A1BC8E4765239"
+			tasks: [{
+				id: "7E24CA23920AAF4E"
+				type: "item"
+				item: "minecraft:chicken"
+			}]
+			rewards: [{
+				id: "7C9A4D4D31494EC4"
+				type: "item"
+				item: "minecraft:chicken"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "073F279A51AB75B6"
+			tasks: [{
+				id: "7C2135D63CF646D5"
+				type: "item"
+				item: "minecraft:rabbit"
+			}]
+			rewards: [{
+				id: "2CAC280A65169E2C"
+				type: "item"
+				item: "minecraft:rabbit"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "4ED04B14ED0D1215"
+			tasks: [{
+				id: "40EEF01597524101"
+				type: "item"
+				item: "minecraft:mutton"
+			}]
+			rewards: [{
+				id: "6D8D2E4FFD8A0F09"
+				type: "item"
+				item: "minecraft:mutton"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["398A1BC8E4765239"]
+			id: "3D8D03612ECD9678"
+			tasks: [{
+				id: "02CAE29B588A8D6F"
+				type: "item"
+				item: "minecraft:cooked_chicken"
+			}]
+			rewards: [{
+				id: "2AC30EC0432233E0"
+				type: "item"
+				item: "minecraft:cooked_chicken"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			dependencies: ["3F28FE11EBFA163C"]
+			id: "3FCAAA2204FA58BE"
+			tasks: [{
+				id: "0EDDFE93C4D089D3"
+				type: "item"
+				item: "minecraft:cooked_salmon"
+			}]
+			rewards: [{
+				id: "7FB974F27EC3C49E"
+				type: "item"
+				item: "minecraft:cooked_salmon"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			dependencies: ["25D8E6A78E05A171"]
+			id: "5AB4BAE47EBD1DD8"
+			tasks: [{
+				id: "0FE2B76DC7BEC9DD"
+				type: "item"
+				item: "minecraft:cooked_porkchop"
+			}]
+			rewards: [{
+				id: "368FD6FC27B00268"
+				type: "item"
+				item: "minecraft:cooked_porkchop"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			dependencies: ["5881491CCC165142"]
+			id: "7B0A0912CAF1F2BD"
+			tasks: [{
+				id: "072016C897DF3AE7"
+				type: "item"
+				item: "minecraft:cooked_cod"
+			}]
+			rewards: [{
+				id: "48BF51772D4F2946"
+				type: "item"
+				item: "minecraft:cooked_cod"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			dependencies: ["073F279A51AB75B6"]
+			id: "2967B803D7ABFAAE"
+			tasks: [{
+				id: "0B8801C6CEE5235A"
+				type: "item"
+				item: "minecraft:cooked_rabbit"
+			}]
+			rewards: [{
+				id: "2A94032176F5A734"
+				type: "item"
+				item: "minecraft:cooked_rabbit"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 1.0d
+			dependencies: ["4ED04B14ED0D1215"]
+			id: "2809CD40AC50C78A"
+			tasks: [{
+				id: "550EA7B1E5F1A5E3"
+				type: "item"
+				item: "minecraft:cooked_mutton"
+			}]
+			rewards: [{
+				id: "2BAC73E81CBF4C66"
+				type: "item"
+				item: "minecraft:cooked_mutton"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "7AA55A1B116B8409"
+			tasks: [{
+				id: "463A3C07A587E5A4"
+				type: "item"
+				item: "minecraft:beef"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["7AA55A1B116B8409"]
+			id: "27F967B7D5D00A9C"
+			tasks: [{
+				id: "19D5232A505198BE"
+				type: "item"
+				item: "minecraft:cooked_beef"
+			}]
+		}
+	]
+}
