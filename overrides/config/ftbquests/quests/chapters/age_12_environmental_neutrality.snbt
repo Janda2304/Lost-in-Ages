@@ -1,0 +1,38 @@
+{
+	id: "58D0B73D63843D54"
+	group: ""
+	order_index: 12
+	filename: "age_12_environmental_neutrality"
+	title: "Age 12: Environmental neutrality "
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Becoming an environmental activist"
+		x: -1.0d
+		y: 1.0d
+		shape: "octagon"
+		subtitle: "Aren't you becoming Greta Thunberg?"
+		description: [
+			"Have you ever though about how much you're destroying your minecraft planet with all that power generating from coal and mining for ores? Don't worry me neither lol. But if you do Environmental tech is for you"
+			"This mod features a lot of huge tiered multiblock structures like a void ore miner which mines ores from the void"
+			""
+			""
+			"and Maybe you'll get a step ahead from your country in 6875"
+		]
+		dependencies: ["668912ECB71B5DEF"]
+		hide: true
+		id: "06567BFC5DC7C9ED"
+		tasks: [{
+			id: "306C5B4F1320EBB8"
+			type: "item"
+			item: "envirocore:litherite_crystal"
+			count: 24L
+		}]
+		rewards: [{
+			id: "20B817F97816362F"
+			type: "item"
+			item: "envirocore:litherite_crystal"
+			count: 6
+		}]
+	}]
+}

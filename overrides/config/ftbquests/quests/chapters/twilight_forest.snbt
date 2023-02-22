@@ -1,0 +1,11 @@
+{
+	id: "665D3DCCBB26C8AD"
+	group: "3548B98E1DB8BA6A"
+	order_index: 7
+	filename: "twilight_forest"
+	title: "Twilight forest"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

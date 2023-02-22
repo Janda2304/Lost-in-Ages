@@ -1,0 +1,893 @@
+{
+	id: "58A870CF5099610C"
+	group: ""
+	order_index: 0
+	filename: "age__0"
+	title: "Age 0: Getting Found in the Lost"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome"
+			icon: {
+				id: "minecraft:leather_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.352d
+			y: -1.216d
+			shape: "hexagon"
+			description: [
+				"Welcome, now you're Lost in Ages, this is an expert type modpack for medium experienced modding enthusiast"
+				"If you're new to modding i do not recommend playing this modpack. A lot of recipes are tweaked, or changed some other way, so it is not the right experience you would expect when coming from vanilla to modding for the first time"
+				"You found some leather armour in the ruin of Limytch, beware it's dangerous out there and don't forget your quest"
+			]
+			optional: true
+			id: "5D98DE994E10BD4F"
+			tasks: [{
+				id: "36789DDAF0B7C865"
+				type: "checkmark"
+				title: "Welcome now you're lost in ages"
+			}]
+			rewards: [
+				{
+					id: "792446344C9D9CF6"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "17E272F11F0735C4"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1CB86041201B39D3"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "59DFC66614B65B7C"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Yet Another Adventure Begins (YAAB)"
+			icon: "minecraft:oak_log"
+			x: 1.0d
+			y: 1.0d
+			shape: "octagon"
+			description: ["Chop down some trees to find out wood for basic crafting"]
+			dependencies: ["36789DDAF0B7C865"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "49D9E2BEF0303CBD"
+			tasks: [{
+				id: "5329D4DAB9C2807F"
+				type: "item"
+				title: "16x Any Log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [{
+				id: "416714726DAFBCEE"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 16
+			}]
+		}
+		{
+			title: "Ages Info"
+			icon: "immersiveengineering:powerpack"
+			x: 0.0d
+			y: -0.544d
+			shape: "hexagon"
+			description: [
+				"As i said this modpack is \"expert type\" so almost every ages are locked between each others and the quest book is guiding your progress through the mods, every main age questline focuses only around 1 mod"
+				""
+				"This is NOT YET IMPLEMENTED you can do most of the ages in any order whatsoever"
+			]
+			id: "0767EAD710503B4A"
+			tasks: [{
+				id: "129919F01BE4BBF2"
+				type: "checkmark"
+				title: "Ages"
+			}]
+		}
+		{
+			title: "will Will Smith smith Will Smith ?"
+			x: -3.0d
+			y: 11.5d
+			shape: "gear"
+			description: ["Yes Will Smith will smith Will smith."]
+			dependencies: ["183A8B8CE41147E5"]
+			hide: true
+			id: "1D8143B22F02CDFA"
+			tasks: [{
+				id: "1A44BA4CCCF99DD5"
+				type: "item"
+				item: "minecraft:smithing_table"
+			}]
+			rewards: [{
+				id: "4662C2C60565351A"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			title: "Tinkering"
+			icon: {
+				id: "tconstruct:tinkers_anvil"
+				Count: 1b
+				tag: {
+					texture: "tconstruct:tinkers_bronze_block"
+				}
+			}
+			x: 3.0d
+			y: 1.5d
+			description: [
+				"You've propably heard about Tinkers'construct by now but for those who didn't Tinkers Construct is a mod all about making tools that can be repaired and technically don't ever break "
+				"For starting u should make yrself some patterns and those tables to build your tools in "
+			]
+			hide_dependency_lines: true
+			dependencies: ["2778676AA6A0F6A6"]
+			id: "104168551C58DAB2"
+			tasks: [
+				{
+					id: "7F194847BE58FBB8"
+					type: "item"
+					title: "Tinker Station"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "728B8EC460817257"
+					type: "item"
+					title: "Part Builder"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "79B5F4ABBB248A3C"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "0D0BE2E8022AC5D1"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 4
+			}]
+		}
+		{
+			title: "Wheat seeds"
+			x: -7.16d
+			y: 1.04d
+			shape: "octagon"
+			description: [
+				"Gather yourself some seeds to start with food questline"
+				"ALL THE FOODS questline"
+			]
+			dependencies: ["091D5219029F9E78"]
+			id: "6A8FE640DD32F8B5"
+			tasks: [{
+				id: "5266A24B178B6F96"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+				count: 4L
+			}]
+			rewards: [{
+				id: "7EDC7A0FAC8CFED1"
+				type: "item"
+				item: "minecraft:wheat"
+				count: 4
+			}]
+		}
+		{
+			title: "Backpacks"
+			icon: "sophisticatedbackpacks:backpack"
+			x: -5.8d
+			y: 5.0d
+			shape: "octagon"
+			description: ["BACKPACKS questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "700320CBE62014CD"
+			tasks: [
+				{
+					id: "46E70CA73F9124A0"
+					type: "item"
+					item: "minecraft:leather"
+					count: 4L
+				}
+				{
+					id: "4F8ADBEF31F3E374"
+					type: "checkmark"
+				}
+			]
+			rewards: [{
+				id: "168B6C43964500D3"
+				type: "item"
+				item: "minecraft:leather"
+				count: 2
+			}]
+		}
+		{
+			title: "oh hell nah, it's too hot in here"
+			icon: "minecraft:obsidian"
+			x: -1.8d
+			y: 1.64d
+			shape: "octagon"
+			description: ["THE NETHER Questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "0E71D099709646AD"
+			tasks: [{
+				id: "773FF843CA4158C1"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 10L
+			}]
+			rewards: [{
+				id: "2FA374A3DB4F3257"
+				type: "item"
+				item: {
+					id: "minecraft:diamond_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Monster Slayer"
+			icon: "minecraft:zombie_head"
+			x: -1.84d
+			y: 2.48d
+			shape: "octagon"
+			description: [
+				"Slay those monsters"
+				"MYSTICAL CROPS QUESTLINE"
+			]
+			dependencies: ["091D5219029F9E78"]
+			hide_text_until_complete: false
+			id: "3EFB2799572658A7"
+			tasks: [
+				{
+					id: "45B2D4F52A538658"
+					type: "kill"
+					entity: "minecraft:zombie"
+					value: 5L
+				}
+				{
+					id: "7BD27878FF2E5F21"
+					type: "kill"
+					icon: "minecraft:skeleton_spawn_egg"
+					entity: "minecraft:skeleton"
+					value: 5L
+				}
+			]
+			rewards: [{
+				id: "6D1BEE2BFB3A7DE4"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+				count: 4
+			}]
+		}
+		{
+			title: "Finally Crafting"
+			x: 2.0d
+			y: 1.0d
+			description: ["Took so long to complete? Didn't it? I'm dissapointed in you"]
+			dependencies: ["49D9E2BEF0303CBD"]
+			hide: true
+			hide_text_until_complete: false
+			id: "022A94B0D9C0364C"
+			tasks: [{
+				id: "3D8051C1D74B4DB5"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [{
+				id: "5185CDE8707559D0"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Petals"
+			x: -4.04d
+			y: 5.2d
+			shape: "octagon"
+			description: ["BOTANICAL questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "62A4D037B871D29D"
+			tasks: [{
+				id: "7E03B0613C43817B"
+				type: "item"
+				item: "botania:white_petal"
+			}]
+			rewards: [{
+				id: "185F6AC3C91B1BB8"
+				type: "item"
+				item: "botania:fertilizer"
+				count: 4
+			}]
+		}
+		{
+			icon: {
+				id: "botania:king_key"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.384d
+			y: -1.216d
+			shape: "hexagon"
+			description: [
+				"Welcome to Rolven, a huge continent inside the galaxy of Ruhitya. You were living in year 6875 in a war between two major empires: The Kitch Federation and The Ketch Kingdom. You were the chosen one from Kitch Federation to stop your country from nuclear danger. You were send into the first world creation phases to find and bring back the key to a long forgotten Elvish Armory of Jaedril which stores some of the most powerful dark magic rituals and hi-end technologies. After your arrival your time machine broke down and it was teleported to year 10875 and you became completely lost between ages. You did not find the key anywhere but after exploring a huge Elvish ruin called Limytch you found a crafting recipe for the key itself."
+				""
+				""
+				""
+				"CRAFT THE KEY, FIND YOURSELF A WAY BACK AND SAVE YOUR COUNTRY FROM DANGER"
+			]
+			optional: true
+			id: "013DB73EF8E4D303"
+			tasks: [{
+				id: "1AD766B7139FC0BB"
+				type: "checkmark"
+				title: "Lore"
+			}]
+			rewards: [{
+				id: "26C2BDD8C293A55D"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Magic Crafting table"
+			x: 3.0d
+			y: 0.5d
+			description: ["Upgrade version of crafting table, do not drop items when exited"]
+			dependencies: ["022A94B0D9C0364C"]
+			id: "2778676AA6A0F6A6"
+			tasks: [{
+				id: "6C94C763CBBB855F"
+				type: "item"
+				item: "tconstruct:crafting_station"
+			}]
+			rewards: [{
+				id: "209F21D22B84730E"
+				type: "item"
+				item: "tconstruct:pattern"
+			}]
+		}
+		{
+			icon: "tconstruct:skyroot_fence_gate"
+			x: -4.76d
+			y: 2.2d
+			description: ["This modpack progression is gated, below you can find all the gates available, the more you unlock the more appears"]
+			hide_dependency_lines: true
+			dependencies: ["022A94B0D9C0364C"]
+			hide: true
+			id: "091D5219029F9E78"
+			tasks: [{
+				id: "1270998593D08830"
+				type: "checkmark"
+				title: "Gates"
+			}]
+		}
+		{
+			title: "EnGrouting"
+			icon: "tconstruct:grout"
+			x: -7.52d
+			y: 1.88d
+			shape: "octagon"
+			description: ["BETTER TINKERING questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "106381EC2EFFD2EA"
+			tasks: [
+				{
+					id: "44B991C3689E28B5"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 2L
+				}
+				{
+					id: "58183012066BC68B"
+					type: "checkmark"
+				}
+			]
+			rewards: [{
+				id: "179ACC36437CA282"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			title: "Engineering"
+			icon: {
+				id: "immersiveengineering:hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.36d
+			y: -0.24d
+			shape: "octagon"
+			description: ["IMMERSIVE questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "2C97500A20A92AC1"
+			tasks: [
+				{
+					id: "3F5AF586C5E0A897"
+					type: "item"
+					item: "immersiveengineering:seed"
+					count: 4L
+				}
+				{
+					id: "33D77B35ACE0E405"
+					type: "checkmark"
+				}
+			]
+			rewards: [{
+				id: "4704E4C444451E0E"
+				type: "item"
+				item: "immersiveengineering:seed"
+			}]
+		}
+		{
+			title: "Creativity"
+			icon: "create:andesite_alloy"
+			x: -5.88d
+			y: -0.04d
+			shape: "octagon"
+			description: [
+				"CREATIVE questline"
+				""
+				"PS: Steel Blasting must be completed too to unlock the questline"
+			]
+			dependencies: ["091D5219029F9E78"]
+			id: "6ABE2D8072E38D26"
+			tasks: [
+				{
+					id: "5211700591DB07C4"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "1FD1B5F248B0EE56"
+					type: "checkmark"
+				}
+			]
+			rewards: [{
+				id: "38B54CB2F4AFB467"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "Blood"
+			icon: "tconstruct:blood_slime"
+			x: -6.6d
+			y: 0.32d
+			shape: "octagon"
+			description: ["BLOODY questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "1164079FD0C6DD86"
+			tasks: [
+				{
+					id: "4A28D7F2A5F096ED"
+					type: "item"
+					item: "tconstruct:blood_slime"
+				}
+				{
+					id: "5DD6FD0E4269A9A2"
+					type: "checkmark"
+				}
+			]
+			rewards: [{
+				id: "3320625E4281BE94"
+				type: "item"
+				item: "bloodmagic:life_essence_bucket"
+			}]
+		}
+		{
+			title: "Hammering"
+			icon: "thermal:wrench"
+			x: -3.52d
+			y: -0.16d
+			shape: "octagon"
+			description: ["THERMAL questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "7B0F35E2F1DC14E0"
+			tasks: [
+				{
+					id: "1B04ABCF1F3F383F"
+					type: "item"
+					item: "thermal:wrench"
+				}
+				{
+					id: "40FD3F0C6C0A03E9"
+					type: "checkmark"
+				}
+			]
+		}
+		{
+			title: "Mekanical"
+			icon: {
+				id: "mekanismtools:osmium_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.84d
+			y: 0.32d
+			shape: "octagon"
+			description: ["MEKANICAL questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "7DF2F9597B4AD8A3"
+			tasks: [
+				{
+					id: "735EAF187C231E1B"
+					type: "item"
+					item: "mekanism:block_osmium"
+				}
+				{
+					id: "73DCE1718F9A834F"
+					type: "checkmark"
+				}
+			]
+			rewards: [{
+				id: "1E0782DFB473B784"
+				type: "item"
+				item: "mekanism:ingot_osmium"
+			}]
+		}
+		{
+			title: "Becoming fully Digital"
+			icon: "refinedstorage:black_controller"
+			x: -2.12d
+			y: 0.76d
+			shape: "octagon"
+			description: ["DIGITAL questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "3949AE264488237D"
+			tasks: [
+				{
+					id: "496652E3D50C71AB"
+					type: "item"
+					item: "appliedenergistics2:certus_quartz_crystal"
+					count: 8L
+				}
+				{
+					id: "129F0FD74869A58F"
+					type: "item"
+					item: "refinedstorage:quartz_enriched_iron"
+					count: 8L
+				}
+				{
+					id: "5995444B633E0DEC"
+					type: "checkmark"
+				}
+			]
+		}
+		{
+			title: "Warning: excessive flux"
+			icon: "rftoolsbase:smartwrench"
+			x: -2.12d
+			y: 3.44d
+			shape: "octagon"
+			description: ["FLUXED questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "50E0F5AF383234AF"
+			tasks: [
+				{
+					id: "1221E8EDF6187C69"
+					type: "item"
+					item: "rftoolsbase:smartwrench"
+				}
+				{
+					id: "220B7751A07D1A57"
+					type: "checkmark"
+				}
+			]
+		}
+		{
+			title: "Industrial rests"
+			x: -7.2d
+			y: 3.8d
+			shape: "octagon"
+			description: ["INDUSTRIAL questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "56535684C81C2391"
+			tasks: [{
+				id: "65934025F46A2F3A"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+			}]
+		}
+		{
+			title: "Astral"
+			icon: "astralsorcery:aquamarine"
+			x: -5.0d
+			y: 5.32d
+			shape: "octagon"
+			description: [
+				"Luckilly this is not about astral sex"
+				"ASTRAL questline"
+			]
+			dependencies: ["091D5219029F9E78"]
+			id: "687F99EB78E01053"
+			tasks: [
+				{
+					id: "0FAA8D8CB7B0E99D"
+					type: "item"
+					item: "astralsorcery:aquamarine"
+					count: 64L
+				}
+				{
+					id: "76BBA42CA905A563"
+					type: "checkmark"
+				}
+			]
+		}
+		{
+			title: "Greta Thunberg "
+			x: -7.52d
+			y: 2.84d
+			shape: "octagon"
+			description: ["ENVIRONMENTAL NEUTRALITY questline"]
+			dependencies: ["091D5219029F9E78"]
+			id: "668912ECB71B5DEF"
+			tasks: [{
+				id: "48C660E3884BD498"
+				type: "item"
+				item: "envirocore:litherite_crystal"
+			}]
+		}
+		{
+			title: "THE FINAL ONE"
+			icon: "extendedcrafting:ultimate_singularity"
+			x: -12.4d
+			y: 2.2d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: [
+				"091D5219029F9E78"
+				"700320CBE62014CD"
+				"106381EC2EFFD2EA"
+				"668912ECB71B5DEF"
+				"7B0F35E2F1DC14E0"
+				"1164079FD0C6DD86"
+				"6ABE2D8072E38D26"
+				"2C97500A20A92AC1"
+				"7DF2F9597B4AD8A3"
+				"3949AE264488237D"
+				"62A4D037B871D29D"
+				"6A8FE640DD32F8B5"
+				"3EFB2799572658A7"
+				"0E71D099709646AD"
+				"56535684C81C2391"
+				"50E0F5AF383234AF"
+				"687F99EB78E01053"
+			]
+			hide: true
+			size: 5.0d
+			id: "6706BCB04BBE1102"
+			tasks: [{
+				id: "254E30218E4B9085"
+				type: "item"
+				item: "extendedcrafting:ultimate_table"
+			}]
+			rewards: [{
+				id: "486B9C0177D504B5"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+				count: 4
+			}]
+		}
+		{
+			title: "Better Storage and Smelting"
+			icon: "storagedrawers:crimson_full_drawers_1"
+			x: -3.12d
+			y: 4.84d
+			shape: "octagon"
+			description: ["BETTER FURNACE, BETTER STORAGE, STORAGE DRAWERS questlines"]
+			dependencies: ["091D5219029F9E78"]
+			id: "2C20CCE68E9C24A2"
+			tasks: [
+				{
+					id: "6312BDE9B1B4BF7F"
+					type: "item"
+					title: "Any #forge:ingots/copper"
+					icon: "create:copper_ingot"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/copper"
+						}
+					}
+				}
+				{
+					id: "3B154348F87D0141"
+					type: "item"
+					item: "minecraft:chest"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "341F435D044F1D78"
+				type: "item"
+				item: "tconstruct:copper_block"
+			}]
+		}
+		{
+			title: "THE END? "
+			icon: "minecraft:end_stone_bricks"
+			x: -2.52d
+			y: 4.16d
+			shape: "octagon"
+			subtitle: "NO IT IS NOT"
+			dependencies: ["091D5219029F9E78"]
+			id: "0AA379D8F2B5D635"
+			tasks: [{
+				id: "7EF0575EC0A494D3"
+				type: "item"
+				item: "minecraft:ender_eye"
+				count: 4L
+			}]
+			rewards: [{
+				id: "7C28CABCBDB04913"
+				type: "item"
+				item: "minecraft:ender_eye"
+			}]
+		}
+		{
+			title: "Spartans"
+			icon: {
+				id: "spartanweaponry:halberd_lead"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.56d
+			y: 4.48d
+			shape: "octagon"
+			dependencies: ["091D5219029F9E78"]
+			id: "6CB90617AE5EC44D"
+			tasks: [{
+				id: "5E5A06D12F148A71"
+				type: "item"
+				item: {
+					id: "spartanweaponry:halberd_wood"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Builder worst and best dream"
+			icon: {
+				id: "constructionwand:infinity_wand"
+				Count: 1b
+				tag: {
+					wand_options: { }
+				}
+			}
+			x: -5.16d
+			y: -0.24d
+			shape: "octagon"
+			dependencies: ["091D5219029F9E78"]
+			id: "41946B80DE92A5F6"
+			tasks: [{
+				id: "7BCC154978D8944F"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2CDBB6A8C9A12481"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 4
+			}]
+		}
+		{
+			title: "Elemental ingot"
+			x: -3.5d
+			y: 6.0d
+			shape: "octagon"
+			subtitle: "MORE FLOWERS JUST FOR YOU!"
+			description: ["MORE BOTANICS questline"]
+			dependencies: ["62A4D037B871D29D"]
+			hide: true
+			id: "0599ECA299F81C7B"
+			tasks: [{
+				id: "5A44C72B700A3A33"
+				type: "item"
+				item: "botania:elementium_ingot"
+				count: 4L
+			}]
+			rewards: [{
+				id: "7DB6A5C7837D84F8"
+				type: "item"
+				item: "botania:pixie_dust"
+			}]
+		}
+	]
+}

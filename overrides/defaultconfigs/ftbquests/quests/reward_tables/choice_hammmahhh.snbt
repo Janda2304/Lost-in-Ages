@@ -1,0 +1,102 @@
+{
+	id: "62AF511F0D077925"
+	order_index: 1
+	title: "choice hammmahhh"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "tconstruct:sledge_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.75f
+						"tconstruct:mining_speed": 1.7600001f
+						"tconstruct:attack_damage": 5.4f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 416.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:smite"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:sledge_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.75f
+						"tconstruct:mining_speed": 1.4f
+						"tconstruct:attack_damage": 6.31125f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 272.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:jagged"
+							level: 4s
+						}
+						{
+							name: "tconstruct:smite"
+							level: 2s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:flint"
+						"tconstruct:flint"
+						"tconstruct:flint"
+						"tconstruct:flint"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+		}
+	]
+}

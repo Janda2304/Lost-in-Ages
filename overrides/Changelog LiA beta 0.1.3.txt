@@ -1,0 +1,59 @@
+MOD UPDATES
+Botania (Vazkii) 420.2 - 420.3
+FerriteCore(Forge) (malte0811) 2.1.0 - 2.1.1
+Just Enough Items(JEI) (mezz) 7.7.1.152 - 7.7.1.153
+Sophisticated Backpacks (P3pp3rF1y) 3.15.18.698 - 3.15.19.721
+Thermal Expansion (TeamCoFH) 1.5.0.7 - 1.5.2.16
+
+
+MODS
+-Added mod AttributeFix (DarkhaxDev)
+-Added mod spark (lucko)
+-Added mod Configured (MrCrayfish)
+-Added mod Default Options (BlayTheNinth)
+-Added mod JEI Enchantment Info (Phylogeny)
+-Added mod Just Enough Immersive Multiblocks (aronson_1)
+-Added mod Cosmetic Armor Reworked (LainMI)
+-Added mod FancyMenu[Forge] (Keksuccino)
+-Added mod When Dungeons Arise - Forge! (Aureljz)
+-Added mod YUNG's Better Dungeons (Forge) (YUNGNICKYOUNG)
+-Added mod YUNG's Extras (Forge) (YOUNGNICKYOUNG, EveCommander)
+-Added mod Ding (ohaiiChun)
+-Added mod Extreme Reactors (ZeroNoRyouki)
+-Added mod Shutup Experimental Settings! (Corgi_Taco)
+-Added mod Rubidium (Asek3)
+-Added mod Dank Storage (tfarecnim)
+-Added mod More Storage Drawers (RydelFox)
+-Added mod Refined Storage: Requestify (Buuz135)
+-Added mod Refined Storage Large Patterns (TheLMiffy1111)
+-Added mod Extra Disks (MelanX)
+-Added mod ExtraStorage (3divad99)
+-Added mod AE2 Extras (tfarecnim)
+-Added mod Applied Energistics 2 Wireless Terminals Forge (tfarecnim)
+-Added mod PackagedAuto (TheLMiffy1111)
+-Added mod Not Enough Energistics (vfyjxf_)
+-Why am i adding so much mods in one update?
+-I just feel that Lost in Ages is incomplete and loses out a lot of potential on the lack of mods in it, if you don't like this update i'm sorry but this was a step that i felt must be done
+-also a lot of added mods are just some QoL features or something little (like More Storage Drawers, Not Enough Energistics, PackagedAuto, Rubidium)
+
+
+CHANGES
+### NEW LOST IN AGES CURSEFORGE LOGO!!!
+-Completely reworked  Age 0- Start and also renamed it to age 0: Getting Found in the lost
+-Lore Implementations in the quests 
+-Slightly edited the style of Age 3 - Creative and added a few new quests to it 
+-Slightly edited style of quests in Age 2 - Immersive and changed some descriptions
+-completed Age 4 - Botanical, starting my work on Age 5 
+-New questline More Botanics - containing all things that couldn't fit in the Age 4 - Botanical questline
+-renamed Age 8:Digital to Age 8: Digital Engineering
+-renamed Age 13:Final Age to Age 13:Escape plan (matching the idea of LiA much more)
+-renamed Storage Drawers to Storage Solutions because of dank Storage mod being added to it
+-Updated Sophisticated backpacks questline and changed backpack recipes
+-changed that all recipes on extended crafting tables can be crafted on all tiers possible (for example t2 table recipes can be crafted on t3 table etc.)
+
+
+### -also a new iteration of the Lost in Ages title screen, i'm working on a custom Lost in Ages banner for title screen
+
+
+
+

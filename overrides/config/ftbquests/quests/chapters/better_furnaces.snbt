@@ -1,0 +1,456 @@
+{
+	id: "4F574CD9D29E83E3"
+	group: "3548B98E1DB8BA6A"
+	order_index: 3
+	filename: "better_furnaces"
+	title: "Better Furnaces"
+	icon: "ironfurnaces:iron_furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Basic Furnace"
+			x: -2.0d
+			y: -0.5d
+			shape: "octagon"
+			dependencies: ["2C20CCE68E9C24A2"]
+			hide: true
+			id: "7AB88E12030B8E3C"
+			tasks: [{
+				id: "2EB7F1045593E691"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["7AB88E12030B8E3C"]
+			id: "4847FFFE5853802B"
+			tasks: [{
+				id: "56525F098E549483"
+				type: "item"
+				item: "minecraft:smoker"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["7AB88E12030B8E3C"]
+			id: "59B1DF489F64E466"
+			tasks: [{
+				id: "5D57992A6ED5AC1C"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["7AB88E12030B8E3C"]
+			id: "65126EC6CFBCBD64"
+			tasks: [{
+				id: "3549FB7F127233CC"
+				type: "item"
+				item: "ironfurnaces:copper_furnace"
+			}]
+			rewards: [{
+				id: "426061F1BBA157F2"
+				type: "item"
+				item: "thermal:copper_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			dependencies: ["65126EC6CFBCBD64"]
+			id: "5F5DEC182CAB545F"
+			tasks: [{
+				id: "5FE5DC6434180773"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+			rewards: [{
+				id: "0E0BAAC9F01DF358"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["Almost the same as iron but slightly faster"]
+			dependencies: ["5F5DEC182CAB545F"]
+			id: "57BE38CE3F9C4D94"
+			tasks: [{
+				id: "277FD539DC31F670"
+				type: "item"
+				item: "ironfurnaces:silver_furnace"
+			}]
+			rewards: [{
+				id: "3B86D0A1DF5BCB99"
+				type: "item"
+				item: "thermal:silver_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			dependencies: ["57BE38CE3F9C4D94"]
+			id: "6E885C43C150DDE1"
+			tasks: [{
+				id: "59B3FAE7E974DCD9"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+			rewards: [{
+				id: "70DEEB6A9518F24F"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			shape: "pentagon"
+			dependencies: ["6E885C43C150DDE1"]
+			id: "71FB2B4D7D275399"
+			tasks: [{
+				id: "6BCC1E647A5C57CB"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+			rewards: [{
+				id: "1D4218ED6690910D"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 8
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["71FB2B4D7D275399"]
+			id: "178B9D2B59DD2DA6"
+			tasks: [{
+				id: "732EE8643D48DBD5"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+			rewards: [{
+				id: "2BB1C2B5CC3E2650"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 8
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["7589AA6BC4DAD18D"]
+			id: "38BB173BD517854A"
+			tasks: [{
+				id: "5B0C701A22CA7D0F"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+			rewards: [{
+				id: "44A00EB6CA140619"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			description: ["slightly faster than emerald furnace"]
+			dependencies: ["178B9D2B59DD2DA6"]
+			id: "7589AA6BC4DAD18D"
+			tasks: [{
+				id: "6A1110BB9FC3F9A8"
+				type: "item"
+				item: "ironfurnaces:crystal_furnace"
+			}]
+			rewards: [{
+				id: "3D6D6DE903CA5BB6"
+				type: "item"
+				item: "botania:mana_glass"
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			dependencies: ["38BB173BD517854A"]
+			id: "3E93709899B038E6"
+			tasks: [{
+				id: "5807BF34FA95B650"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+			rewards: [{
+				id: "4C6103AA08848699"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+				count: 2
+			}]
+		}
+		{
+			title: "Blast furnace augment"
+			x: 1.0d
+			y: 1.5d
+			description: ["Makes your furnace a blast furnace"]
+			dependencies: ["71FB2B4D7D275399"]
+			id: "0D71A46A49922144"
+			tasks: [{
+				id: "540FE0B2506A7433"
+				type: "item"
+				item: "ironfurnaces:augment_blasting"
+			}]
+			rewards: [{
+				id: "2A809C2DC609D483"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			title: "Smoker augment"
+			x: 2.0d
+			y: 2.0d
+			description: ["Makes your furnace a smoker"]
+			dependencies: ["0D71A46A49922144"]
+			id: "77FA8FDBD155BBD1"
+			tasks: [{
+				id: "7FD01ACBC5CA78D0"
+				type: "item"
+				item: "ironfurnaces:augment_smoking"
+			}]
+			rewards: [{
+				id: "439F1183F64736ED"
+				type: "item"
+				item: "minecraft:smoker"
+			}]
+		}
+		{
+			title: "Speedy cooking"
+			x: 0.0d
+			y: 2.0d
+			description: ["Doubles the coal usage but halves the time needed to smelt something"]
+			dependencies: ["0D71A46A49922144"]
+			id: "76309FCF0427360C"
+			tasks: [{
+				id: "4C117EF25406616C"
+				type: "item"
+				item: "ironfurnaces:augment_speed"
+			}]
+			rewards: [{
+				id: "38ED49A52019FDC7"
+				type: "item"
+				item: "minecraft:coal_block"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			description: ["Makes the fuel more efficient but cooking slower"]
+			dependencies: [
+				"77FA8FDBD155BBD1"
+				"76309FCF0427360C"
+			]
+			id: "77FC2CF1AC55EC51"
+			tasks: [{
+				id: "4E123239A1A66D78"
+				type: "item"
+				item: "ironfurnaces:augment_fuel"
+			}]
+			rewards: [{
+				id: "32F206455DD712D0"
+				type: "item"
+				item: "minecraft:coal_block"
+			}]
+		}
+		{
+			title: "Stone to Iron furnace upgrade"
+			x: 1.0d
+			y: -2.0d
+			shape: "pentagon"
+			description: ["Stone to Copper upgrade"]
+			dependencies: ["71FB2B4D7D275399"]
+			id: "08003B217676CA14"
+			tasks: [{
+				id: "6E6975B9C5D076C8"
+				type: "item"
+				item: "ironfurnaces:upgrade_copper"
+			}]
+			rewards: [{
+				id: "2C8C848A5A566783"
+				type: "item"
+				item: "ironfurnaces:upgrade_copper"
+			}]
+		}
+		{
+			title: "Copper to Iron upgrade"
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["08003B217676CA14"]
+			id: "040D4F15D5D175EF"
+			tasks: [{
+				id: "3AF5D85F6DD8D739"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron2"
+			}]
+			rewards: [{
+				id: "4799CDA52AD56623"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron2"
+			}]
+		}
+		{
+			title: "Silver to Gold upgrade"
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["22DFA261C79D9031"]
+			id: "5A40994C132C22ED"
+			tasks: [{
+				id: "3C7B9D86CB1A9691"
+				type: "item"
+				item: "ironfurnaces:upgrade_gold2"
+			}]
+			rewards: [{
+				id: "40E3526ECAE65267"
+				type: "item"
+				item: "ironfurnaces:upgrade_gold2"
+			}]
+		}
+		{
+			title: "Gold to Diamond upgrade"
+			x: 1.0d
+			y: -5.0d
+			dependencies: [
+				"5A40994C132C22ED"
+				"4F09B7F3A3EB5A8C"
+			]
+			dependency_requirement: "one_completed"
+			id: "6EF0E0502122ACFE"
+			tasks: [{
+				id: "0F027D612E683B56"
+				type: "item"
+				item: "ironfurnaces:upgrade_diamond"
+			}]
+			rewards: [{
+				id: "1064DDFB02438048"
+				type: "item"
+				item: "ironfurnaces:upgrade_diamond"
+			}]
+		}
+		{
+			title: "Diamond to emerald upgrade"
+			x: 1.0d
+			y: -6.0d
+			dependencies: ["6EF0E0502122ACFE"]
+			id: "472C0B62CDD5E410"
+			tasks: [{
+				id: "3C67B768D27E6E94"
+				type: "item"
+				item: "ironfurnaces:upgrade_emerald"
+			}]
+			rewards: [{
+				id: "087DCB611D53A35F"
+				type: "item"
+				item: "ironfurnaces:upgrade_emerald"
+			}]
+		}
+		{
+			title: "crystal to obsidian upgrade"
+			x: 1.0d
+			y: -7.0d
+			dependencies: ["472C0B62CDD5E410"]
+			id: "27140F1679DF82C3"
+			tasks: [{
+				id: "7F5E844606E314E5"
+				type: "item"
+				item: "ironfurnaces:upgrade_obsidian2"
+			}]
+			rewards: [{
+				id: "05EDFCEF98422FA2"
+				type: "item"
+				item: "ironfurnaces:upgrade_obsidian2"
+			}]
+		}
+		{
+			title: "Obsidian to netherite upgrade"
+			x: 1.0d
+			y: -8.0d
+			dependencies: ["27140F1679DF82C3"]
+			id: "10DE0B611313AED1"
+			tasks: [{
+				id: "726EA40E246ECB43"
+				type: "item"
+				item: "ironfurnaces:upgrade_netherite"
+			}]
+			rewards: [{
+				id: "5315EFAD9E0BCFC0"
+				type: "item"
+				item: "ironfurnaces:upgrade_netherite"
+			}]
+		}
+		{
+			title: "Touch the rainbow"
+			x: 3.5d
+			y: 0.5d
+			description: [
+				"The ultimate Furnace that can smelt 20 items per second that means that you can smelt one stack in less than 3.5 seconds"
+				"Can still be upgraded be speed upgrade to create the most ultimate furnace that will smelt 40 items per second"
+				"Also consumes coal super super fast so use rainbow coal instead"
+			]
+			dependencies: ["3E93709899B038E6"]
+			id: "553AE7047BE0B6F0"
+			tasks: [{
+				id: "39625299DEE828CE"
+				type: "item"
+				item: "ironfurnaces:million_furnace"
+			}]
+			rewards: [{
+				id: "68F7D592C14B1538"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+				count: 2
+			}]
+		}
+		{
+			title: "Copper to Silver Upgrade"
+			x: 0.5d
+			y: -3.0d
+			dependencies: ["08003B217676CA14"]
+			id: "22DFA261C79D9031"
+			tasks: [{
+				id: "141E8B012309CD17"
+				type: "item"
+				item: "ironfurnaces:upgrade_silver"
+			}]
+			rewards: [{
+				id: "0213F196FF89B1F3"
+				type: "item"
+				item: "ironfurnaces:upgrade_silver"
+			}]
+		}
+		{
+			title: "Iron to Gold Upgrade"
+			x: 1.5d
+			y: -4.0d
+			dependencies: ["6BEBFF3E466FED25"]
+			id: "4F09B7F3A3EB5A8C"
+			tasks: [{
+				id: "5C489C4699EDDFBD"
+				type: "item"
+				item: "ironfurnaces:upgrade_gold"
+			}]
+		}
+	]
+}

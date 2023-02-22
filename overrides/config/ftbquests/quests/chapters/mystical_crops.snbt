@@ -1,0 +1,277 @@
+{
+	id: "201E2C4143063985"
+	group: "3548B98E1DB8BA6A"
+	order_index: 12
+	filename: "mystical_crops"
+	title: "Mystical crops"
+	icon: {
+		id: "matc:supremium_crystal"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Inferium essence"
+			x: 0.0d
+			y: 0.0d
+			description: ["Mystical Agriculture basic resource"]
+			dependencies: ["3EFB2799572658A7"]
+			hide: true
+			id: "56D6DCB3C9466900"
+			tasks: [{
+				id: "4424B2EA0674B50D"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+				count: 32L
+			}]
+			rewards: [{
+				id: "6371877A006A5813"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+				count: 24
+			}]
+		}
+		{
+			title: "Inferium Infusion"
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["56D6DCB3C9466900"]
+			hide: true
+			id: "34C054901C24F1EA"
+			tasks: [{
+				id: "1B927E64DD362109"
+				type: "item"
+				item: {
+					id: "matc:inferium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B4B2BD3F2AD9AA5"
+				type: "item"
+				item: {
+					id: "matc:inferium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Prudentium Infusion"
+			x: -2.5d
+			y: 1.0d
+			dependencies: ["34C054901C24F1EA"]
+			id: "096708EF4C5DA0C3"
+			tasks: [{
+				id: "2CBE4090C0E71D8D"
+				type: "item"
+				item: {
+					id: "matc:prudentium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1249606BB8C11AA8"
+				type: "item"
+				item: {
+					id: "matc:prudentium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Tertium Infusion"
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["096708EF4C5DA0C3"]
+			id: "35A8DBDAA6B828D0"
+			tasks: [{
+				id: "3E7D9053B4FCFEC0"
+				type: "item"
+				item: {
+					id: "matc:tertium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6EEF799DE77F2F74"
+				type: "item"
+				item: {
+					id: "matc:tertium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Imperium Infusion"
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["35A8DBDAA6B828D0"]
+			id: "672FD30E8AF6524E"
+			tasks: [{
+				id: "4FC63B7DFC702CAC"
+				type: "item"
+				item: {
+					id: "matc:imperium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4830A0D5D136661C"
+				type: "item"
+				item: {
+					id: "matc:imperium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Supremium Infusion"
+			x: -1.0d
+			y: -2.0d
+			dependencies: ["672FD30E8AF6524E"]
+			id: "2D0C6BE9934C2CB1"
+			tasks: [{
+				id: "3291487F1AE5200D"
+				type: "item"
+				item: {
+					id: "matc:supremium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0D7EE68EF2E4405B"
+				type: "item"
+				item: {
+					id: "matc:supremium_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Tertium"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["5467AD3FC53182D5"]
+			id: "079832C2D6CF2290"
+			tasks: [{
+				id: "6F27F760CE80FC69"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+			}]
+			rewards: [{
+				id: "3BC93FE5434633E1"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+				count: 4
+			}]
+		}
+		{
+			title: "Prudentium"
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["338D175AC652EE38"]
+			id: "5467AD3FC53182D5"
+			tasks: [{
+				id: "318F13313E19CD7D"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+			}]
+			rewards: [{
+				id: "6AD375673226A1F5"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+				count: 4
+			}]
+		}
+		{
+			title: "Inferium"
+			icon: "mysticalagriculture:inferium_essence"
+			x: 3.0d
+			y: -2.0d
+			dependencies: ["56D6DCB3C9466900"]
+			hide: true
+			id: "338D175AC652EE38"
+			tasks: [{
+				id: "33A97667FB369595"
+				type: "checkmark"
+				title: "symmetry "
+			}]
+			rewards: [{
+				id: "7DA36A7A23419D1A"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+				count: 8
+			}]
+		}
+		{
+			title: "Imperium"
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["079832C2D6CF2290"]
+			id: "2CCC25039E85A0C8"
+			tasks: [{
+				id: "49C758B6FDF60F85"
+				type: "item"
+				item: "mysticalagriculture:imperium_essence"
+			}]
+			rewards: [{
+				id: "0E5888B8D2EC3121"
+				type: "item"
+				item: "mysticalagriculture:imperium_essence"
+				count: 4
+			}]
+		}
+		{
+			title: "Supremium"
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["2CCC25039E85A0C8"]
+			id: "05F9749687CAFC31"
+			tasks: [{
+				id: "18DC55544E351EC5"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+			}]
+			rewards: [{
+				id: "0F488BB56314281B"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+				count: 4
+			}]
+		}
+	]
+}

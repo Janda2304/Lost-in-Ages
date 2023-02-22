@@ -1,0 +1,679 @@
+{
+	id: "584FBF7945038903"
+	group: "3548B98E1DB8BA6A"
+	order_index: 0
+	filename: "backpacks"
+	title: "Backpacks"
+	icon: "sophisticatedbackpacks:backpack"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The basic backpack"
+			x: -1.0d
+			y: 0.0d
+			shape: "octagon"
+			description: [
+				"can be placed as a block with shift+right click when held in hand a u can use it as a chest"
+				"But beware! holding more and more backpacks in your inventory slows you down"
+			]
+			dependencies: ["700320CBE62014CD"]
+			hide: true
+			id: "1A642F9B0BD94AF5"
+			tasks: [{
+				id: "4ED81D3D98AAC55B"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [{
+				id: "5D3951E6054226D8"
+				type: "item"
+				item: "minecraft:leather"
+				count: 8
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["Bigger than leather one"]
+			dependencies: ["1A642F9B0BD94AF5"]
+			id: "47E89E723F9FCBFE"
+			tasks: [{
+				id: "7FCA1F8E2FA3A106"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+			rewards: [{
+				id: "0B885AB260F4CCEF"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			description: ["Bigger than iron one"]
+			dependencies: ["47E89E723F9FCBFE"]
+			id: "350271E3FE23FFF8"
+			tasks: [{
+				id: "273F235B52FA9DDF"
+				type: "item"
+				item: "sophisticatedbackpacks:gold_backpack"
+			}]
+			rewards: [{
+				id: "2B5BFCB631F0D51D"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			description: ["Bigger than gold backpack"]
+			dependencies: ["350271E3FE23FFF8"]
+			id: "7B92C872AD40EBEF"
+			tasks: [{
+				id: "1EEF2D1A9CE72B25"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:diamond_backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 108
+						upgradeSlots: 5
+						contentsUuid: [I;
+							-1004566979
+							811158473
+							-1168004828
+							-916364578
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "6FCB5DD3AE75F0A5"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 4
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			description: ["Same as diamond backpack but do not burn in lava"]
+			dependencies: ["7B92C872AD40EBEF"]
+			id: "49854FC14C547C1E"
+			tasks: [{
+				id: "3C077D4539999133"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:netherite_backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 120
+						upgradeSlots: 7
+						contentsUuid: [I;
+							-1972268947
+							7031254
+							-1469701733
+							1266823792
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B96F6732645DA91"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			title: "Backpack upgrades?!"
+			x: 5.0d
+			y: -2.5d
+			description: [
+				"The base of all backpack upgrades"
+				"the upgrades can be added to backpack by shift+left clicking the upgrade when in backpack gui"
+			]
+			dependencies: ["1A642F9B0BD94AF5"]
+			id: "37CB400F17E8EBD3"
+			tasks: [{
+				id: "196FFAA347473D31"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+			rewards: [{
+				id: "2783C44EC35BF6C6"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+				count: 6
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: ["Automagically pickup items for you"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "366412E0C3539DE2"
+			tasks: [{
+				id: "7E5B35CD467A5C49"
+				type: "item"
+				item: "sophisticatedbackpacks:pickup_upgrade"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			description: ["More configurable version of the pickup upgrade"]
+			dependencies: ["366412E0C3539DE2"]
+			id: "03DEE4F4BC79C1C7"
+			tasks: [{
+				id: "027C1272EC9D7CC7"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["filters the items piped in/out of the backpack"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "4FBDCB10446E3515"
+			tasks: [{
+				id: "4C6E2EDE0B414AFD"
+				type: "item"
+				item: "sophisticatedbackpacks:filter_upgrade"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			description: ["More configurable version of the filter upgrade"]
+			dependencies: ["4FBDCB10446E3515"]
+			id: "1DAA82AC9FFEE821"
+			tasks: [{
+				id: "77D0E84B0B375DFC"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_filter_upgrade"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			description: ["Atracts the items to your backpack"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "4941E60243B79EC6"
+			tasks: [{
+				id: "1AEFFDFE71CB1FB4"
+				type: "item"
+				item: "sophisticatedbackpacks:magnet_upgrade"
+			}]
+			rewards: [{
+				id: "34CA865AD3993ACF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			description: ["More configurable version of magnet upgrade"]
+			dependencies: ["4941E60243B79EC6"]
+			id: "21168FEAEAEBE772"
+			tasks: [{
+				id: "5B73842684A4B007"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_magnet_upgrade"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			description: ["Feed you with food from backpack"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "102C1BC91AC82741"
+			tasks: [{
+				id: "4C29771EDD241CE2"
+				type: "item"
+				item: "sophisticatedbackpacks:feeding_upgrade"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -0.5d
+			description: ["compacts items into their 2x2 variants"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "6CF4005976A12CB9"
+			tasks: [{
+				id: "1F698312064AFF2A"
+				type: "item"
+				item: "sophisticatedbackpacks:compacting_upgrade"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -0.5d
+			description: ["Can compact items into 2x2 and 3x3 variants"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "754B649CC43F6B2D"
+			tasks: [{
+				id: "011C3C40FC97F45E"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_compacting_upgrade"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.5d
+			description: ["destroys selected items"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "3FEBA17924EA08FE"
+			tasks: [{
+				id: "331CA728E55E47F0"
+				type: "item"
+				item: "sophisticatedbackpacks:void_upgrade"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			description: ["has more filtering options than the basic"]
+			dependencies: ["3FEBA17924EA08FE"]
+			id: "548AC464CCB465BE"
+			tasks: [{
+				id: "185DB598DA3BD2C5"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_void_upgrade"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.5d
+			description: ["restock backpack from inventory that you previously shift+right clicked"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "5C47921F649C164C"
+			tasks: [{
+				id: "67D334623EBC9D97"
+				type: "item"
+				item: "sophisticatedbackpacks:restock_upgrade"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			description: ["has more filtering options than the basic"]
+			dependencies: ["5C47921F649C164C"]
+			id: "1A959740A0B945D0"
+			tasks: [{
+				id: "33F8C75C1ADF1702"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_restock_upgrade"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.5d
+			description: ["works same as restock upgrades but deposit items instead of restocking items"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "53D5C40319521048"
+			tasks: [{
+				id: "5C0D72CC5F1EB860"
+				type: "item"
+				item: "sophisticatedbackpacks:deposit_upgrade"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.5d
+			description: ["has more filtering options than the basic"]
+			dependencies: ["53D5C40319521048"]
+			id: "156A8E0A5C4180C9"
+			tasks: [{
+				id: "70752AC88C753038"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_deposit_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.5d
+			description: ["refill blocks in your hand"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "3F0CE7980451771D"
+			tasks: [{
+				id: "17A15F8EE833ED80"
+				type: "item"
+				item: "sophisticatedbackpacks:refill_upgrade"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.5d
+			description: ["did you ever thinked about putting backpack in backpack? this upgrade is for you "]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "5459E280749B466D"
+			tasks: [{
+				id: "5F524A2A5E9C96E6"
+				type: "item"
+				item: "sophisticatedbackpacks:inception_upgrade"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -3.5d
+			description: ["makes your backpack indestructible (even void cannot destroy it)"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "30DFDC1A455A522C"
+			tasks: [{
+				id: "167F7F0552A79F80"
+				type: "item"
+				item: "sophisticatedbackpacks:everlasting_upgrade"
+			}]
+			rewards: [{
+				id: "2AACBD1ED5E51948"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.5d
+			description: ["furnace in backpack tab"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "72A23B755F96B785"
+			tasks: [{
+				id: "445C965F1C0289C4"
+				type: "item"
+				item: "sophisticatedbackpacks:smelting_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.5d
+			description: ["furnace that automatically take smeltable items"]
+			dependencies: ["72A23B755F96B785"]
+			id: "3539F02E5944EF18"
+			tasks: [{
+				id: "3DADFB3F48B829A5"
+				type: "item"
+				item: "sophisticatedbackpacks:auto_smelting_upgrade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			description: ["crafting table in backpack tab"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "70A7F12946B4EE00"
+			tasks: [{
+				id: "5C3E320998E0DF1F"
+				type: "item"
+				item: "sophisticatedbackpacks:crafting_upgrade"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			description: ["stonecutter in backpack tab"]
+			dependencies: ["70A7F12946B4EE00"]
+			id: "506668B17C10A428"
+			tasks: [{
+				id: "5FD1B073602583C2"
+				type: "item"
+				item: "sophisticatedbackpacks:stonecutter_upgrade"
+			}]
+		}
+		{
+			title: "Iron stack upgrade"
+			x: 1.5d
+			y: -2.5d
+			description: ["multiplies the items that can fit in one slot by 2 "]
+			dependencies: [
+				"37CB400F17E8EBD3"
+				"47E89E723F9FCBFE"
+			]
+			id: "21DFF8B34D464654"
+			tasks: [{
+				id: "65645EC692E65CAA"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+			}]
+			rewards: [{
+				id: "0DD565EB8EE15AD8"
+				type: "item"
+				item: "minecraft:iron_block"
+			}]
+		}
+		{
+			title: "Gold stack upgrade"
+			x: 0.5d
+			y: -2.5d
+			description: ["multiplies item that can fit in one slot by 4"]
+			dependencies: [
+				"21DFF8B34D464654"
+				"350271E3FE23FFF8"
+			]
+			id: "3F0B73333E49DBE8"
+			tasks: [{
+				id: "49778062751C06DB"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_2"
+			}]
+			rewards: [{
+				id: "5150AD2FD7A6CC92"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+		}
+		{
+			title: "Diamond stack upgrade"
+			x: -0.5d
+			y: -2.5d
+			description: ["multiplies items that can fit in one slot by 8"]
+			dependencies: [
+				"3F0B73333E49DBE8"
+				"7B92C872AD40EBEF"
+			]
+			id: "6BA9C3D984725E42"
+			tasks: [{
+				id: "37811394E1C64859"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_3"
+			}]
+			rewards: [{
+				id: "1FD49F84A477C068"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			title: "Netherite stack upgrade"
+			x: -1.5d
+			y: -2.5d
+			description: ["multiplies items that can fit in one slot by 16"]
+			dependencies: [
+				"6BA9C3D984725E42"
+				"49854FC14C547C1E"
+			]
+			id: "4B36F5AC19709BD7"
+			tasks: [{
+				id: "710D9D34F1AB19A5"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+			}]
+			rewards: [{
+				id: "748FED8800216355"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+				count: 3
+			}]
+		}
+		{
+			title: "The final and best upgrade"
+			x: -3.0d
+			y: -2.5d
+			description: ["Jukebox in a backpack Amazing isn't it ?"]
+			dependencies: ["4B36F5AC19709BD7"]
+			id: "1B53D7A293CDCC17"
+			tasks: [{
+				id: "2A580CBCD562A87E"
+				type: "item"
+				item: "sophisticatedbackpacks:jukebox_upgrade"
+			}]
+			rewards: [{
+				id: "4324B8170F6C6922"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: ["Automagically swaps tools in player hand to the most effective one"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "3903E64CD8107EDA"
+			tasks: [{
+				id: "673795B82C6F5A59"
+				type: "item"
+				item: "sophisticatedbackpacks:tool_swapper_upgrade"
+			}]
+		}
+		{
+			title: "Tool Swapping like a pro"
+			x: 2.5d
+			y: 1.0d
+			description: ["More configurable and also allows swapping for wrench like tools"]
+			dependencies: ["3903E64CD8107EDA"]
+			id: "13E142F65AE81B91"
+			tasks: [{
+				id: "178AED24915910D4"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["tank in a backpack"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "3D775082EBF6E054"
+			tasks: [{
+				id: "78A267FA1CC1519A"
+				type: "item"
+				item: "sophisticatedbackpacks:tank_upgrade"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			description: ["battery in a bacpack"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "1ED3461D9D25C247"
+			tasks: [{
+				id: "659C4B7156836109"
+				type: "item"
+				item: "sophisticatedbackpacks:battery_upgrade"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			description: ["simple upgrade for pumping up fluids"]
+			dependencies: ["37CB400F17E8EBD3"]
+			id: "3B495E417B9B5200"
+			tasks: [{
+				id: "39D0AB2C982C6329"
+				type: "item"
+				item: "sophisticatedbackpacks:pump_upgrade"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -5.5d
+			dependencies: ["3B495E417B9B5200"]
+			id: "6B949D6ACAC9E177"
+			tasks: [{
+				id: "44F3A95407A909CE"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_pump_upgrade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			dependencies: [
+				"6B949D6ACAC9E177"
+				"3B495E417B9B5200"
+			]
+			id: "685503B234BC36AD"
+			tasks: [{
+				id: "5A15635BB999ACEF"
+				type: "item"
+				item: "sophisticatedbackpacks:xp_pump_upgrade"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			description: ["More advanced version of feeding upgrade"]
+			dependencies: ["102C1BC91AC82741"]
+			id: "5915456B3C026A97"
+			tasks: [{
+				id: "5E81E7D798FBBA97"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -7.0d
+			dependencies: ["72A23B755F96B785"]
+			hide: true
+			id: "080C58DC18D451E8"
+			tasks: [{
+				id: "20483DF82FCE446A"
+				type: "item"
+				item: "sophisticatedbackpacks:blasting_upgrade"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			description: ["automagically pulls/pushes items"]
+			dependencies: ["080C58DC18D451E8"]
+			id: "4DE62DA4F13B2052"
+			tasks: [{
+				id: "598D9956AA8C1853"
+				type: "item"
+				item: "sophisticatedbackpacks:auto_blasting_upgrade"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -6.5d
+			dependencies: ["72A23B755F96B785"]
+			hide: true
+			id: "1B9FAE5779FFC250"
+			tasks: [{
+				id: "5803DA560C13152C"
+				type: "item"
+				item: "sophisticatedbackpacks:smoking_upgrade"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -7.5d
+			description: ["automagically pulls/pushes items"]
+			dependencies: ["1B9FAE5779FFC250"]
+			id: "28A94CA6C0C44C51"
+			tasks: [{
+				id: "590AD950F9676203"
+				type: "item"
+				item: "sophisticatedbackpacks:auto_smoking_upgrade"
+			}]
+		}
+	]
+}

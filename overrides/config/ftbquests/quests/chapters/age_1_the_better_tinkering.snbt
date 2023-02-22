@@ -1,0 +1,643 @@
+{
+	id: "183A8B8CE41147E5"
+	group: ""
+	order_index: 1
+	filename: "age_1_the_better_tinkering"
+	title: "Age 1: better tinkering"
+	icon: {
+		id: "tconstruct:tinkers_anvil"
+		Count: 1b
+		tag: {
+			texture: "immersiveengineering:storage_electrum"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Smeltery"
+			icon: "tconstruct:seared_melter"
+			x: 2.0d
+			y: -0.5d
+			description: [
+				"Basic smeltery "
+				"Build your melter on top of heater and use solid fuel to heat it up"
+				"Also completing this quest unlocks the better chests and furnaces questline"
+			]
+			dependencies: ["32032FDD9B7CD61F"]
+			id: "0161182F67A55CEC"
+			tasks: [
+				{
+					id: "64861688658F4077"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "5C3A9A13D10A8977"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "3CCC4736B0C3F609"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "3AB94D7F1AA26BE9"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+			]
+			rewards: [{
+				id: "4F589C6F29D4A566"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 32
+			}]
+		}
+		{
+			title: "Better smeltery"
+			icon: "tconstruct:smeltery_controller"
+			x: 2.0d
+			y: -1.5d
+			shape: "pentagon"
+			description: [
+				"Time to build a real smeltery"
+				"build a 2x2 smeltery and connect your faucet to the drain, supply your seared tank with lava to make it running"
+			]
+			dependencies: ["0161182F67A55CEC"]
+			id: "66CB39A415627A07"
+			tasks: [
+				{
+					id: "0069231ED85BA550"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "6F7DE8D5DD42F7CD"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "28CF9250150989D3"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+			]
+			rewards: [{
+				id: "64EC4CAFA25B1677"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 16
+			}]
+		}
+		{
+			title: "Basic Crafting"
+			x: 6.8d
+			y: -4.68d
+			description: ["Same as normal crafting table but used for more variety of recipes"]
+			dependencies: [
+				"66CB39A415627A07"
+				"7C8484471DBAB14F"
+			]
+			id: "4983BD541C1397B0"
+			tasks: [{
+				id: "681A9361D9C4337E"
+				type: "item"
+				item: "extendedcrafting:basic_table"
+			}]
+			rewards: [{
+				id: "31747F959F2EB55B"
+				type: "item"
+				item: "immersiveengineering:ingot_aluminum"
+				count: 8
+			}]
+		}
+		{
+			title: "gROOTING"
+			x: 0.0d
+			y: 0.0d
+			shape: "octagon"
+			description: ["smelt in furnace to get seared bricks"]
+			dependencies: ["106381EC2EFFD2EA"]
+			hide: true
+			id: "1A7DB21BC94B09D7"
+			tasks: [{
+				id: "02C0BE1EEB4EE144"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 16L
+			}]
+			rewards: [{
+				id: "169BC60AD5A81724"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 4
+			}]
+		}
+		{
+			title: "Seared Brick"
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["1A7DB21BC94B09D7"]
+			id: "32032FDD9B7CD61F"
+			tasks: [{
+				id: "622A900EC2BDA172"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 16L
+			}]
+			rewards: [{
+				id: "692AD9BE3472A013"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 8
+			}]
+		}
+		{
+			title: "Basic Slimesling"
+			x: -1.5d
+			y: 0.5d
+			description: ["Used to bonk you to the sky"]
+			dependencies: ["1A7DB21BC94B09D7"]
+			id: "0C01F130C1932ADC"
+			tasks: [{
+				id: "51F2458D4A7B9212"
+				type: "item"
+				title: "Slimesling"
+				icon: {
+					id: "tconstruct:earth_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				item: {
+					id: "tconstruct:earth_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "28F89A02B3217C07"
+				type: "item"
+				item: "tconstruct:earth_congealed_slime"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			description: ["used to bonk yourself forward"]
+			dependencies: ["1A7DB21BC94B09D7"]
+			id: "4B084AC5BB655EE7"
+			tasks: [{
+				id: "7F1349D086D433F3"
+				type: "item"
+				item: {
+					id: "tconstruct:sky_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "76DCF63C21B8CE4E"
+				type: "item"
+				item: "tconstruct:sky_slime_ball"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["Used to bonk you through blocks"]
+			dependencies: ["1A7DB21BC94B09D7"]
+			id: "192634112018F9C9"
+			tasks: [{
+				id: "59FFCC65BA7A1731"
+				type: "item"
+				item: {
+					id: "tconstruct:ender_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "147409FAC24EE859"
+				type: "item"
+				item: "tconstruct:ender_slime_ball"
+				count: 2
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			description: ["Used to bonk entities around your home"]
+			dependencies: [
+				"0C01F130C1932ADC"
+				"192634112018F9C9"
+				"4B084AC5BB655EE7"
+			]
+			dependency_requirement: "one_completed"
+			id: "43B01AEFCE4AAAA8"
+			tasks: [{
+				id: "5A0A1F65E86DD371"
+				type: "item"
+				item: {
+					id: "tconstruct:ichor_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "265CFFE10DBC0F70"
+				type: "item"
+				item: "tconstruct:ichor_slime_ball"
+				count: 2
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			description: ["Can be built from any metal block "]
+			dependencies: ["66CB39A415627A07"]
+			id: "7943F54C19E03669"
+			tasks: [{
+				id: "0588C5A450E95B89"
+				type: "item"
+				item: "tconstruct:tinkers_anvil"
+			}]
+			rewards: [{
+				id: "10354056A4A471C7"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 4
+			}]
+		}
+		{
+			title: "Cobalt Ingot"
+			x: 3.6d
+			y: -3.08d
+			dependencies: ["66CB39A415627A07"]
+			id: "6727AE0AAA49E1F5"
+			tasks: [{
+				id: "4833D31DE4193EC5"
+				type: "item"
+				item: "tconstruct:cobalt_ore"
+				count: 4L
+			}]
+			rewards: [{
+				id: "48C6C773C3C3BC38"
+				type: "item"
+				item: "tconstruct:cobalt_ingot"
+				count: 2
+			}]
+		}
+		{
+			title: "Netherite Ingot"
+			icon: "minecraft:ancient_debris"
+			x: 2.28d
+			y: -3.92d
+			dependencies: [
+				"22791BDE73861E5F"
+				"66CB39A415627A07"
+			]
+			dependency_requirement: "all_started"
+			id: "5A34D5BCAA481263"
+			tasks: [{
+				id: "5335B3670332074A"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1A474028DA33A3A1"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 2
+			}]
+		}
+		{
+			title: "Manyullyn alloy"
+			x: 3.48d
+			y: -4.64d
+			dependencies: [
+				"5A34D5BCAA481263"
+				"6727AE0AAA49E1F5"
+			]
+			id: "7C8484471DBAB14F"
+			tasks: [{
+				id: "0379A8030D5071B9"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0EBC28260DC70D02"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: 5.68d
+			y: -0.72d
+			shape: "gear"
+			description: ["Every 4 adds +1 Fire Protection level to your Tinker's armour"]
+			hide_dependency_lines: true
+			dependencies: ["66CB39A415627A07"]
+			hide: true
+			optional: true
+			id: "57DA6F58B75A758C"
+			tasks: [{
+				id: "743824DB3CB663ED"
+				type: "item"
+				item: "tconstruct:seared_reinforcement"
+			}]
+		}
+		{
+			x: 5.68d
+			y: -1.56d
+			shape: "gear"
+			description: [
+				"Used 24 of any type to add 1 reinforcement level to your tinker tool or armour "
+				"Level 5 adds up to 75% more durability"
+			]
+			hide_dependency_lines: true
+			dependencies: ["66CB39A415627A07"]
+			hide: true
+			optional: true
+			id: "53B48F516B994B92"
+			tasks: [{
+				id: "0FF0689CEEC96C9F"
+				type: "item"
+				item: "tconstruct:iron_reinforcement"
+			}]
+		}
+		{
+			x: 6.36d
+			y: -1.12d
+			shape: "gear"
+			description: ["Every 4 adds +1 Overforced level to your Tinker's armour"]
+			hide_dependency_lines: true
+			dependencies: ["66CB39A415627A07"]
+			hide: true
+			optional: true
+			id: "2154F56B0C8D28F9"
+			tasks: [{
+				id: "072F883645822E14"
+				type: "item"
+				item: "tconstruct:slimesteel_reinforcement"
+			}]
+		}
+		{
+			x: 5.24d
+			y: -2.24d
+			shape: "gear"
+			description: ["Every 4 adds +1 Magic Protection level to your Tinker's armour"]
+			hide_dependency_lines: true
+			dependencies: ["66CB39A415627A07"]
+			hide: true
+			optional: true
+			id: "3156C1DD580F624C"
+			tasks: [{
+				id: "3033B32F437085A4"
+				type: "item"
+				item: "tconstruct:gold_reinforcement"
+			}]
+		}
+		{
+			x: 4.84d
+			y: -1.56d
+			shape: "gear"
+			description: ["Every 4 adds +1 Protection level to your Tinker's armour"]
+			dependencies: ["66CB39A415627A07"]
+			hide: true
+			optional: true
+			id: "4113AE15F15153C3"
+			tasks: [{
+				id: "5224C23BEBE0E9F6"
+				type: "item"
+				item: "tconstruct:emerald_reinforcement"
+			}]
+		}
+		{
+			x: 5.24d
+			y: -0.04d
+			shape: "gear"
+			description: ["Every 4 adds +1 Projectile Protection level to your Tinker's armour"]
+			hide_dependency_lines: true
+			dependencies: ["66CB39A415627A07"]
+			hide: true
+			optional: true
+			id: "33C1F98F3D7D5979"
+			tasks: [{
+				id: "11A811C66927307E"
+				type: "item"
+				item: "tconstruct:bronze_reinforcement"
+			}]
+		}
+		{
+			x: 4.84d
+			y: -0.72d
+			shape: "gear"
+			description: ["Every 4 adds +1 Melee Protection level to your Tinker's armour"]
+			dependencies: ["66CB39A415627A07"]
+			hide: true
+			optional: true
+			id: "22438690BD0EC2DF"
+			tasks: [{
+				id: "480EC9C36771BB02"
+				type: "item"
+				item: "tconstruct:cobalt_reinforcement"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["used to bounce like slimeblock thus taking no fall damage"]
+			dependencies: ["66CB39A415627A07"]
+			id: "7B2207C6E4CC68B0"
+			tasks: [{
+				id: "0AF9DA63206FA7FC"
+				type: "item"
+				item: {
+					id: "tconstruct:slime_boots"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 546.0f
+							"tconstruct:armor": 0.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:bouncy"
+								level: 1s
+							}
+							{
+								name: "tconstruct:leaping"
+								level: 1s
+							}
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 5
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "1C5CB34556A7023C"
+				type: "item"
+				item: "tconstruct:ender_slime_ball"
+				count: 4
+			}]
+		}
+		{
+			title: "Slime Armor"
+			icon: {
+				id: "tconstruct:slime_chestplate"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:durability": 672.0f
+						"tconstruct:armor": 0.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [{
+						name: "tconstruct:wings"
+						level: 1s
+					}]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:elyta": 1b
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 5
+					}
+				}
+			}
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["7B2207C6E4CC68B0"]
+			id: "149EBCE489F1103F"
+			tasks: [
+				{
+					id: "5D285CD39AEEADD6"
+					type: "item"
+					item: {
+						id: "tconstruct:slime_chestplate"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 672.0f
+								"tconstruct:armor": 0.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [{
+								name: "tconstruct:wings"
+								level: 1s
+							}]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:elyta": 1b
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 5
+							}
+						}
+					}
+				}
+				{
+					id: "7617ED55AE469116"
+					type: "item"
+					item: {
+						id: "tconstruct:slime_leggings"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 630.0f
+								"tconstruct:armor": 0.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:pockets"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:total_item_slots": 9
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 5
+							}
+						}
+					}
+				}
+				{
+					id: "1EC8B8836EDF41E0"
+					type: "item"
+					item: {
+						id: "tconstruct:slime_helmet"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 487.0f
+								"tconstruct:armor": 0.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:wither_skeleton_disguise"
+									level: 1s
+								}
+								{
+									name: "tconstruct:withered"
+									level: 1s
+								}
+							]
+							tic_materials: ["tconstruct:necrotic_bone"]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 5
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5884944AB9207211"
+				type: "item"
+				item: "tconstruct:ender_slime"
+				count: 4
+			}]
+		}
+	]
+}

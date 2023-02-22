@@ -1,0 +1,196 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=376322%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376322%
+  orientation = mid-centered
+  x = -125
+  action = movebutton
+  y = -61
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 346
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 849f1288-eaf4-4c09-b9b7-bfc95dd88adb1667680311058
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 124
+  action = deep_customization_element:title_screen_branding
+  actionid = 0260e528-6e8e-4b20-a79c-72bd5fa9b4511667680311069
+  y = 528
+  height = 10
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 731
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 44dae857-89f2-4032-8fc8-c5013e4c29bf1667680311069
+  y = 520
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 583
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 11982216-3cff-4ce0-ac23-4129155f1e631667680311069
+  y = 235
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 343
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = a4f52850-e1b7-4d9c-822f-f181471896e71667680311069
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = false
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = a1975583-19ee-4ef7-89a2-552b84c458181667680311069
+  y = 0
+  height = 30
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 117
+  action = movebutton
+  y = 140
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 167
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 117
+  action = movebutton
+  y = 110
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 167
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = sethoverlabel
+  label = Click to get lost
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 117
+  action = movebutton
+  y = 200
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = top-left
+  x = 235
+  action = movebutton
+  y = 200
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 117
+  action = movebutton
+  y = 170
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = setbuttonlabel
+  value = Settings...
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = sethoverlabel
+  label = Click here to configure the game
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 117
+  action = movebutton
+  y = 232
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 167
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 235
+  action = movebutton
+  y = 170
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+

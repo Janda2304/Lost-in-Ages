@@ -1,0 +1,24 @@
+{
+	id: "276585663B872361"
+	group: ""
+	order_index: 9
+	filename: "age_11_fluxed"
+	title: "Age 9: Fluxed"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Rftools basics"
+		x: 0.0d
+		y: 0.5d
+		shape: "octagon"
+		description: ["A chapter all about making your life easier with Rftools and Rftools dimensions"]
+		dependencies: ["50E0F5AF383234AF"]
+		hide: true
+		id: "68A5A7C73F642335"
+		tasks: [{
+			id: "3C360DFCDDB80B27"
+			type: "item"
+			item: "rftoolsbase:smartwrench"
+		}]
+	}]
+}

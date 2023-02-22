@@ -1,0 +1,1892 @@
+{
+	id: "695EA7199BC5645C"
+	group: "3548B98E1DB8BA6A"
+	order_index: 2
+	filename: "all_the_foods"
+	title: "All the foods"
+	icon: "solcarrot:food_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Food checker"
+			x: -5.0d
+			y: -1.0d
+			shape: "octagon"
+			description: [
+				"This modpack contains the Spice of Life : carrot edition, that means every few foods you eat you get a heart, the foods you must eat increases over time and u can gain up to 40 additional hearts"
+				"This modpack contains a total of 1197 different foods this page is to document them almost all"
+				"Why im doing this? I don't really know"
+			]
+			dependencies: ["6A8FE640DD32F8B5"]
+			hide: true
+			id: "506B7A2334709F92"
+			tasks: [{
+				id: "423826A820A09375"
+				type: "checkmark"
+				title: "Foods"
+				icon: "solcarrot:food_book"
+			}]
+			rewards: [{
+				id: "6EA6F4C3B88F57B1"
+				type: "item"
+				item: "solcarrot:food_book"
+			}]
+		}
+		{
+			title: "Vanilla Foods"
+			x: -4.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "All of Vanilla"
+			description: [""]
+			dependencies: [
+				"506B7A2334709F92"
+				"6A8FE640DD32F8B5"
+			]
+			hide: true
+			id: "74BE56A4406A0DD3"
+			tasks: [{
+				id: "4EBAEA237682CD88"
+				type: "checkmark"
+				title: "Vanilla"
+			}]
+			rewards: [{
+				id: "6E4226DC246F500B"
+				type: "item"
+				item: "minecraft:bread"
+				count: 4
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			subtitle: "Pretty raw try some sandwiches from it"
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "0177837C95165957"
+			tasks: [{
+				id: "6B32EE7BDD3C2EF3"
+				type: "item"
+				item: "minecraft:bread"
+			}]
+			rewards: [{
+				id: "55F9C09A781E4DBA"
+				type: "item"
+				item: "minecraft:bread"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "0B5447B36500562D"
+			tasks: [{
+				id: "742261CD2C663A77"
+				type: "item"
+				item: "minecraft:apple"
+			}]
+			rewards: [{
+				id: "49AF406DA10FA478"
+				type: "item"
+				item: "minecraft:apple"
+				count: 4
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "53E0D2E74495F8C0"
+			tasks: [{
+				id: "4E4294B924CC9807"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+			rewards: [{
+				id: "180131B74529CE71"
+				type: "item"
+				item: "minecraft:golden_apple"
+				count: 4
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "66B7E81C76FC4ADB"
+			tasks: [{
+				id: "39C71B308D5CC6B4"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+			rewards: [{
+				id: "6D1D8254708778D9"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "563F947A3DE39D5D"
+			tasks: [{
+				id: "5E4D1BC492248B5E"
+				type: "item"
+				item: "minecraft:golden_carrot"
+			}]
+			rewards: [{
+				id: "23AFD8B42E49D90B"
+				type: "item"
+				item: "minecraft:golden_carrot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "482D9E936EBB4A61"
+			tasks: [{
+				id: "4D64EDAA680FB3C3"
+				type: "item"
+				item: "minecraft:potato"
+			}]
+			rewards: [{
+				id: "44231F8F2939FCD9"
+				type: "item"
+				item: "minecraft:potato"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "6E579C102573DD06"
+			tasks: [{
+				id: "33DA19A3A61F483C"
+				type: "item"
+				item: "minecraft:baked_potato"
+			}]
+			rewards: [{
+				id: "33334549942B2A4B"
+				type: "item"
+				item: "minecraft:baked_potato"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			subtitle: "not so healthy"
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "14857AC48F4D171E"
+			tasks: [{
+				id: "72BC6754176710BB"
+				type: "item"
+				item: "minecraft:poisonous_potato"
+			}]
+			rewards: [{
+				id: "0E7A24B56FDA04DD"
+				type: "item"
+				item: "minecraft:poisonous_potato"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "79B7A46E26D71F96"
+			tasks: [{
+				id: "3CE5CA888EBB8009"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+			}]
+			rewards: [{
+				id: "0A1268055828E844"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "1226FB117720360E"
+			tasks: [{
+				id: "4804C4A01980F8F3"
+				type: "item"
+				item: "minecraft:spider_eye"
+			}]
+			rewards: [{
+				id: "175FB6E5CE3A5B88"
+				type: "item"
+				item: "minecraft:spider_eye"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "0FECB3657BDBDC7A"
+			tasks: [{
+				id: "18DDAA1D52A7D8D9"
+				type: "item"
+				item: "minecraft:beetroot"
+			}]
+			rewards: [{
+				id: "2E6F8CE039C18789"
+				type: "item"
+				item: "minecraft:beetroot"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.0d
+			subtitle: "gud sup"
+			description: [""]
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "3960EC5011E9642E"
+			tasks: [{
+				id: "556788ACDFCD9C17"
+				type: "item"
+				item: "minecraft:beetroot_soup"
+			}]
+			rewards: [{
+				id: "0C3C6586B3E1BDCA"
+				type: "item"
+				item: "minecraft:beetroot_soup"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			description: [""]
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "66EA68BBF0C0BB57"
+			tasks: [{
+				id: "688F23C60FC2EB4B"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+			rewards: [{
+				id: "574CF128CF5E67B0"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "75F2CE99D4F9A0A3"
+			tasks: [{
+				id: "6DC04F403FC6AA11"
+				type: "item"
+				item: "minecraft:rabbit_stew"
+			}]
+			rewards: [{
+				id: "6CC9184D7651D79A"
+				type: "item"
+				item: "minecraft:rabbit_stew"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "25D8E6A78E05A171"
+			tasks: [{
+				id: "7A2AA96E32733704"
+				type: "item"
+				item: "minecraft:porkchop"
+			}]
+			rewards: [{
+				id: "05727CC7543A3B1F"
+				type: "item"
+				item: "minecraft:porkchop"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "5881491CCC165142"
+			tasks: [{
+				id: "6C03BA58287C8CD3"
+				type: "item"
+				item: "minecraft:cod"
+			}]
+			rewards: [{
+				id: "07B2C8CA9F17A6A3"
+				type: "item"
+				item: "minecraft:cod"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "3F28FE11EBFA163C"
+			tasks: [{
+				id: "0C7F69CEEBB31EEA"
+				type: "item"
+				item: "minecraft:salmon"
+			}]
+			rewards: [{
+				id: "6C24BCE607AEBB51"
+				type: "item"
+				item: "minecraft:salmon"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: ["better not wanna eat it unless you want to poison yourself"]
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "398A1BC8E4765239"
+			tasks: [{
+				id: "7E24CA23920AAF4E"
+				type: "item"
+				item: "minecraft:chicken"
+			}]
+			rewards: [{
+				id: "7C9A4D4D31494EC4"
+				type: "item"
+				item: "minecraft:chicken"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "073F279A51AB75B6"
+			tasks: [{
+				id: "7C2135D63CF646D5"
+				type: "item"
+				item: "minecraft:rabbit"
+			}]
+			rewards: [{
+				id: "2CAC280A65169E2C"
+				type: "item"
+				item: "minecraft:rabbit"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "4ED04B14ED0D1215"
+			tasks: [{
+				id: "40EEF01597524101"
+				type: "item"
+				item: "minecraft:mutton"
+			}]
+			rewards: [{
+				id: "6D8D2E4FFD8A0F09"
+				type: "item"
+				item: "minecraft:mutton"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["398A1BC8E4765239"]
+			id: "3D8D03612ECD9678"
+			tasks: [{
+				id: "02CAE29B588A8D6F"
+				type: "item"
+				item: "minecraft:cooked_chicken"
+			}]
+			rewards: [{
+				id: "2AC30EC0432233E0"
+				type: "item"
+				item: "minecraft:cooked_chicken"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			dependencies: ["3F28FE11EBFA163C"]
+			id: "3FCAAA2204FA58BE"
+			tasks: [{
+				id: "0EDDFE93C4D089D3"
+				type: "item"
+				item: "minecraft:cooked_salmon"
+			}]
+			rewards: [{
+				id: "7FB974F27EC3C49E"
+				type: "item"
+				item: "minecraft:cooked_salmon"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.5d
+			dependencies: ["25D8E6A78E05A171"]
+			id: "5AB4BAE47EBD1DD8"
+			tasks: [{
+				id: "0FE2B76DC7BEC9DD"
+				type: "item"
+				item: "minecraft:cooked_porkchop"
+			}]
+			rewards: [{
+				id: "368FD6FC27B00268"
+				type: "item"
+				item: "minecraft:cooked_porkchop"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			dependencies: ["5881491CCC165142"]
+			id: "7B0A0912CAF1F2BD"
+			tasks: [{
+				id: "072016C897DF3AE7"
+				type: "item"
+				item: "minecraft:cooked_cod"
+			}]
+			rewards: [{
+				id: "48BF51772D4F2946"
+				type: "item"
+				item: "minecraft:cooked_cod"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.0d
+			dependencies: ["073F279A51AB75B6"]
+			id: "2967B803D7ABFAAE"
+			tasks: [{
+				id: "0B8801C6CEE5235A"
+				type: "item"
+				item: "minecraft:cooked_rabbit"
+			}]
+			rewards: [{
+				id: "2A94032176F5A734"
+				type: "item"
+				item: "minecraft:cooked_rabbit"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			dependencies: ["4ED04B14ED0D1215"]
+			id: "2809CD40AC50C78A"
+			tasks: [{
+				id: "550EA7B1E5F1A5E3"
+				type: "item"
+				item: "minecraft:cooked_mutton"
+			}]
+			rewards: [{
+				id: "2BAC73E81CBF4C66"
+				type: "item"
+				item: "minecraft:cooked_mutton"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "7AA55A1B116B8409"
+			tasks: [{
+				id: "463A3C07A587E5A4"
+				type: "item"
+				item: "minecraft:beef"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["7AA55A1B116B8409"]
+			id: "27F967B7D5D00A9C"
+			tasks: [{
+				id: "19D5232A505198BE"
+				type: "item"
+				item: "minecraft:cooked_beef"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "0DFED81C0C0B4D3D"
+			tasks: [{
+				id: "6D195E3C672E170A"
+				type: "item"
+				item: "minecraft:tropical_fish"
+			}]
+			rewards: [{
+				id: "3CABBD4FDEC232B7"
+				type: "item"
+				item: "minecraft:tropical_fish"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 1.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "3D8F76825E2DDDD3"
+			tasks: [{
+				id: "5EA95E40A9A2041F"
+				type: "item"
+				item: "minecraft:pufferfish"
+			}]
+			rewards: [{
+				id: "60FF6EC90EEA5CBB"
+				type: "item"
+				item: "minecraft:pufferfish"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -2.5d
+			subtitle: "One of the hardest but you've gotta catch them all"
+			dependencies: ["53E0D2E74495F8C0"]
+			id: "1FFF5B172A11AAC1"
+			tasks: [{
+				id: "30A67E690508AE81"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+			rewards: [{
+				id: "5F871B5782422A4E"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			subtitle: "Delicious"
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "71E8F425EE008264"
+			tasks: [{
+				id: "287A5C812A1B7EA1"
+				type: "item"
+				item: "minecraft:cake"
+			}]
+			rewards: [{
+				id: "2BE3CF47C88080D7"
+				type: "item"
+				item: "minecraft:cake"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			subtitle: "where am i?"
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "009A45936FBB3176"
+			tasks: [{
+				id: "221863F8B4E6A59F"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+			rewards: [{
+				id: "6031F2A1F9D9E5D7"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "5ED19AA89941DAD1"
+			tasks: [{
+				id: "13C725259341B0D9"
+				type: "item"
+				item: "minecraft:cookie"
+			}]
+			rewards: [{
+				id: "1131F4D96849A459"
+				type: "item"
+				item: "minecraft:cookie"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "63A982967A3A6098"
+			tasks: [{
+				id: "31D084D2F58614E5"
+				type: "item"
+				item: "minecraft:dried_kelp"
+			}]
+			rewards: [{
+				id: "21481AF0E59E0E3D"
+				type: "item"
+				item: "minecraft:dried_kelp"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "13E749EC73A22EDA"
+			tasks: [{
+				id: "1F7EDB2FFFBFDBB3"
+				type: "item"
+				item: "minecraft:honey_bottle"
+			}]
+			rewards: [{
+				id: "4AAB72F680311F75"
+				type: "item"
+				item: "minecraft:honey_bottle"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "2BE4C24483B889C0"
+			tasks: [{
+				id: "2D48FE9CDC22F058"
+				type: "item"
+				item: "minecraft:melon_slice"
+			}]
+			rewards: [{
+				id: "701D1660B7E49830"
+				type: "item"
+				item: "minecraft:melon_slice"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -4.5d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "1885215A76516A30"
+			tasks: [{
+				id: "6B24AD8D882867F4"
+				type: "item"
+				item: "minecraft:pumpkin_pie"
+			}]
+			rewards: [{
+				id: "4878E0B619D3E13A"
+				type: "item"
+				item: "minecraft:pumpkin_pie"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.0d
+			dependencies: ["74BE56A4406A0DD3"]
+			id: "24FFCDE9B0F45F5A"
+			tasks: [{
+				id: "41CA47D4038BCF7F"
+				type: "item"
+				item: "minecraft:sweet_berries"
+			}]
+			rewards: [{
+				id: "60BCC9FF984B507C"
+				type: "item"
+				item: "minecraft:sweet_berries"
+			}]
+		}
+		{
+			title: "Pam's Harvestcraft 2 Crops "
+			icon: "pamhc2crops:asparagusseeditem"
+			x: 4.5d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "Just starting with pam's harvestcraft"
+			description: [
+				"a lot of foods but it's just a little percentage of all"
+				""
+			]
+			hide_dependency_lines: true
+			dependencies: ["74BE56A4406A0DD3"]
+			hide: true
+			id: "2FE8C8227517ACC6"
+			tasks: [{
+				id: "4A56ADB335921621"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "58774BEB5D4BFE0A"
+			tasks: [{
+				id: "3F3723DEBE8620AD"
+				type: "item"
+				item: "pamhc2crops:artichokeitem"
+			}]
+			rewards: [{
+				id: "339DE84F1525341C"
+				type: "item"
+				item: "pamhc2crops:artichokeitem"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "71A7713A45CCCA34"
+			tasks: [{
+				id: "476FA36ACC836197"
+				type: "item"
+				item: "pamhc2crops:asparagusitem"
+			}]
+			rewards: [{
+				id: "1FA9EF1107D49896"
+				type: "item"
+				item: "pamhc2crops:asparagusitem"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "45C1CBC028651028"
+			tasks: [{
+				id: "1D9C2006618CC0F0"
+				type: "item"
+				item: "pamhc2crops:bellpepperitem"
+			}]
+			rewards: [{
+				id: "42BA861A4A867AD3"
+				type: "item"
+				item: "pamhc2crops:bellpepperitem"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "095C3D32AC64D572"
+			tasks: [{
+				id: "3897FDB2DF1BF36A"
+				type: "item"
+				item: "pamhc2crops:broccoliitem"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "74C48BCC741BE504"
+			tasks: [{
+				id: "623346F0FE531D81"
+				type: "item"
+				item: "pamhc2crops:brusselsproutitem"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "47015E5FE4A58DF4"
+			tasks: [{
+				id: "147E665F71837E24"
+				type: "item"
+				item: "pamhc2crops:cabbageitem"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "03299F97C7FD2084"
+			tasks: [{
+				id: "24390AC5FD395AB9"
+				type: "item"
+				item: "pamhc2crops:caulifloweritem"
+			}]
+			rewards: [{
+				id: "213E679BBDEC47C2"
+				type: "item"
+				item: "pamhc2crops:caulifloweritem"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "34F07E884AD12B63"
+			tasks: [{
+				id: "5DDEEF1D913D5D04"
+				type: "item"
+				item: "pamhc2crops:celeryitem"
+			}]
+			rewards: [{
+				id: "14FA176FAEA8D46D"
+				type: "item"
+				item: "pamhc2crops:celeryitem"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "1B31CF8173E857EB"
+			tasks: [{
+				id: "7F93E818EA977583"
+				type: "item"
+				item: "pamhc2crops:chilipepperitem"
+			}]
+			rewards: [{
+				id: "51DDEEFB485150F8"
+				type: "item"
+				item: "pamhc2crops:chilipepperitem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "23B89CABED43C32D"
+			tasks: [{
+				id: "6C7DEC7E4149E463"
+				type: "item"
+				item: "pamhc2crops:cucumberitem"
+			}]
+			rewards: [{
+				id: "5E3E40055C9D733A"
+				type: "item"
+				item: "pamhc2crops:cucumberitem"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "7051275E16CFEFED"
+			tasks: [{
+				id: "6B4954B5B7122ECF"
+				type: "item"
+				item: "pamhc2crops:tomatoitem"
+			}]
+			rewards: [{
+				id: "488FB8BDCE599F4F"
+				type: "item"
+				item: "pamhc2crops:tomatoitem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "198AC844C8ACABB1"
+			tasks: [{
+				id: "66328B0C505CB153"
+				type: "item"
+				item: "pamhc2crops:eggplantitem"
+			}]
+			rewards: [{
+				id: "712A144E036200CA"
+				type: "item"
+				item: "pamhc2crops:eggplantitem"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "2C9EE6E1A036B359"
+			tasks: [{
+				id: "136151F2EFBA3BFE"
+				type: "item"
+				item: "pamhc2crops:kaleitem"
+			}]
+			rewards: [{
+				id: "61DDA9F7525D2DAA"
+				type: "item"
+				item: "pamhc2crops:kaleitem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "118102AC5CE2D74B"
+			tasks: [{
+				id: "35F26479A47DA484"
+				type: "item"
+				item: "pamhc2crops:lettuceitem"
+			}]
+			rewards: [{
+				id: "3B233666AB94C37F"
+				type: "item"
+				item: "pamhc2crops:lettuceitem"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "2F6EE28F2CE48980"
+			tasks: [{
+				id: "1C8E5781BD6C99A2"
+				type: "item"
+				item: "pamhc2crops:okraitem"
+			}]
+			rewards: [{
+				id: "7673B2C8E82903C0"
+				type: "item"
+				item: "pamhc2crops:okraitem"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "781F62FB650A7E62"
+			tasks: [{
+				id: "6C81D5373E5F3CE0"
+				type: "item"
+				item: "pamhc2crops:peasitem"
+			}]
+			rewards: [{
+				id: "3D6CD8A8D79F04B0"
+				type: "item"
+				item: "pamhc2crops:peasitem"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "462C8FF6707F5522"
+			tasks: [{
+				id: "053C228D3CF01B69"
+				type: "item"
+				item: "pamhc2crops:spinachitem"
+			}]
+			rewards: [{
+				id: "6A4E742FDD62FB6C"
+				type: "item"
+				item: "pamhc2crops:spinachitem"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "0B3BC1676B348A16"
+			tasks: [{
+				id: "47D4AAB92320B005"
+				type: "item"
+				item: "pamhc2crops:tomatilloitem"
+			}]
+			rewards: [{
+				id: "163A3017972BBB65"
+				type: "item"
+				item: "pamhc2crops:tomatilloitem"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "5FAA6D2BD7787F79"
+			tasks: [{
+				id: "1BAB76EF44F89D3C"
+				type: "item"
+				item: "pamhc2crops:wintersquashitem"
+			}]
+			rewards: [{
+				id: "02A2B3C23C96F402"
+				type: "item"
+				item: "pamhc2crops:wintersquashitem"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "3D50F7FE7AEA35B9"
+			tasks: [{
+				id: "174AC4C6E331CC9B"
+				type: "item"
+				item: "pamhc2crops:zucchiniitem"
+			}]
+			rewards: [{
+				id: "0FB5BF2E64EE72D8"
+				type: "item"
+				item: "pamhc2crops:zucchiniitem"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "23CBFD0E6813B98B"
+			tasks: [{
+				id: "49B9211F679FD912"
+				type: "item"
+				item: "pamhc2crops:arrowrootitem"
+			}]
+			rewards: [{
+				id: "13005E1B3078F126"
+				type: "item"
+				item: "pamhc2crops:arrowrootitem"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "0189EC00EC38B189"
+			tasks: [{
+				id: "5FDB4B8A6BA155BB"
+				type: "item"
+				item: "pamhc2crops:cassavaitem"
+			}]
+			rewards: [{
+				id: "769EB85D79E70AC4"
+				type: "item"
+				item: "pamhc2crops:cassavaitem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "68FB506F81E76D4A"
+			tasks: [{
+				id: "774063F96C7728E0"
+				type: "item"
+				item: "pamhc2crops:garlicitem"
+			}]
+			rewards: [{
+				id: "48406AC1E0A6C9AD"
+				type: "item"
+				item: "pamhc2crops:garlicitem"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "41FF7EAC6E7E3494"
+			tasks: [{
+				id: "00516019E5B7A835"
+				type: "item"
+				item: "pamhc2crops:jicamaitem"
+			}]
+			rewards: [{
+				id: "16F9931E4006D229"
+				type: "item"
+				item: "pamhc2crops:jicamaitem"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "38070A68B8472139"
+			tasks: [{
+				id: "5147AEDF3788EA4B"
+				type: "item"
+				item: "pamhc2crops:leekitem"
+			}]
+			rewards: [{
+				id: "1202EA320F2B811F"
+				type: "item"
+				item: "pamhc2crops:leekitem"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "3064497D72252C8F"
+			tasks: [{
+				id: "420143F27D436A08"
+				type: "item"
+				item: "pamhc2crops:kohlrabiitem"
+			}]
+			rewards: [{
+				id: "09CAA06989FC0768"
+				type: "item"
+				item: "pamhc2crops:kohlrabiitem"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "669093635582D019"
+			tasks: [{
+				id: "21D2A5C311C2865D"
+				type: "item"
+				item: "pamhc2crops:onionitem"
+			}]
+			rewards: [{
+				id: "04F848EAC9B48736"
+				type: "item"
+				item: "pamhc2crops:onionitem"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "54687B4B9014A4A6"
+			tasks: [{
+				id: "36D32245F33AC779"
+				type: "item"
+				item: "pamhc2crops:parsnipitem"
+			}]
+			rewards: [{
+				id: "26FDE59C2F3DAD7A"
+				type: "item"
+				item: "pamhc2crops:parsnipitem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "6A0CD86A860E261D"
+			tasks: [{
+				id: "0F48FA9298D28B32"
+				type: "item"
+				item: "pamhc2crops:peanutitem"
+			}]
+			rewards: [{
+				id: "4058AD352796E772"
+				type: "item"
+				item: "pamhc2crops:peanutitem"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "658D1E8D84DDF073"
+			tasks: [{
+				id: "5A5FE8B2EED6D6F5"
+				type: "item"
+				item: "pamhc2crops:radishitem"
+			}]
+			rewards: [{
+				id: "14C290392D677C63"
+				type: "item"
+				item: "pamhc2crops:radishitem"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "32CB1C259D75D104"
+			tasks: [{
+				id: "4F87A229CAFF9926"
+				type: "item"
+				item: "pamhc2crops:rhubarbitem"
+			}]
+			rewards: [{
+				id: "61EC5D6C18E0B0DE"
+				type: "item"
+				item: "pamhc2crops:rhubarbitem"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "28451ACC8028E4E5"
+			tasks: [{
+				id: "0CBB18BEFDEE1293"
+				type: "item"
+				item: "pamhc2crops:rutabagaitem"
+			}]
+			rewards: [{
+				id: "3BED297C8B70F90B"
+				type: "item"
+				item: "pamhc2crops:rutabagaitem"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "73FCF96830636E7F"
+			tasks: [{
+				id: "1B97E192515042C7"
+				type: "item"
+				item: "pamhc2crops:scallionitem"
+			}]
+			rewards: [{
+				id: "04A1E663F7A4D3B0"
+				type: "item"
+				item: "pamhc2crops:scallionitem"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "47B81A2B4667AD8A"
+			tasks: [{
+				id: "470A84467EEA340C"
+				type: "item"
+				item: "pamhc2crops:sweetpotatoitem"
+			}]
+			rewards: [{
+				id: "23996CFF3B4A20F2"
+				type: "item"
+				item: "pamhc2crops:sweetpotatoitem"
+			}]
+		}
+		{
+			x: 8.3d
+			y: -1.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "0B612A32BBF3D9F7"
+			tasks: [{
+				id: "3CEEE208B0E488E1"
+				type: "item"
+				item: "pamhc2crops:taroitem"
+			}]
+			rewards: [{
+				id: "4C146D693C84505B"
+				type: "item"
+				item: "pamhc2crops:taroitem"
+			}]
+		}
+		{
+			x: 7.9d
+			y: -2.4d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "26C0FF63FB1A0276"
+			tasks: [{
+				id: "0C2321B546623B13"
+				type: "item"
+				item: "pamhc2crops:turnipitem"
+			}]
+			rewards: [{
+				id: "4197CD8928032101"
+				type: "item"
+				item: "pamhc2crops:turnipitem"
+			}]
+		}
+		{
+			x: 7.4d
+			y: -3.3d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "1702C070D34EEC13"
+			tasks: [{
+				id: "3274F8153433F946"
+				type: "item"
+				item: "pamhc2crops:waterchestnutitem"
+			}]
+			rewards: [{
+				id: "494B2B1BE8AC2BD4"
+				type: "item"
+				item: "pamhc2crops:waterchestnutitem"
+			}]
+		}
+		{
+			x: 6.8d
+			y: -4.1d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "714184A1902633ED"
+			tasks: [{
+				id: "553A7CE736580DB6"
+				type: "item"
+				item: "pamhc2crops:blackberryitem"
+			}]
+			rewards: [{
+				id: "09C3F865089D1AAF"
+				type: "item"
+				item: "pamhc2crops:blackberryitem"
+			}]
+		}
+		{
+			x: 5.9d
+			y: -4.9d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "7E709CD5A61780A0"
+			tasks: [{
+				id: "6A66F6D7E414A66D"
+				type: "item"
+				item: "pamhc2crops:blueberryitem"
+			}]
+			rewards: [{
+				id: "339765CAD466E1FB"
+				type: "item"
+				item: "pamhc2crops:blueberryitem"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.4d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "56472363DAA7DADD"
+			tasks: [{
+				id: "0FCA32BBD9EC16A3"
+				type: "item"
+				item: "pamhc2crops:cactusfruititem"
+			}]
+			rewards: [{
+				id: "7CADFDECE9EA039C"
+				type: "item"
+				item: "pamhc2crops:cactusfruititem"
+			}]
+		}
+		{
+			x: 3.1d
+			y: -4.9d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "1D96C8BC1E5FB5EE"
+			tasks: [{
+				id: "61A1C1BA78FE7F37"
+				type: "item"
+				item: "pamhc2crops:candleberryitem"
+			}]
+			rewards: [{
+				id: "71E8E27F3554BBB2"
+				type: "item"
+				item: "pamhc2crops:candleberryitem"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.1d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "27E285CA5C6E0384"
+			tasks: [{
+				id: "3444E2921F850834"
+				type: "item"
+				item: "pamhc2crops:cantaloupeitem"
+			}]
+			rewards: [{
+				id: "5A63CCC01F3C3947"
+				type: "item"
+				item: "pamhc2crops:cantaloupeitem"
+			}]
+		}
+		{
+			x: 1.7d
+			y: -3.4d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "5C8BC08599889516"
+			tasks: [{
+				id: "02F1F31A914A9950"
+				type: "item"
+				item: "pamhc2crops:cranberryitem"
+			}]
+			rewards: [{
+				id: "43055DFF431B3827"
+				type: "item"
+				item: "pamhc2crops:cranberryitem"
+			}]
+		}
+		{
+			x: 1.3d
+			y: -2.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "7AD56181D43AC083"
+			tasks: [{
+				id: "605AA4D543E11080"
+				type: "item"
+				item: "pamhc2crops:elderberryitem"
+			}]
+			rewards: [{
+				id: "08E9FE96DFA56BFE"
+				type: "item"
+				item: "pamhc2crops:elderberryitem"
+			}]
+		}
+		{
+			x: 0.7d
+			y: -1.6d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "3A19E0B1E73715A4"
+			tasks: [{
+				id: "12C22D06CAB0C5DB"
+				type: "item"
+				item: "pamhc2crops:grapeitem"
+			}]
+			rewards: [{
+				id: "60F16A00EA1F4C70"
+				type: "item"
+				item: "pamhc2crops:grapeitem"
+			}]
+		}
+		{
+			x: 0.6d
+			y: -0.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "7397618FF60044A5"
+			tasks: [{
+				id: "722ECCCC3774210A"
+				type: "item"
+				item: "pamhc2crops:greengrapeitem"
+			}]
+			rewards: [{
+				id: "2E006B96119A7AD6"
+				type: "item"
+				item: "pamhc2crops:greengrapeitem"
+			}]
+		}
+		{
+			x: 1.1d
+			y: 0.3d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "5E151B06B271AAC4"
+			tasks: [{
+				id: "47A755216690EF55"
+				type: "item"
+				item: "pamhc2crops:huckleberryitem"
+			}]
+			rewards: [{
+				id: "5F05AAE41B32E34C"
+				type: "item"
+				item: "pamhc2crops:huckleberryitem"
+			}]
+		}
+		{
+			x: 1.6d
+			y: 1.2d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "31DFF95230AA2920"
+			tasks: [{
+				id: "2913090CD7195B91"
+				type: "item"
+				item: "pamhc2crops:juniperberryitem"
+			}]
+			rewards: [{
+				id: "1555BF0C3399CA72"
+				type: "item"
+				item: "pamhc2crops:juniperberryitem"
+			}]
+		}
+		{
+			x: 2.1d
+			y: 1.9d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "0169C7C153A54AC6"
+			tasks: [{
+				id: "7438F7B1D9FE5203"
+				type: "item"
+				item: "pamhc2crops:kiwiitem"
+			}]
+			rewards: [{
+				id: "0AE1108D9E20AA21"
+				type: "item"
+				item: "pamhc2crops:kiwiitem"
+			}]
+		}
+		{
+			x: 2.9d
+			y: 2.7d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "2F1D85E2F87C853A"
+			tasks: [{
+				id: "0AAD4033B351B54F"
+				type: "item"
+				item: "pamhc2crops:mulberryitem"
+			}]
+			rewards: [{
+				id: "65778105FFF138C9"
+				type: "item"
+				item: "pamhc2crops:mulberryitem"
+			}]
+		}
+		{
+			x: 4.9d
+			y: 3.3d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "6901C86AFDC2DF39"
+			tasks: [{
+				id: "1A90F934B424D2F7"
+				type: "item"
+				item: "pamhc2crops:pineappleitem"
+			}]
+			rewards: [{
+				id: "0D251921E2547229"
+				type: "item"
+				item: "pamhc2crops:pineappleitem"
+			}]
+		}
+		{
+			x: 5.9d
+			y: 2.9d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "315D9875153E9346"
+			tasks: [{
+				id: "57F43BC13F404AF0"
+				type: "item"
+				item: "pamhc2crops:raspberryitem"
+			}]
+			rewards: [{
+				id: "33B628398747A544"
+				type: "item"
+				item: "pamhc2crops:raspberryitem"
+			}]
+		}
+		{
+			x: 6.7d
+			y: 2.2d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "3A32C737ECAFDA30"
+			tasks: [{
+				id: "3219B183F859D182"
+				type: "item"
+				item: "pamhc2crops:strawberryitem"
+			}]
+			rewards: [{
+				id: "2F770462530659CD"
+				type: "item"
+				item: "pamhc2crops:strawberryitem"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.4d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "1D8B47662F941FA5"
+			tasks: [{
+				id: "648AA6F11526F980"
+				type: "item"
+				item: "pamhc2crops:spiceleafitem"
+			}]
+			rewards: [{
+				id: "5AB7E1A34FB64E42"
+				type: "item"
+				item: "pamhc2crops:spiceleafitem"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "34FF1D28B726DBC8"
+			tasks: [{
+				id: "2291AB66320091B9"
+				type: "item"
+				item: "pamhc2crops:whitemushroomitem"
+			}]
+			rewards: [{
+				id: "050615ACD416CE84"
+				type: "item"
+				item: "pamhc2crops:whitemushroomitem"
+			}]
+		}
+		{
+			x: 8.4d
+			y: -0.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "0C6CD6FB490AA0B7"
+			tasks: [{
+				id: "2D590662580AA6A1"
+				type: "item"
+				item: "pamhc2crops:bakedarrowrootitem"
+			}]
+			rewards: [{
+				id: "685C797D7AC35955"
+				type: "item"
+				item: "pamhc2crops:bakedarrowrootitem"
+			}]
+		}
+		{
+			x: 4.1d
+			y: -6.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "52E9D832F59C29E9"
+			tasks: [{
+				id: "07BF7DF05D9459EF"
+				type: "item"
+				item: "pamhc2crops:bakedcassavaitem"
+			}]
+			rewards: [{
+				id: "222881154DABD685"
+				type: "item"
+				item: "pamhc2crops:bakedcassavaitem"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -2.2d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "08D440E045DCEB63"
+			tasks: [{
+				id: "7B8F6133AE555EF4"
+				type: "item"
+				item: "pamhc2crops:roastedgarlicitem"
+			}]
+			rewards: [{
+				id: "12241BB8BBB08FC9"
+				type: "item"
+				item: "pamhc2crops:roastedgarlicitem"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -3.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "5DE52EB15FD1E492"
+			tasks: [{
+				id: "0A53F5F746C59619"
+				type: "item"
+				item: "pamhc2crops:bakedjicamaitem"
+			}]
+			rewards: [{
+				id: "205DF8AA840EA1BB"
+				type: "item"
+				item: "pamhc2crops:bakedjicamaitem"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "41138812C47D0B85"
+			tasks: [{
+				id: "4EE0293AFBA0B28E"
+				type: "item"
+				item: "pamhc2crops:roastedleekitem"
+			}]
+			rewards: [{
+				id: "33150F73A80168B8"
+				type: "item"
+				item: "pamhc2crops:roastedleekitem"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -5.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "23B6E8537903400B"
+			tasks: [{
+				id: "23C802693A137497"
+				type: "item"
+				item: "pamhc2crops:roastedkohlrabiitem"
+			}]
+			rewards: [{
+				id: "26E955ACA1FAC826"
+				type: "item"
+				item: "pamhc2crops:roastedkohlrabiitem"
+			}]
+		}
+		{
+			x: 6.8d
+			y: -5.6d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "1C59DC4776E3EDA1"
+			tasks: [{
+				id: "09E1DED1953BA794"
+				type: "item"
+				item: "pamhc2crops:roastedonionitem"
+			}]
+			rewards: [{
+				id: "2F5498F3B646E001"
+				type: "item"
+				item: "pamhc2crops:roastedonionitem"
+			}]
+		}
+		{
+			x: 5.9d
+			y: -6.0d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "74FA11526DBBEDFF"
+			tasks: [{
+				id: "278AED1E4B892E5C"
+				type: "item"
+				item: "pamhc2crops:bakedparsnipitem"
+			}]
+			rewards: [{
+				id: "6026C09253ACDA0E"
+				type: "item"
+				item: "pamhc2crops:bakedparsnipitem"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.6d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "0502C40314F9620E"
+			tasks: [{
+				id: "3999DD744EBED359"
+				type: "item"
+				item: "pamhc2crops:roastedpeanutitem"
+			}]
+			rewards: [{
+				id: "3EE9A7DEAD9380A7"
+				type: "item"
+				item: "pamhc2crops:roastedpeanutitem"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.4d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "6BEB00BA9D3CED9F"
+			tasks: [{
+				id: "373FDF9A7474B175"
+				type: "item"
+				item: "pamhc2crops:roastedradishitem"
+			}]
+			rewards: [{
+				id: "31C65B5244ABF093"
+				type: "item"
+				item: "pamhc2crops:roastedradishitem"
+			}]
+		}
+		{
+			x: 3.2d
+			y: -6.3d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "4A283462513C044D"
+			tasks: [{
+				id: "289607BD84187053"
+				type: "item"
+				item: "pamhc2crops:roastedrhubarbitem"
+			}]
+			rewards: [{
+				id: "0495FAE14A9A7884"
+				type: "item"
+				item: "pamhc2crops:roastedrhubarbitem"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.8d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "4DF6602A593CFF38"
+			tasks: [{
+				id: "1BF0480D7AE99C6A"
+				type: "item"
+				item: "pamhc2crops:bakedrutabagaitem"
+			}]
+			rewards: [{
+				id: "43F6A7B74CC10631"
+				type: "item"
+				item: "pamhc2crops:bakedrutabagaitem"
+			}]
+		}
+		{
+			x: 1.9d
+			y: -5.1d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "4E35E56D70253215"
+			tasks: [{
+				id: "7335EF22CAF13DB5"
+				type: "item"
+				item: "pamhc2crops:roastedscallionitem"
+			}]
+			rewards: [{
+				id: "2EDD7061B16DD88D"
+				type: "item"
+				item: "pamhc2crops:roastedscallionitem"
+			}]
+		}
+		{
+			x: 1.2d
+			y: -4.4d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "671617143BC6294D"
+			tasks: [{
+				id: "0A85AF2FB3B8BCB1"
+				type: "item"
+				item: "pamhc2crops:bakedsweetpotatoitem"
+			}]
+			rewards: [{
+				id: "04450FE4F6AE2A51"
+				type: "item"
+				item: "pamhc2crops:bakedsweetpotatoitem"
+			}]
+		}
+		{
+			x: 0.6d
+			y: -3.5d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "5794C7FE0DE1B76B"
+			tasks: [{
+				id: "1C22BB123AE25D36"
+				type: "item"
+				item: "pamhc2crops:bakedtaroitem"
+			}]
+			rewards: [{
+				id: "31703901E506069D"
+				type: "item"
+				item: "pamhc2crops:bakedtaroitem"
+			}]
+		}
+		{
+			x: 0.2d
+			y: -2.6d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "35A08364BD91C376"
+			tasks: [{
+				id: "39130A5CDEE467A6"
+				type: "item"
+				item: "pamhc2crops:bakedturnipitem"
+			}]
+			rewards: [{
+				id: "14F053E9B564D5B7"
+				type: "item"
+				item: "pamhc2crops:bakedturnipitem"
+			}]
+		}
+		{
+			x: -0.3d
+			y: -1.7d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "36FF65B5ACCF8782"
+			tasks: [{
+				id: "37F2C2C8F51E8D6A"
+				type: "item"
+				item: "pamhc2crops:bakedwaterchestnutitem"
+			}]
+			rewards: [{
+				id: "43236A39F3C577A3"
+				type: "item"
+				item: "pamhc2crops:bakedwaterchestnutitem"
+			}]
+		}
+		{
+			x: -0.3d
+			y: -0.7d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "0E42B073CD80D3C5"
+			tasks: [{
+				id: "1E1A2F01BA73B9DD"
+				type: "item"
+				item: "pamhc2crops:roastedmushroomitem"
+			}]
+			rewards: [{
+				id: "515A4A25D3891345"
+				type: "item"
+				item: "pamhc2crops:roastedmushroomitem"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.2d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "1446489AE8FB34D4"
+			tasks: [{
+				id: "2FCD687C69A1AAB3"
+				type: "item"
+				item: "pamhc2crops:hotteaitem"
+			}]
+			rewards: [{
+				id: "29E755E34F142293"
+				type: "item"
+				item: "pamhc2crops:hotteaitem"
+			}]
+		}
+		{
+			x: 3.8d
+			y: 3.2d
+			dependencies: ["2FE8C8227517ACC6"]
+			id: "77FC1F133D7C15C0"
+			tasks: [{
+				id: "2F3820982BD8FE21"
+				type: "item"
+				item: "pamhc2crops:hotcoffeeitem"
+			}]
+			rewards: [{
+				id: "016A54EABEC3C3B7"
+				type: "item"
+				item: "pamhc2crops:hotcoffeeitem"
+			}]
+		}
+	]
+}

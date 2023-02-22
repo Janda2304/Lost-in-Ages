@@ -1,0 +1,25 @@
+{
+	id: "3D02893AAF2DC8DE"
+	group: ""
+	order_index: 4
+	filename: "age_4_botanical"
+	title: "Age 4: Botanical"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -0.5d
+		y: 0.5d
+		description: ["A chapter all about Botania (NYI will be in later versions of pack)"]
+		id: "0D3DAF7719D693C9"
+		tasks: [{
+			id: "400F567C87311E25"
+			type: "item"
+			item: "botania:white_petal"
+		}]
+		rewards: [{
+			id: "2E731E954541BD2B"
+			type: "item"
+			item: "botania:lexicon"
+		}]
+	}]
+}

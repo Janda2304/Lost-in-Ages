@@ -1,0 +1,39 @@
+{
+	id: "129D6C63955CA7BA"
+	group: ""
+	order_index: 13
+	filename: "age_13_final_age"
+	title: "Age 13: Final age"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.5d
+		description: ["A chapter all about crafting creative items with Extended crafting "]
+		dependencies: [
+			"183A8B8CE41147E5"
+			"735814829908CB7A"
+			"628F42F9B4075BC4"
+			"3D02893AAF2DC8DE"
+			"77C8C2A692DF51BD"
+			"08B39E2E38D949EE"
+			"08606E45BB589342"
+			"72B9F56016E8F4AF"
+			"276585663B872361"
+			"6BA0F801DE3CCAEA"
+			"58D0B73D63843D54"
+		]
+		id: "5361F6BF55741770"
+		tasks: [{
+			id: "5FABCC6504761E58"
+			type: "item"
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "extendedcrafting:guide"
+				}
+			}
+		}]
+	}]
+}

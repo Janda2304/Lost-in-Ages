@@ -1,0 +1,64 @@
+{
+	id: "79F75EEB60B79254"
+	order_index: 4
+	title: "pickaxe head rnd"
+	icon: {
+		id: "tconstruct:pickaxe_head"
+		Count: 1b
+		tag: {
+			Material: "tconstruct:flint"
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:wood"
+				}
+			}
+			weight: 285
+		}
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "materialis:terrasteel"
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:bone"
+				}
+			}
+			weight: 214
+		}
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "materialis:manasteel"
+				}
+			}
+			weight: 171
+		}
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "tdelight:gildedfern"
+				}
+			}
+			weight: 157
+		}
+	]
+}

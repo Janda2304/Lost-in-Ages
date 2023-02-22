@@ -1,0 +1,36 @@
+{
+	id: "53217FA6094E5953"
+	group: "3548B98E1DB8BA6A"
+	order_index: 1
+	filename: "more_botanics"
+	title: "More Botanics"
+	icon: {
+		id: "botania:manasteel_chestplate"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "More Botanics"
+		icon: "botania:elementium_ingot"
+		x: 0.0d
+		y: 0.0d
+		description: ["this questline contains a lot more QoL botania things that didn't fit into the Age 4: Botanical questline"]
+		dependencies: ["78191A6C6DC46AB7"]
+		hide: true
+		id: "2C0DF95E7A909839"
+		tasks: [{
+			id: "7F8FA8AA662BAFD4"
+			type: "checkmark"
+			title: "OK"
+		}]
+		rewards: [{
+			id: "679BE44DAAD8F055"
+			type: "item"
+			item: "botania:dragonstone"
+		}]
+	}]
+}

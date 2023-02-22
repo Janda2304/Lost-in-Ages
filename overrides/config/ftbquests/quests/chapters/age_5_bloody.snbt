@@ -1,0 +1,37 @@
+{
+	id: "77C8C2A692DF51BD"
+	group: ""
+	order_index: 5
+	filename: "age_5_bloody"
+	title: "Age 5: Bloody"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.5d
+		y: 1.0d
+		shape: "octagon"
+		description: [
+			"A quest page all about Blood magic mod"
+			""
+		]
+		dependencies: ["1164079FD0C6DD86"]
+		hide: true
+		id: "1453179546999DC7"
+		tasks: [{
+			id: "7B962E69DEEBCB7A"
+			type: "item"
+			item: "bloodmagic:altar"
+		}]
+		rewards: [{
+			id: "4E43DFC14AF18075"
+			type: "item"
+			item: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "bloodmagic:guide"
+				}
+			}
+		}]
+	}]
+}

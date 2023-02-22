@@ -1,0 +1,90 @@
+{
+	id: "72B9F56016E8F4AF"
+	group: ""
+	order_index: 8
+	filename: "age_8_digital"
+	title: "Age 8: Digital Engineering"
+	icon: "chisel:futura/controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Digital storing"
+			icon: "chisel:futura/controller"
+			x: -1.0d
+			y: 0.0d
+			shape: "octagon"
+			description: ["A chapter all about storing items digitally with Refined Storage and Applied Energistics"]
+			dependencies: ["3949AE264488237D"]
+			hide: true
+			id: "7965069F22AFFF94"
+			tasks: [
+				{
+					id: "460DB7CCB0C6132D"
+					type: "item"
+					item: "refinedstorage:quartz_enriched_iron"
+				}
+				{
+					id: "1BC09FE295F03C46"
+					type: "item"
+					item: "appliedenergistics2:certus_quartz_crystal"
+				}
+			]
+			rewards: [
+				{
+					id: "01284725DD05FE6F"
+					type: "item"
+					item: "refinedstorage:quartz_enriched_iron"
+					count: 16
+				}
+				{
+					id: "3570387101564881"
+					type: "item"
+					item: "appliedenergistics2:certus_quartz_crystal"
+					count: 16
+				}
+			]
+		}
+		{
+			icon: "appliedenergistics2:controller"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Do you like AE2 or RS more?"
+				"These fights are going on forever so i just made almost similar questline for both of these mods"
+			]
+			dependencies: ["7965069F22AFFF94"]
+			id: "06A5D5C9D3AA3F93"
+			tasks: [{
+				id: "2A1547256A6ABBF5"
+				type: "checkmark"
+				title: "Choose your path"
+			}]
+		}
+		{
+			title: "Refined Path"
+			x: 1.0d
+			y: 0.5d
+			dependencies: ["06A5D5C9D3AA3F93"]
+			id: "57DEBEA1F8701DA0"
+			tasks: [{
+				id: "6BBC638B665DFAFC"
+				type: "item"
+				item: "refinedstorage:wrench"
+			}]
+		}
+		{
+			title: "AE2 Path"
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["06A5D5C9D3AA3F93"]
+			id: "6813AFE441D465D4"
+			tasks: [{
+				id: "3EAE33F511C70B3A"
+				type: "item"
+				item: "appliedenergistics2:certus_quartz_wrench"
+			}]
+		}
+	]
+}

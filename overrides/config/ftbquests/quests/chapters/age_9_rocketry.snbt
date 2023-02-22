@@ -1,0 +1,40 @@
+{
+	id: "6BA0F801DE3CCAEA"
+	group: ""
+	order_index: 11
+	filename: "age_9_rocketry"
+	title: "Age 11: Astral"
+	icon: "astralsorcery:resonating_gem"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "U.S marine but aqua"
+		icon: "astralsorcery:tome"
+		x: 0.0d
+		y: 0.5d
+		shape: "octagon"
+		description: ["Astral sorcery is a mod all about crafting cool things with astral tables making different stellar rituals and much more "]
+		dependencies: ["687F99EB78E01053"]
+		hide: true
+		id: "64CE418E0D360E45"
+		tasks: [
+			{
+				id: "7A5389BE535F9C04"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+				count: 32L
+			}
+			{
+				id: "519E5514577CDCEF"
+				type: "item"
+				item: "astralsorcery:tome"
+			}
+		]
+		rewards: [{
+			id: "61A1C64B6578A499"
+			type: "item"
+			item: "astralsorcery:aquamarine"
+			count: 8
+		}]
+	}]
+}

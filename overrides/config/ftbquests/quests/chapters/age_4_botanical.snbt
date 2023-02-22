@@ -1,0 +1,2637 @@
+{
+	id: "3D02893AAF2DC8DE"
+	group: ""
+	order_index: 4
+	filename: "age_4_botanical"
+	title: "Age 4: Botanical"
+	icon: {
+		id: "botania:lexicon"
+		Count: 1b
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Petals"
+			x: -0.5d
+			y: 0.5d
+			shape: "octagon"
+			description: [
+				"Chapter all about white magic featuring Botania"
+				"Check Lexica Botania for more info about Botania"
+			]
+			dependencies: ["62A4D037B871D29D"]
+			hide: true
+			id: "0D3DAF7719D693C9"
+			tasks: [{
+				id: "400F567C87311E25"
+				type: "item"
+				title: "Any petal "
+				icon: "botania:white_petal"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:petals"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2E731E954541BD2B"
+				type: "item"
+				item: "botania:lexicon"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			description: ["Used for making Botania flowers"]
+			dependencies: ["0D3DAF7719D693C9"]
+			hide: true
+			id: "31659826885E7C6C"
+			tasks: [{
+				id: "05E5966D083222F0"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+			rewards: [{
+				id: "09B8649F9C511A2D"
+				type: "item"
+				item: "mekanism:block_steel"
+				count: 3
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			description: ["Used for basic conversion of wood and stone to botania wood and botania stone"]
+			dependencies: ["31659826885E7C6C"]
+			hide: true
+			id: "2D5972EB94268B15"
+			tasks: [{
+				id: "6DB8C7467D1E94B7"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+			rewards: [{
+				id: "234389B5DAA836C4"
+				type: "item"
+				item: "botania:white_petal"
+				count: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			description: [
+				"When planted on grass it turns it to enchanted grass. Botania crops planted on enchanted grass will function at two times their speed"
+				"Can be found in dungeons and also crafted manually after you get terrasteel"
+			]
+			dependencies: ["31659826885E7C6C"]
+			id: "5B3A69EA1532290D"
+			tasks: [{
+				id: "408CA218AAB60588"
+				type: "item"
+				item: "botania:overgrowth_seed"
+			}]
+			rewards: [{
+				id: "017DE6F4B325CBC1"
+				type: "item"
+				item: "mysticalagriculture:prudentium_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			description: ["Check lexica botanica for inside info but basically highlights item held in hand in nearby chests, monster hands ,etc."]
+			dependencies: ["31659826885E7C6C"]
+			id: "57E6A03B01BC149D"
+			tasks: [{
+				id: "153D5CE4AB303A9A"
+				type: "item"
+				item: {
+					id: "botania:itemfinder"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "07EA5116AD358FB2"
+				type: "item"
+				item: "mekanism:ingot_steel"
+				count: 2
+			}]
+		}
+		{
+			title: "Livingrocks"
+			x: 2.5d
+			y: 0.0d
+			description: ["Used for crafting mana pool and much more"]
+			dependencies: ["2D5972EB94268B15"]
+			id: "2EDD6D632027331C"
+			tasks: [{
+				id: "4CED99419F453AF8"
+				type: "item"
+				item: "botania:livingrock"
+				count: 8L
+			}]
+			rewards: [{
+				id: "0484269E150D6A92"
+				type: "item"
+				item: "botania:livingrock"
+				count: 4
+			}]
+		}
+		{
+			title: "Livingwood"
+			x: 2.5d
+			y: 1.0d
+			description: ["Used for crafting mana spreaders and much more"]
+			dependencies: ["2D5972EB94268B15"]
+			id: "13B079D76AB7A005"
+			tasks: [{
+				id: "345E2338C8CBFF10"
+				type: "item"
+				item: "botania:livingwood"
+				count: 8L
+			}]
+			rewards: [{
+				id: "26553E2D0CF5E5C5"
+				type: "item"
+				item: "botania:livingwood"
+				count: 4
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["2EDD6D632027331C"]
+			hide: true
+			id: "43595B814AA9DCFC"
+			tasks: [{
+				id: "67D167E27A2CBF06"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+			rewards: [{
+				id: "04710B00717BCCE7"
+				type: "item"
+				item: "botania:livingrock"
+				count: 8
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			shape: "gear"
+			description: [
+				"Can be found in dungeons chests and later crafted with elementium and a lot of black iron "
+				"When thrown to mana pool with atleast 1 mana restores 100k mana to the mana pool "
+			]
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			optional: true
+			id: "6D0C7466D6AB11BC"
+			tasks: [{
+				id: "7AF53FCAF6A9C87E"
+				type: "item"
+				item: "botania:blacker_lotus"
+			}]
+			rewards: [{
+				id: "5ECE987695C4A532"
+				type: "item"
+				item: "botania:black_lotus"
+			}]
+		}
+		{
+			title: "Mana Spreading"
+			x: 3.872d
+			y: 2.432d
+			shape: "hexagon"
+			description: ["Used for mana transfer between mana generating flowers and mana consuming blocks"]
+			hide_dependency_lines: true
+			dependencies: [
+				"13B079D76AB7A005"
+				"0C281488C2C317E2"
+			]
+			hide: true
+			id: "06BF886487FBA9EE"
+			tasks: [{
+				id: "5D68A6EB44198A59"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+			rewards: [{
+				id: "17C3DEB68821F4B0"
+				type: "item"
+				item: "botania:black_lotus"
+			}]
+		}
+		{
+			title: "Horn"
+			x: 2.0d
+			y: 2.0d
+			description: ["destroys flowers in area around player"]
+			dependencies: ["13B079D76AB7A005"]
+			id: "135C56810FE1BE7A"
+			tasks: [{
+				id: "0DA12E5190D7160E"
+				type: "item"
+				item: "botania:horn_grass"
+			}]
+			rewards: [{
+				id: "1EB0AC9AFF76C171"
+				type: "item"
+				item: "botania:livingwood"
+				count: 4
+			}]
+		}
+		{
+			title: "Basic Mana generation"
+			x: 3.5d
+			y: -4.0d
+			description: [
+				"used to generate mana from water source blocks, decays after 1 hour "
+				"It is reccomended to make some better flower asap"
+			]
+			dependencies: ["43595B814AA9DCFC"]
+			id: "7D2E3F7E806A691F"
+			tasks: [{
+				id: "53187515EA997B4B"
+				type: "item"
+				item: "botania:hydroangeas"
+			}]
+			rewards: [
+				{
+					id: "4B794BB8E1E8D643"
+					type: "item"
+					item: "botania:blue_petal"
+					count: 2
+				}
+				{
+					id: "065BFEBE03249F2A"
+					type: "item"
+					item: "botania:hydroangeas"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			description: ["right click on grass blocks to grow some fancy botania flowers"]
+			dependencies: ["43595B814AA9DCFC"]
+			id: "0C281488C2C317E2"
+			tasks: [{
+				id: "25AFFA7AABC74344"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+			rewards: [{
+				id: "52CF87EBBE0AC856"
+				type: "item"
+				item: "botania:fertilizer"
+				count: 4
+			}]
+		}
+		{
+			title: "Advanced mana generation"
+			x: 7.5d
+			y: -4.0d
+			description: ["generates mana from furnace fuel items"]
+			dependencies: ["7D2E3F7E806A691F"]
+			hide: true
+			id: "3DF491EC13562CFC"
+			tasks: [{
+				id: "64A5A0E043F69E26"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+			rewards: [{
+				id: "1BC7E04BFE7FA2A7"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -6.0d
+			description: ["Consumes lava source blocks to generate mana"]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "2C512916AD4EA901"
+			tasks: [{
+				id: "169BB73EC883A259"
+				type: "item"
+				item: "botania:thermalily"
+			}]
+			rewards: [{
+				id: "00846B1E63569F95"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -5.5d
+			description: ["Uses experience orbs to generate mana"]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "0FB4BABEA476B16C"
+			tasks: [{
+				id: "3A74DE824FF7F440"
+				type: "item"
+				item: "botania:rosa_arcana"
+			}]
+			rewards: [{
+				id: "2B8E974E75FD39E6"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -4.5d
+			description: ["Consumes naturally grown tree leaves to generate mana"]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "0A435DA0E69F46FD"
+			tasks: [{
+				id: "459C45CE890F6909"
+				type: "item"
+				item: "botania:munchdew"
+			}]
+			rewards: [{
+				id: "118689AA42518FCA"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.5d
+			description: [
+				"Dampens tnt explosions to generate mana"
+				"does not absorb explosions in water"
+			]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "696951928129E297"
+			tasks: [{
+				id: "25835D584FC4BFBC"
+				type: "item"
+				item: "botania:entropinnyum"
+			}]
+			rewards: [{
+				id: "42331E58F2FB5870"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.5d
+			description: [
+				"Consumes cakes to generate mana"
+				"highly suggested to automate with astral sorcery later"
+			]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "655E0648C7722180"
+			tasks: [{
+				id: "2B638A73C4A94EC8"
+				type: "item"
+				item: "botania:kekimurus"
+			}]
+			rewards: [{
+				id: "13A6963FCFC497D0"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.5d
+			description: ["Consumes food items to generate mana"]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "26A0991397888781"
+			tasks: [{
+				id: "25DA6B2A502A5EF1"
+				type: "item"
+				item: "botania:gourmaryllis"
+			}]
+			rewards: [{
+				id: "5A59052DEB1BE082"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			description: ["Consumes naturally spawned slimes to generate mana"]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "1FB7A3B9E751EFA5"
+			tasks: [{
+				id: "3CF1439A3936DFCE"
+				type: "item"
+				item: "botania:narslimmus"
+			}]
+			rewards: [{
+				id: "6308D3025731801C"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			description: ["Consumes colored wool blocks to generate mana"]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "29AE61AEA9ED3506"
+			tasks: [{
+				id: "59BE9BEE7646460A"
+				type: "item"
+				item: "botania:spectrolus"
+			}]
+			rewards: [{
+				id: "363FEFDE258B4EF3"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			description: ["Consumes player placed botania flowers to generate mana"]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "31268A205F83169E"
+			tasks: [{
+				id: "1AC6E6E86AB50BD1"
+				type: "item"
+				item: "botania:rafflowsia"
+			}]
+			rewards: [{
+				id: "69699B0385141919"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.5d
+			subtitle: "Generates mana from shulkers applying levitation to player"
+			description: [""]
+			dependencies: ["3DF491EC13562CFC"]
+			id: "1F5B4C4B86269CA8"
+			tasks: [{
+				id: "494462CB8934C308"
+				type: "item"
+				item: "botania:shulk_me_not"
+			}]
+			rewards: [{
+				id: "7B32A3B99ACD6835"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			title: "Mana Diamond"
+			x: 7.232d
+			y: 2.688d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "0D444C30771264A8"
+			tasks: [{
+				id: "3EDC6536F070B29C"
+				type: "item"
+				item: "botania:mana_diamond"
+				count: 2L
+			}]
+			rewards: [{
+				id: "33EC7BC2FF95DA48"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			title: "Manasteel Ingot"
+			x: 7.584d
+			y: 2.016d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "5A7E1BD264792277"
+			tasks: [{
+				id: "77D4AA1BDE1E37CF"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 2L
+			}]
+			rewards: [{
+				id: "5B783EAF1E6B10B8"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+		}
+		{
+			title: "Mana String"
+			x: 6.88d
+			y: 2.016d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "01CB36B73E733763"
+			tasks: [{
+				id: "4FA97912F7C0E025"
+				type: "item"
+				item: "botania:mana_string"
+				count: 2L
+			}]
+			rewards: [{
+				id: "2F4E1082A60C57E5"
+				type: "item"
+				item: "botania:mana_string"
+			}]
+		}
+		{
+			title: "Mana Quartz"
+			x: 7.968d
+			y: 2.688d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "1FFD83BB0AFC2959"
+			tasks: [{
+				id: "21666C885FE41015"
+				type: "item"
+				item: "botania:quartz_mana"
+				count: 2L
+			}]
+			rewards: [{
+				id: "7C386C29C418F367"
+				type: "item"
+				item: "botania:quartz_mana"
+			}]
+		}
+		{
+			title: "Mana Pearl"
+			x: 8.32d
+			y: 2.016d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "4F8E98B68EAB5C13"
+			tasks: [{
+				id: "712E2DD57A9A2E79"
+				type: "item"
+				item: "botania:mana_pearl"
+				count: 2L
+			}]
+			rewards: [{
+				id: "51CAEE9A9E2D201B"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+		}
+		{
+			title: "Mana Powder"
+			x: 7.232d
+			y: 1.344d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "07370A0E6E2E8ABF"
+			tasks: [{
+				id: "06A1BEA0EDDA0D56"
+				type: "item"
+				item: "botania:mana_powder"
+				count: 2L
+			}]
+			rewards: [{
+				id: "7A51056CC5E5B13A"
+				type: "item"
+				item: "botania:mana_powder"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			dependencies: [
+				"43595B814AA9DCFC"
+				"06BF886487FBA9EE"
+			]
+			id: "1C346D270F7A3C58"
+			tasks: [{
+				id: "4169EB7103EB9F92"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			title: "Rune of Water"
+			x: 14.5d
+			y: 1.5d
+			description: ["Used for crafting a lot of useful botania things related to water"]
+			hide_dependency_lines: true
+			dependencies: ["1C346D270F7A3C58"]
+			hide: true
+			id: "4DCAFE03E166F558"
+			tasks: [{
+				id: "2ABE912226B939C2"
+				type: "item"
+				item: "botania:rune_water"
+				count: 2L
+			}]
+			rewards: [{
+				id: "6B69DD375B75BF5E"
+				type: "item"
+				item: "botania:rune_water"
+			}]
+		}
+		{
+			title: "Rune of Fire"
+			x: 14.0d
+			y: 1.0d
+			description: ["Used for crafting a lot of useful botania things related to fire or lava"]
+			hide_dependency_lines: true
+			dependencies: ["1C346D270F7A3C58"]
+			hide: true
+			id: "4826F57278E5D0B0"
+			tasks: [{
+				id: "6FB6F015CD0B7623"
+				type: "item"
+				item: "botania:rune_fire"
+				count: 2L
+			}]
+			rewards: [{
+				id: "508E15CCEF11029B"
+				type: "item"
+				item: "botania:rune_fire"
+			}]
+		}
+		{
+			title: "Rune of Earth"
+			x: 14.0d
+			y: 2.0d
+			description: ["Used for crafting a lot of useful botania things related to earth"]
+			hide_dependency_lines: true
+			dependencies: ["1C346D270F7A3C58"]
+			hide: true
+			id: "26A21EE276432E8B"
+			tasks: [{
+				id: "1F51C440BCC2FDA5"
+				type: "item"
+				item: "botania:rune_earth"
+				count: 2L
+			}]
+			rewards: [{
+				id: "4CCB338319EC733C"
+				type: "item"
+				item: "botania:rune_earth"
+			}]
+		}
+		{
+			title: "Rune of Air"
+			x: 13.5d
+			y: 1.5d
+			description: ["Used for crafting a lot of useful botania things related to air"]
+			hide_dependency_lines: true
+			dependencies: ["1C346D270F7A3C58"]
+			hide: true
+			id: "398997FAF0456263"
+			tasks: [{
+				id: "21388748F42A77D8"
+				type: "item"
+				item: "botania:rune_air"
+				count: 2L
+			}]
+			rewards: [{
+				id: "337622F9E7FFDBB6"
+				type: "item"
+				item: "botania:rune_air"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 0.5d
+			description: ["used in some more complex recipes"]
+			dependencies: [
+				"4DCAFE03E166F558"
+				"4826F57278E5D0B0"
+			]
+			id: "724C84CE166477E9"
+			tasks: [{
+				id: "3CA5EA7CCF5EECEF"
+				type: "item"
+				item: "botania:rune_spring"
+			}]
+			rewards: [{
+				id: "28596134A2F7ECDD"
+				type: "item"
+				item: "botania:rune_spring"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 2.5d
+			description: ["used in some more complex recipes"]
+			dependencies: [
+				"398997FAF0456263"
+				"26A21EE276432E8B"
+			]
+			id: "0D239954A958CD49"
+			tasks: [{
+				id: "352650E6A6638D68"
+				type: "item"
+				item: "botania:rune_summer"
+			}]
+			rewards: [{
+				id: "6E9D877FEF9FBD84"
+				type: "item"
+				item: "botania:rune_summer"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.5d
+			description: ["Used in some more complex recipes "]
+			dependencies: [
+				"398997FAF0456263"
+				"4826F57278E5D0B0"
+			]
+			id: "69D3AC5111994155"
+			tasks: [{
+				id: "1E7AAA931F6F0C07"
+				type: "item"
+				item: "botania:rune_autumn"
+			}]
+			rewards: [{
+				id: "543E771FAA6AA948"
+				type: "item"
+				item: "botania:rune_autumn"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 2.5d
+			description: ["used in some more complex recipes"]
+			dependencies: [
+				"4DCAFE03E166F558"
+				"26A21EE276432E8B"
+			]
+			id: "1C085AB0B40F9E57"
+			tasks: [{
+				id: "18D7E9576F00E5C7"
+				type: "item"
+				item: "botania:rune_winter"
+			}]
+			rewards: [{
+				id: "2306C74BF646B909"
+				type: "item"
+				item: "botania:rune_winter"
+			}]
+		}
+		{
+			title: "Rune of Mana"
+			x: 13.5d
+			y: -0.5d
+			description: [
+				"Used in some of the most basic recipes "
+				"Also used in the hard ones"
+				"you'll need lot of them later on"
+			]
+			dependencies: [
+				"0D239954A958CD49"
+				"4826F57278E5D0B0"
+			]
+			dependency_requirement: "one_completed"
+			id: "5ADEE2DF43FFE1FF"
+			tasks: [{
+				id: "47D954594AD0DA25"
+				type: "item"
+				item: "botania:rune_mana"
+				count: 5L
+			}]
+			rewards: [{
+				id: "317B6276BF15561F"
+				type: "item"
+				item: "botania:rune_mana"
+				count: 2
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			description: ["used in the most complex recipes of botania and also a lot of other things"]
+			dependencies: [
+				"398997FAF0456263"
+				"0D239954A958CD49"
+			]
+			id: "237AE7D9B6EE90A3"
+			tasks: [{
+				id: "6E33C59A1D03169A"
+				type: "item"
+				item: "botania:rune_lust"
+			}]
+			rewards: [{
+				id: "2AFE45DBDDB3D48D"
+				type: "item"
+				item: "botania:rune_lust"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -0.5d
+			description: ["used in the most complex recipes of botania and also a lot of other things"]
+			dependencies: [
+				"4826F57278E5D0B0"
+				"1C085AB0B40F9E57"
+			]
+			id: "45A13893D514C7A9"
+			tasks: [{
+				id: "0676C42EEF68CA76"
+				type: "item"
+				item: "botania:rune_gluttony"
+			}]
+			rewards: [{
+				id: "44D355005732E496"
+				type: "item"
+				item: "botania:rune_gluttony"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 1.0d
+			description: ["used in the most complex recipes of botania and also a lot of other things"]
+			dependencies: [
+				"4DCAFE03E166F558"
+				"724C84CE166477E9"
+			]
+			id: "20FE8B371B89EB83"
+			tasks: [{
+				id: "0C437BCD5FE9D360"
+				type: "item"
+				item: "botania:rune_greed"
+			}]
+			rewards: [{
+				id: "1ED7DE48313F46E1"
+				type: "item"
+				item: "botania:rune_greed"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 1.0d
+			description: ["used in the most complex recipes of botania and also a lot of other things"]
+			dependencies: [
+				"398997FAF0456263"
+				"69D3AC5111994155"
+			]
+			id: "1C94BA57F780BF0C"
+			tasks: [{
+				id: "2E02F48A599A2A52"
+				type: "item"
+				item: "botania:rune_sloth"
+			}]
+			rewards: [{
+				id: "761DFE67EB081F69"
+				type: "item"
+				item: "botania:rune_sloth"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 3.5d
+			description: ["used in the most complex recipes of botania and also a lot of other things"]
+			dependencies: [
+				"26A21EE276432E8B"
+				"1C085AB0B40F9E57"
+			]
+			id: "6A115EE4639AC2A0"
+			tasks: [{
+				id: "70CF4EC459073BB3"
+				type: "item"
+				item: "botania:rune_wrath"
+			}]
+			rewards: [{
+				id: "644AF69FA0A7AB60"
+				type: "item"
+				item: "botania:rune_wrath"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			description: ["used in the most complex recipes of botania and also a lot of other things"]
+			dependencies: [
+				"4DCAFE03E166F558"
+				"1C085AB0B40F9E57"
+			]
+			id: "248D4974F0F56F56"
+			tasks: [{
+				id: "0CDB1A6971775E67"
+				type: "item"
+				item: "botania:rune_envy"
+			}]
+			rewards: [{
+				id: "5941E9DCDFC9027E"
+				type: "item"
+				item: "botania:rune_envy"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 3.5d
+			description: ["used in the most complex recipes of botania and also a lot of other things"]
+			dependencies: [
+				"4826F57278E5D0B0"
+				"0D239954A958CD49"
+			]
+			id: "6477A7C66209996B"
+			tasks: [{
+				id: "1EAC7ECE7CD2DA2C"
+				type: "item"
+				item: "botania:rune_pride"
+			}]
+			rewards: [{
+				id: "69A3E8F8ECE57B29"
+				type: "item"
+				item: "botania:rune_pride"
+			}]
+		}
+		{
+			title: "Manaweave Cloth"
+			x: 7.968d
+			y: 1.344d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["01CB36B73E733763"]
+			id: "634F8202FEA1C2DB"
+			tasks: [{
+				id: "6BDB3BD534F596DE"
+				type: "item"
+				item: "botania:manaweave_cloth"
+				count: 2L
+			}]
+			rewards: [{
+				id: "31D4D5B6E10EE29D"
+				type: "item"
+				item: "botania:manaweave_cloth"
+			}]
+		}
+		{
+			title: "Introduction to Functional flowers"
+			x: 3.5d
+			y: -6.5d
+			shape: "circle"
+			subtitle: "Functional Flowers are flowers that uses mana to do something useful for you"
+			description: ["Bellethorne uses mana to inflict harm to any nearby entities except players"]
+			dependencies: ["43595B814AA9DCFC"]
+			id: "5894F108E901B334"
+			tasks: [{
+				id: "1D13449A2A8BB225"
+				type: "item"
+				item: "botania:bellethorn"
+			}]
+			rewards: [{
+				id: "30C087DFA9EB439D"
+				type: "item"
+				item: "botania:red_petal"
+				count: 4
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			shape: "diamond"
+			description: ["Increases plant growth speed"]
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "1F8D22568B5B731D"
+			tasks: [{
+				id: "128EBA27D1F8002A"
+				type: "item"
+				item: "botania:agricarnation"
+			}]
+			rewards: [{
+				id: "45F234ACC71F128C"
+				type: "item"
+				item: "botania:manasteel_block"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "5B5B5E51C7824561"
+			tasks: [{
+				id: "7050B0CA85FC3FF4"
+				type: "item"
+				item: "botania:bergamute"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "603E889D32BA4F7C"
+			tasks: [{
+				id: "2DBB4FC16EFDE058"
+				type: "item"
+				item: "botania:bubbell"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -8.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "589901061FC11E2E"
+			tasks: [{
+				id: "6E6F52D0CCB70BEE"
+				type: "item"
+				item: "botania:clayconia"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "1AA5A2AB9EB390F4"
+			tasks: [{
+				id: "2982FC9FDAF10089"
+				type: "item"
+				item: "botania:daffomill"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "499D341518FD7C6E"
+			tasks: [{
+				id: "35C7BC50EA67BA90"
+				type: "item"
+				item: "botania:dreadthorn"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "19AC89B532AC4991"
+			tasks: [{
+				id: "2D62D126BD1E9749"
+				type: "item"
+				item: "botania:exoflame"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "3C33CA06DA957DAA"
+			tasks: [{
+				id: "4AA0C16917E4CDC9"
+				type: "item"
+				item: "botania:fallen_kanade"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "3A0842BCEC7EF2B2"
+			tasks: [{
+				id: "3FADC7D266243F82"
+				type: "item"
+				item: "botania:heisei_dream"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -7.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "004E49A34532E4F4"
+			tasks: [{
+				id: "62222EDBAC2AC869"
+				type: "item"
+				item: "botania:hopperhock"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -6.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "04710A9F22630F58"
+			tasks: [{
+				id: "624383C4729936A8"
+				type: "item"
+				item: "botania:jaded_amaranthus"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -6.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "2857B968F94DC06D"
+			tasks: [{
+				id: "393E27930AA4CF4E"
+				type: "item"
+				item: "botania:hyacidus"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "704D5CF5D36C4BC9"
+			tasks: [{
+				id: "08E65B14BE4E3EBE"
+				type: "item"
+				item: "botania:jiyuulia"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "73F966E41824309B"
+			tasks: [{
+				id: "0B3CFF583E9DECAD"
+				type: "item"
+				item: "botania:loonium"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "67A57439AADFC501"
+			tasks: [{
+				id: "5466A8DDD2FC4B60"
+				type: "item"
+				item: "botania:marimorphosis"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "151887EB99E8DF2B"
+			tasks: [{
+				id: "53E0D15F1BD8A689"
+				type: "item"
+				item: "botania:medumone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "455F75C9E46B9A19"
+			tasks: [{
+				id: "14B05841E0E6D257"
+				type: "item"
+				item: "botania:orechid"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.5d
+			shape: "diamond"
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "3E03269586824F03"
+			tasks: [{
+				id: "566EDDE7917B4443"
+				type: "item"
+				item: "botania:orechid_ignem"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "53E1196A19D70622"
+			tasks: [{
+				id: "5EAB16E82C5D0930"
+				type: "item"
+				item: "botania:pollidisiac"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -6.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "74B1CC2A315C132E"
+			tasks: [{
+				id: "1F73825602784AF5"
+				type: "item"
+				item: "botania:rannuncarpus"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "238B39EB56CF47DC"
+			tasks: [{
+				id: "0AFED4C05CF32109"
+				type: "item"
+				item: "botania:solegnolia"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "20FCFF04F1FD2DDE"
+			tasks: [{
+				id: "4CEFBB0B96F78C6E"
+				type: "item"
+				item: "botania:spectranthemum"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "3DB19B8C30FFB4E9"
+			tasks: [{
+				id: "7AAFC8340544FDC8"
+				type: "item"
+				item: "botania:tangleberrie"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "1A9EE1A36E8D717E"
+			tasks: [{
+				id: "23447FF3DFA789B0"
+				type: "item"
+				item: "botania:tigerseye"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["5894F108E901B334"]
+			hide: true
+			id: "18749D1E1B7CEBDB"
+			tasks: [{
+				id: "32A388197CF76B20"
+				type: "item"
+				item: "botania:vinculotus"
+			}]
+		}
+		{
+			title: "Pocket mana"
+			x: 3.5d
+			y: 7.0d
+			description: ["Works like a portable mana pool"]
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "73003092C096B500"
+			tasks: [{
+				id: "6FCADF054B2CFC8A"
+				type: "item"
+				item: {
+					id: "botania:mana_tablet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7E6212A4921D2306"
+				type: "item"
+				item: "botania:livingrock"
+				count: 8
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["basically a botania wrench"]
+			dependencies: ["13B079D76AB7A005"]
+			id: "2D84A1DB3A6D7174"
+			tasks: [{
+				id: "7CBC7297412721E0"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mana indicator"
+			x: 4.5d
+			y: 7.5d
+			description: [
+				"can be used as a simple mana profit/loose indicator"
+				"Check Lexica Botania for more info"
+			]
+			dependencies: ["73003092C096B500"]
+			id: "40240E1175DCFF45"
+			tasks: [{
+				id: "3B3A02951036F2F9"
+				type: "item"
+				item: "botania:manastar"
+			}]
+			rewards: [{
+				id: "4B361330063A8BA8"
+				type: "item"
+				item: "botania:green_petal"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 3.5d
+			y: 9.5d
+			description: ["Uses mana to generate redstone flux"]
+			hide_dependency_lines: false
+			dependencies: ["73003092C096B500"]
+			id: "2986C5188FC9FE9F"
+			tasks: [{
+				id: "413A786C9CE145C1"
+				type: "item"
+				item: "botania:mana_fluxfield"
+			}]
+			rewards: [{
+				id: "13A079C23259FA90"
+				type: "item"
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		}
+		{
+			title: "Mana Lenses"
+			x: 3.5d
+			y: 12.5d
+			description: [
+				"Used to upgrade mana spreaders"
+				"Some lenses have a better functionality something just changes the burst color"
+			]
+			hide_dependency_lines: true
+			dependencies: ["06BF886487FBA9EE"]
+			hide: true
+			id: "33E7C1AC71A6E3B1"
+			tasks: [{
+				id: "43D2A2B30A3F1FB8"
+				type: "item"
+				item: {
+					id: "botania:lens_normal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5A4912715440983D"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 32
+			}]
+		}
+		{
+			title: "Sparks"
+			x: 5.5d
+			y: 7.0d
+			description: [
+				"can be used to transfer mana more easily"
+				"check Lexica Botania for more info"
+			]
+			dependencies: ["40240E1175DCFF45"]
+			id: "0308173B03877637"
+			tasks: [{
+				id: "6956194727EA4F51"
+				type: "item"
+				title: "Spark"
+				item: "botania:spark"
+				count: 2L
+			}]
+			rewards: [{
+				id: "1F3068FCBC11B580"
+				type: "item"
+				item: "botania:spark"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 13.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "094869DF29CD664D"
+			tasks: [{
+				id: "43E19E7743B4A1E8"
+				type: "item"
+				item: {
+					id: "botania:lens_speed"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6DF4096417F38D8F"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 13.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "3CDE4878FF45E041"
+			tasks: [{
+				id: "4D8FBAF52FC7CF3F"
+				type: "item"
+				item: {
+					id: "botania:lens_power"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "048DB3560E8BA0E9"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: 13.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "2F0D2F2B0510BEA0"
+			tasks: [{
+				id: "091B7B504FA3972B"
+				type: "item"
+				item: {
+					id: "botania:lens_time"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2FAC223163AABA1F"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 13.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "17FD0249BC101C94"
+			tasks: [{
+				id: "578F1D4D1BE014F9"
+				type: "item"
+				item: {
+					id: "botania:lens_efficiency"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "30F0FB054328E1C0"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 11.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "471134A52A17C119"
+			tasks: [{
+				id: "3F79B8547B5E4F41"
+				type: "item"
+				item: {
+					id: "botania:lens_bounce"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "509318A75E7646F3"
+				type: "item"
+				item: "tconstruct:sky_congealed_slime"
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: 11.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "391F387B64B3EA69"
+			tasks: [{
+				id: "1D5390BDED9066AF"
+				type: "item"
+				item: {
+					id: "botania:lens_gravity"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6EF33757763A2D5B"
+				type: "item"
+				item: "thermal:bronze_ingot"
+				count: 8
+			}]
+		}
+		{
+			x: 4.0d
+			y: 11.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "667E497EF045638D"
+			tasks: [{
+				id: "609E5F04823658E3"
+				type: "item"
+				item: {
+					id: "botania:lens_mine"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0B3B108002847A6E"
+				type: "random"
+				title: "Random pickaxe head"
+				icon: {
+					id: "tconstruct:pickaxe_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:flint"
+					}
+				}
+				table_id: 8788597562869781076L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 11.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "3D0C1600DBEB35FD"
+			tasks: [{
+				id: "6EDCB8A26F440670"
+				type: "item"
+				item: {
+					id: "botania:lens_damage"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4340B4452CEB9120"
+				type: "item"
+				item: {
+					id: "twilightforest:ironwood_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							lvl: 1s
+							id: "minecraft:knockback"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 12.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "27468B17448F0929"
+			tasks: [{
+				id: "50DD7BE6BBAE2382"
+				type: "item"
+				item: {
+					id: "botania:lens_phantom"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7A9B94698FC43BF3"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 12.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "3F1C97E3EF177726"
+			tasks: [{
+				id: "25EF6157412C296E"
+				type: "item"
+				item: {
+					id: "botania:lens_magnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "57FE6E7793E0B203"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: 2.5d
+			y: 14.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "5A6FB67482FA3048"
+			tasks: [{
+				id: "58DB43B851436D9B"
+				type: "item"
+				item: {
+					id: "botania:lens_explosive"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5C875B5996C63A38"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 3.5d
+			y: 14.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "06DA8CD963544D05"
+			tasks: [{
+				id: "32C49DCA5606CB04"
+				type: "item"
+				item: {
+					id: "botania:lens_influence"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5B8F00D6DC3B8A79"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 4.5d
+			y: 14.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "305C42643F8E46B2"
+			tasks: [{
+				id: "1C1C53BCE21FD121"
+				type: "item"
+				item: {
+					id: "botania:lens_weight"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2B6A7B3FB6768BBB"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 6.0d
+			y: 12.0d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "72B53A13D501DEDF"
+			tasks: [{
+				id: "6E893FC8A2EAE689"
+				type: "item"
+				item: {
+					id: "botania:lens_fire"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "589A13E3C15DC5D7"
+				type: "item"
+				item: "extendedcrafting:redstone_ingot"
+				count: 3
+			}]
+		}
+		{
+			x: 6.0d
+			y: 13.0d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "111197833416D05F"
+			tasks: [{
+				id: "5A04234E5B736D5A"
+				type: "item"
+				item: {
+					id: "botania:lens_piston"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 10.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "1DB9684DCA7C5F98"
+			tasks: [{
+				id: "35163362F40758C3"
+				type: "item"
+				item: {
+					id: "botania:lens_light"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4BD835E5610667C7"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: 3.5d
+			y: 10.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "5C2CAF8C49C8FBCC"
+			tasks: [{
+				id: "2037E4209BA11636"
+				type: "item"
+				item: {
+					id: "botania:lens_warp"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0CC0623FF975AB3A"
+				type: "item"
+				item: "botania:pixie_dust"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 2.5d
+			y: 10.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "04C20BD7D28B75C2"
+			tasks: [{
+				id: "6AB748D30F93394E"
+				type: "item"
+				item: {
+					id: "botania:lens_redirect"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "22FB0EC9F1C056B6"
+				type: "item"
+				item: "botania:pixie_dust"
+				count: 2
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 1.0d
+			y: 12.0d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "5E34F4A9E7576F3D"
+			tasks: [{
+				id: "0D936FD7ED61D89D"
+				type: "item"
+				item: {
+					id: "botania:lens_redirect"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "71CB810EF960E959"
+				type: "item"
+				item: "botania:elementium_ingot"
+				count: 2
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 1.0d
+			y: 13.0d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "54B98022CC8EA76D"
+			tasks: [{
+				id: "70C8CAA7281FEDE9"
+				type: "item"
+				item: {
+					id: "botania:lens_firework"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "25D7F31ADD938D55"
+				type: "item"
+				item: "botania:pixie_dust"
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 0.0d
+			y: 12.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "0D9FBEF757F1E558"
+			tasks: [{
+				id: "545DDF77E7FB2B6C"
+				type: "item"
+				item: {
+					id: "botania:lens_flare"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "73F42BFAC424DC45"
+				type: "item"
+				item: "botania:elementium_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: 3.5d
+			y: 15.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "46827CADCE97D735"
+			tasks: [{
+				id: "2E67609389B301C9"
+				type: "item"
+				item: {
+					id: "botania:lens_messenger"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "22888D791B6E944E"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			x: 7.0d
+			y: 12.5d
+			dependencies: ["33E7C1AC71A6E3B1"]
+			id: "5543609B9499B4BB"
+			tasks: [{
+				id: "2929D1A4E52C8BCF"
+				type: "item"
+				item: {
+					id: "botania:lens_tripwire"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "39CF4E0B5B1BE61E"
+				type: "item"
+				item: "botania:elementium_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.5d
+			description: [
+				"drains mana in nearby mana pool to charge mana-chargeable player items"
+				""
+				"check the lexica botania for more info about sparks augments"
+			]
+			dependencies: ["44D767372A186F05"]
+			id: "4CE3E49408B6E641"
+			tasks: [{
+				id: "7E77FF48F40DDF4C"
+				type: "item"
+				item: "botania:spark_upgrade_dispersive"
+			}]
+			rewards: [
+				{
+					id: "2CEF5B6A8CAE6BF4"
+					type: "item"
+					item: "botania:elementium_ingot"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "1CB4E8E164729B94"
+					type: "item"
+					item: "botania:manasteel_ingot"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 5.5d
+			description: [
+				"pull mana from other non-augmented spark pools into its own"
+				""
+				"check lexica botania for more info about sparks augments"
+			]
+			dependencies: ["44D767372A186F05"]
+			id: "2F7983916A0F7516"
+			tasks: [{
+				id: "23EFAB3D6792B70E"
+				type: "item"
+				item: "botania:spark_upgrade_dominant"
+			}]
+			rewards: [
+				{
+					id: "6DD321E68F498294"
+					type: "item"
+					item: "botania:pixie_dust"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "4BBD7980F0EF084B"
+					type: "item"
+					item: "botania:quartz_mana"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 5.5d
+			description: [
+				"makes the spark distribute all of its mana into any nearby non-augmented sparks mana pool"
+				""
+				"check the lexica botania for more info about sparks augments"
+			]
+			dependencies: ["44D767372A186F05"]
+			id: "304C429248456ED6"
+			tasks: [{
+				id: "66F134C6B9514F80"
+				type: "item"
+				item: "botania:spark_upgrade_recessive"
+			}]
+			rewards: [
+				{
+					id: "471C83D2A9C433CF"
+					type: "item"
+					item: "botania:dragonstone"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "0BAE8549DF1C7FD2"
+					type: "item"
+					item: "botania:mana_diamond"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 4.5d
+			description: [
+				"prevents the spark to interact with any excessive or dominant spark but still allows to interact with blocks that can receive mana"
+				""
+				"check the lexica botania for more info about sparks augments"
+			]
+			dependencies: ["44D767372A186F05"]
+			id: "00EFEC339B9F471E"
+			tasks: [{
+				id: "54A28B0241800986"
+				type: "item"
+				item: "botania:spark_upgrade_isolated"
+			}]
+			rewards: [
+				{
+					id: "5A6378035D0C120F"
+					type: "item"
+					item: "botania:quartz_red"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "2733A5FBBFA60527"
+					type: "item"
+					item: "botania:quartz_mana"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 5.0d
+			description: [
+				"used to apply augments to sparks"
+				"Check lexica botania for more info"
+			]
+			dependencies: ["0308173B03877637"]
+			hide: true
+			id: "44D767372A186F05"
+			tasks: [{
+				id: "5D562EEA21ACC268"
+				type: "item"
+				item: "botania:spark_changer"
+			}]
+			rewards: [{
+				id: "6EA41E754A0009EA"
+				type: "item"
+				item: "botania:livingrock"
+				count: 8
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			shape: "gear"
+			description: [
+				"portable mana pool"
+				"be careful if it is broken it does not keep its mana"
+			]
+			hide_dependency_lines: true
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			optional: true
+			id: "23E69C42AEE78ABC"
+			tasks: [{
+				id: "7991D38864198820"
+				type: "item"
+				item: "botania:pool_minecart"
+			}]
+			rewards: [{
+				id: "6F44DDF331CE5555"
+				type: "item"
+				item: "minecraft:minecart"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			description: ["any mana received from bursts will be distributed upon connected mana pools"]
+			dependencies: ["0308173B03877637"]
+			id: "45D8A7C08CDBF612"
+			tasks: [{
+				id: "47E18159B2E2CF99"
+				type: "item"
+				item: "botania:mana_distributor"
+			}]
+			rewards: [{
+				id: "3E37EC8D047E9C13"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Elven Mana Spreading"
+			x: 3.136d
+			y: 2.432d
+			shape: "hexagon"
+			description: ["faster and more efficient than the previous variant"]
+			dependencies: ["06BF886487FBA9EE"]
+			hide: true
+			id: "5B8D50BDAD101337"
+			tasks: [{
+				id: "755D4A216714AEDC"
+				type: "item"
+				item: "botania:elven_spreader"
+			}]
+			rewards: [{
+				id: "416CCD696B98F67E"
+				type: "item"
+				item: "botania:black_lotus"
+			}]
+		}
+		{
+			title: "Gaia Mana Spreading"
+			x: 3.52d
+			y: 3.104d
+			shape: "hexagon"
+			description: ["faster and more efficient than the previous variant"]
+			dependencies: ["5B8D50BDAD101337"]
+			hide: true
+			id: "5697E0440B91817E"
+			tasks: [{
+				id: "45B1E79789E85DEE"
+				type: "item"
+				item: "botania:gaia_spreader"
+			}]
+			rewards: [
+				{
+					id: "4662D2C8A506E1C6"
+					type: "item"
+					item: "botania:life_essence"
+				}
+				{
+					id: "39B6939F66789B3B"
+					type: "item"
+					item: "botania:black_lotus"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 7.0d
+			description: [
+				"can be used instead of bookshelves only 2 of them is enough for enchanting level 30"
+				""
+				"Check Lexica Botania for more info "
+			]
+			dependencies: ["73003092C096B500"]
+			id: "1164F266C7D7A305"
+			tasks: [{
+				id: "1E526696029BEC1A"
+				type: "item"
+				item: "botania:mana_pylon"
+			}]
+			rewards: [{
+				id: "19FB0F4480FF0B77"
+				type: "item"
+				item: "botania:mana_diamond"
+				count: 3
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			description: ["used for the portal of alfheim"]
+			dependencies: [
+				"1164F266C7D7A305"
+				"270E029FAB7E4563"
+			]
+			id: "51D5B6F311E2DA94"
+			tasks: [{
+				id: "19DA006BC8367600"
+				type: "item"
+				item: "botania:natura_pylon"
+			}]
+			rewards: [{
+				id: "03ADA75C8FE90AF4"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			title: "Terrasteel creation ritual"
+			icon: "botania:terra_plate"
+			x: 3.5d
+			y: 4.5d
+			description: [
+				"Used to create Terrasteel"
+				""
+				"Check Lexica Botania for more info"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"5A7E1BD264792277"
+				"5ADEE2DF43FFE1FF"
+				"4826F57278E5D0B0"
+				"398997FAF0456263"
+				"26A21EE276432E8B"
+				"4DCAFE03E166F558"
+			]
+			id: "55BDFCFE983BB144"
+			tasks: [
+				{
+					id: "06369CE639AB37E7"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "157A50308D397EE7"
+					type: "item"
+					title: "Livingrock"
+					item: "botania:livingrock"
+					count: 4L
+				}
+				{
+					id: "77E49DF94338803C"
+					type: "item"
+					title: "Lapis Lazuli Block"
+					item: "minecraft:lapis_block"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "24EA97424E92B552"
+				type: "item"
+				item: "botania:manasteel_block"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Terrasteel?!"
+			x: 2.5d
+			y: 5.0d
+			subtitle: "You're doing good"
+			description: [
+				"Terrasteel is a more advanced alloy used in a lot of advanced botania recipes "
+				""
+				"Check lexica botania for more info"
+				""
+				"PS.: I suggest making any automation for this asap "
+			]
+			dependencies: ["55BDFCFE983BB144"]
+			id: "270E029FAB7E4563"
+			tasks: [{
+				id: "7471782C33B72888"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+			rewards: [{
+				id: "085A47D3CEF45AF9"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+				random_bonus: 1
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			description: ["used for the ritual of gaia"]
+			dependencies: [
+				"78191A6C6DC46AB7"
+				"35FC3D18DCF7CC8F"
+			]
+			hide: true
+			id: "127301DDFB462520"
+			tasks: [{
+				id: "213990854A416BA8"
+				type: "item"
+				title: "Gaia Ritual preparations"
+				item: "botania:gaia_pylon"
+				count: 4L
+			}]
+			rewards: [{
+				id: "1FBD9D553DD8B073"
+				type: "item"
+				item: "botania:mana_diamond"
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Portal to Alfheim"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "botania:textures/block/alfheim_portal_swirl.png"
+				}
+			}
+			x: 3.5d
+			y: 6.0d
+			description: [
+				"Used to trade some things with elves converting them to other elf items used for more advanced recipes"
+				""
+			]
+			dependencies: ["51D5B6F311E2DA94"]
+			hide: true
+			id: "78191A6C6DC46AB7"
+			tasks: [
+				{
+					id: "12F6EC1E6374B7D6"
+					type: "item"
+					item: "botania:livingwood"
+					count: 8L
+				}
+				{
+					id: "782B00EBC9EB7A79"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+				{
+					id: "0DC38F8D38D796FF"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "0A072DA63F33F31A"
+					type: "item"
+					title: "Natura Pylon"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+				{
+					id: "35C3F43F7AC84037"
+					type: "item"
+					title: "Mana Pool"
+					item: "botania:mana_pool"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "4B7431AA9FE9A3E0"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					random_bonus: 2
+				}
+				{
+					id: "7ABDCD91670AB1F2"
+					type: "command"
+					title: "Check This!"
+					command: "/say https://ftb.fandom.com/wiki/Portal_to_Alfheim"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			dependencies: ["43595B814AA9DCFC"]
+			hide: true
+			id: "34000712BA6C9487"
+			tasks: [{
+				id: "669E06E9A06B5C54"
+				type: "item"
+				item: "botania:fabulous_pool"
+			}]
+		}
+		{
+			x: -2.048d
+			y: 5.568d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["78191A6C6DC46AB7"]
+			id: "34D581D4F2D3F8E2"
+			tasks: [{
+				id: "79A341EDD474A834"
+				type: "item"
+				item: "botania:dragonstone"
+			}]
+			rewards: [{
+				id: "15A6FE6980C2743A"
+				type: "item"
+				item: "botania:dragonstone"
+			}]
+		}
+		{
+			x: -2.048d
+			y: 6.912d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["78191A6C6DC46AB7"]
+			id: "7F1886D171E9A4DD"
+			tasks: [{
+				id: "36253CE399A89EEA"
+				type: "item"
+				item: "botania:elementium_ingot"
+			}]
+			rewards: [{
+				id: "26A2E6A28AEF2CD7"
+				type: "item"
+				item: "botania:elementium_ingot"
+			}]
+		}
+		{
+			x: -2.784d
+			y: 6.912d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["78191A6C6DC46AB7"]
+			id: "42B6DA1D3B2C413B"
+			tasks: [{
+				id: "556E874325E5B42B"
+				type: "item"
+				item: "botania:pixie_dust"
+			}]
+			rewards: [{
+				id: "31E886B5C84C71EC"
+				type: "item"
+				item: "botania:pixie_dust"
+			}]
+		}
+		{
+			x: -1.696d
+			y: 6.24d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["78191A6C6DC46AB7"]
+			id: "01CBFCA5D5F0ACD6"
+			tasks: [{
+				id: "2D401FAEC8AAD607"
+				type: "item"
+				item: "botania:elf_glass"
+			}]
+			rewards: [{
+				id: "39D1D81BC11DAD92"
+				type: "item"
+				item: "botania:elf_glass"
+			}]
+		}
+		{
+			x: -3.136d
+			y: 6.24d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["78191A6C6DC46AB7"]
+			id: "157058A0B514BE51"
+			tasks: [{
+				id: "5A10BEF672216B14"
+				type: "item"
+				item: "botania:dreamwood"
+			}]
+			rewards: [{
+				id: "69813FCCC60BE2B3"
+				type: "item"
+				item: "botania:dreamwood"
+			}]
+		}
+		{
+			x: -2.784d
+			y: 5.568d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["78191A6C6DC46AB7"]
+			id: "66300BE0DF34C2D6"
+			tasks: [{
+				id: "1115BC84066AEC98"
+				type: "item"
+				item: "botania:quartz_elven"
+			}]
+			rewards: [{
+				id: "6D6FDB313938918A"
+				type: "item"
+				item: "botania:quartz_elven"
+			}]
+		}
+		{
+			title: "Gaia Guardian"
+			x: 5.5d
+			y: 5.0d
+			description: [
+				"The gaia ritual is a really hard bossfight, where all of your damage and defense is capped at a certain value, Gaia Guardian is summoned by placing a beacon and 4 Gaia Plyon in the world (you can view the exact placement with Lexica Botania)"
+				""
+				"After that right-click the beacon with a terrasteel ingot and prepare for the most intense fight of your life"
+			]
+			dependencies: ["127301DDFB462520"]
+			id: "655F26C8B28E5F5A"
+			tasks: [{
+				id: "746AEF773E174A8B"
+				type: "kill"
+				title: "Kill 1 Guardian of Gaia"
+				icon: "botania:life_essence"
+				entity: "botania:doppleganger"
+				value: 1L
+			}]
+			rewards: [{
+				id: "5F3AD0E24E88C165"
+				type: "item"
+				item: "botania:life_essence"
+				random_bonus: 2
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			description: ["Used to summon a more powerful version of Guardian of Gaia"]
+			dependencies: ["655F26C8B28E5F5A"]
+			id: "4C5892364319A5FB"
+			tasks: [{
+				id: "0DB2C821455F97D0"
+				type: "item"
+				item: "botania:gaia_ingot"
+			}]
+			rewards: [{
+				id: "39458B3CB915D703"
+				type: "item"
+				item: "botania:gaia_ingot"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "Elite Crafting"
+			x: 10.0d
+			y: 0.0d
+			subtitle: "Finally better crafting"
+			description: [
+				"A 7x7 crafting table"
+				"You will need this for a lot of recipes from now on"
+			]
+			hide_dependency_lines: true
+			dependencies: ["655F26C8B28E5F5A"]
+			size: 2.5d
+			id: "4D6B034DC99A5A75"
+			tasks: [{
+				id: "20804CF3BDA0D835"
+				type: "item"
+				item: "extendedcrafting:elite_table"
+			}]
+			rewards: [{
+				id: "4B746840C4F1F4C6"
+				type: "item"
+				item: "botania:mana_diamond"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+	]
+}

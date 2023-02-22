@@ -1,0 +1,315 @@
+{
+	id: "73A93108F1A2C9AD"
+	group: "3548B98E1DB8BA6A"
+	order_index: 4
+	filename: "better_chests"
+	title: "Better Chests"
+	icon: "ironchest:iron_chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Basic Chest"
+			x: 0.0d
+			y: 0.0d
+			shape: "octagon"
+			dependencies: ["2C20CCE68E9C24A2"]
+			hide: true
+			id: "11E5AD2CE1A0678A"
+			tasks: [{
+				id: "6C21F416FBA7DBFD"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+			rewards: [{
+				id: "6B58987D26886271"
+				type: "item"
+				item: "minecraft:chest"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			subtitle: "Bigger Storage"
+			dependencies: ["11E5AD2CE1A0678A"]
+			id: "562294C19CAD8DEC"
+			tasks: [{
+				id: "68F4B71EDF53AEBD"
+				type: "item"
+				item: "ironchest:copper_chest"
+			}]
+			rewards: [{
+				id: "01C250023AB424C6"
+				type: "item"
+				item: "create:copper_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Even bigger storage"
+			dependencies: ["562294C19CAD8DEC"]
+			id: "2A14F6C1A7DC2857"
+			tasks: [{
+				id: "664D2A695DD2D1C0"
+				type: "item"
+				item: "ironchest:silver_chest"
+			}]
+			rewards: [{
+				id: "6313DED1E9827D7A"
+				type: "item"
+				item: "thermal:silver_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Even bigger storage"
+			dependencies: ["562294C19CAD8DEC"]
+			id: "645485D56B061502"
+			tasks: [{
+				id: "6A68447B982C983B"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [{
+				id: "20FC98C8E314FA9E"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			subtitle: "Even more bigger storage"
+			dependencies: [
+				"645485D56B061502"
+				"2A14F6C1A7DC2857"
+			]
+			dependency_requirement: "one_completed"
+			id: "7860508E23135BFE"
+			tasks: [{
+				id: "52F6B1EC093DBAB7"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [{
+				id: "2E01A746A337B7BA"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			subtitle: "The biggest storage"
+			dependencies: ["7860508E23135BFE"]
+			id: "478B354E030A7368"
+			tasks: [{
+				id: "163D6B09D62A2A21"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+			rewards: [{
+				id: "50B117B6C31D4179"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			subtitle: "Same as diamond but strong as obsidian"
+			dependencies: ["478B354E030A7368"]
+			id: "62E485B60970F463"
+			tasks: [{
+				id: "6D9CB06B0A32211B"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+			rewards: [{
+				id: "68E7D9BAFD729363"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			subtitle: "Same as diamond but transparent"
+			dependencies: ["478B354E030A7368"]
+			id: "2C622AB57541B7B3"
+			tasks: [{
+				id: "1E3824CB23B8020F"
+				type: "item"
+				item: "ironchest:crystal_chest"
+			}]
+			rewards: [{
+				id: "38C9FB13E3E83815"
+				type: "item"
+				item: "minecraft:glass"
+				count: 4
+			}]
+		}
+		{
+			title: "Best chest ever"
+			x: 6.0d
+			y: 0.5d
+			subtitle: "Completely useless but super op"
+			dependencies: [
+				"62E485B60970F463"
+				"2C622AB57541B7B3"
+			]
+			id: "2D0E5E4E4E5D6394"
+			tasks: [{
+				id: "13BB69E1F1812797"
+				type: "item"
+				item: "ironchest:dirt_chest"
+			}]
+			rewards: [{
+				id: "7375818048FFDF51"
+				type: "item"
+				item: "ironchest:dirt_chest"
+				count: 2
+			}]
+		}
+		{
+			icon: "minecraft:chest"
+			x: 0.0d
+			y: -1.5d
+			shape: "octagon"
+			dependencies: ["11E5AD2CE1A0678A"]
+			hide: true
+			id: "717F0499983E9116"
+			tasks: [{
+				id: "5FE56588269BA301"
+				type: "checkmark"
+				title: "Storage Upgrades"
+			}]
+			rewards: [{
+				id: "2136682A9F61AAF9"
+				type: "item"
+				item: "pamhc2foodextended:fortunecookieitem"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			description: ["right click wood chest to upgrade it to copper"]
+			dependencies: ["717F0499983E9116"]
+			id: "257F350403B07753"
+			tasks: [{
+				id: "4D76879E85B21689"
+				type: "item"
+				item: "ironchest:wood_to_copper_chest_upgrade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			description: ["right click copper chest to upgrade it to silver"]
+			dependencies: ["257F350403B07753"]
+			id: "3DD3CED0AA270B6C"
+			tasks: [{
+				id: "18111553119A4B71"
+				type: "item"
+				item: "ironchest:copper_to_silver_chest_upgrade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: ["right click copper chest to upgrade it to iron"]
+			dependencies: ["257F350403B07753"]
+			id: "6BEBFF3E466FED25"
+			tasks: [{
+				id: "3CF69ABC9039B399"
+				type: "item"
+				item: "ironchest:copper_to_iron_chest_upgrade"
+			}]
+		}
+		{
+			icon: "ironchest:silver_to_gold_chest_upgrade"
+			x: 3.0d
+			y: -2.0d
+			description: ["right click iron or silver chest to upgrade it to gold"]
+			dependencies: [
+				"3DD3CED0AA270B6C"
+				"6BEBFF3E466FED25"
+			]
+			dependency_requirement: "one_completed"
+			id: "2E468322E2D93BCD"
+			tasks: [
+				{
+					id: "3423219B547CA620"
+					type: "item"
+					item: "ironchest:iron_to_gold_chest_upgrade"
+				}
+				{
+					id: "5EFB11A922C7ACAF"
+					type: "item"
+					item: "ironchest:silver_to_gold_chest_upgrade"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			description: ["right click gold chest to upgrade it to diamond"]
+			dependencies: ["2E468322E2D93BCD"]
+			id: "2265BD3C1AB3730F"
+			tasks: [{
+				id: "43FA3556010F7091"
+				type: "item"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			description: ["right click diamond chest to upgrade it to obsidian"]
+			dependencies: ["2265BD3C1AB3730F"]
+			id: "5D8F3AD49CE70408"
+			tasks: [{
+				id: "7DCD9FB353D7FDF2"
+				type: "item"
+				item: "ironchest:diamond_to_obsidian_chest_upgrade"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			description: ["right click diamond chest to upgrade it to crystal"]
+			dependencies: ["2265BD3C1AB3730F"]
+			id: "55B2482397E314B4"
+			tasks: [{
+				id: "6D1955690ACB8332"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+			}]
+		}
+		{
+			title: "DirtChest9000 upgrade"
+			x: 6.0d
+			y: -2.0d
+			dependencies: [
+				"55B2482397E314B4"
+				"5D8F3AD49CE70408"
+				"2D0E5E4E4E5D6394"
+			]
+			id: "7BE22AA88DFFE97F"
+			tasks: [{
+				id: "3327669EAF070DBC"
+				type: "checkmark"
+				title: "Sadly no Dirt chest upgrade :(((("
+			}]
+		}
+	]
+}

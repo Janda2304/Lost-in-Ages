@@ -1,0 +1,499 @@
+{
+	id: "4F574CD9D29E83E3"
+	group: "3548B98E1DB8BA6A"
+	order_index: 2
+	filename: "better_furnaces"
+	title: "Better Furnaces"
+	icon: "ironfurnaces:iron_furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Basic Furnace"
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["104168551C58DAB2"]
+			hide: true
+			id: "7AB88E12030B8E3C"
+			tasks: [{
+				id: "2EB7F1045593E691"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["7AB88E12030B8E3C"]
+			id: "4847FFFE5853802B"
+			tasks: [{
+				id: "56525F098E549483"
+				type: "item"
+				item: "minecraft:smoker"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["7AB88E12030B8E3C"]
+			id: "59B1DF489F64E466"
+			tasks: [{
+				id: "5D57992A6ED5AC1C"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: ["7AB88E12030B8E3C"]
+			id: "65126EC6CFBCBD64"
+			tasks: [{
+				id: "3549FB7F127233CC"
+				type: "item"
+				item: "ironfurnaces:copper_furnace"
+			}]
+			rewards: [{
+				id: "6C07E2545DC87EAE"
+				type: "item"
+				item: "ironfurnaces:upgrade_copper"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			dependencies: ["65126EC6CFBCBD64"]
+			id: "5F5DEC182CAB545F"
+			tasks: [{
+				id: "5FE5DC6434180773"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+			rewards: [{
+				id: "6E2F19FF70B1525D"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron2"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["5F5DEC182CAB545F"]
+			id: "57BE38CE3F9C4D94"
+			tasks: [{
+				id: "277FD539DC31F670"
+				type: "item"
+				item: "ironfurnaces:silver_furnace"
+			}]
+			rewards: [{
+				id: "7E491A925C19D373"
+				type: "item"
+				item: "ironfurnaces:upgrade_silver2"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			dependencies: ["57BE38CE3F9C4D94"]
+			id: "6E885C43C150DDE1"
+			tasks: [{
+				id: "59B3FAE7E974DCD9"
+				type: "item"
+				item: "ironfurnaces:gold_furnace"
+			}]
+			rewards: [{
+				id: "4E90D5DCF626E15B"
+				type: "item"
+				item: "ironfurnaces:upgrade_gold2"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["6E885C43C150DDE1"]
+			id: "71FB2B4D7D275399"
+			tasks: [{
+				id: "6BCC1E647A5C57CB"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+			rewards: [{
+				id: "3E7E845A0A3541CE"
+				type: "item"
+				item: "ironfurnaces:upgrade_diamond"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["71FB2B4D7D275399"]
+			id: "178B9D2B59DD2DA6"
+			tasks: [{
+				id: "732EE8643D48DBD5"
+				type: "item"
+				item: "ironfurnaces:emerald_furnace"
+			}]
+			rewards: [{
+				id: "1E0B97A69FE84EF8"
+				type: "item"
+				item: "ironfurnaces:upgrade_emerald"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: [
+				"178B9D2B59DD2DA6"
+				"7589AA6BC4DAD18D"
+			]
+			id: "38BB173BD517854A"
+			tasks: [{
+				id: "5B0C701A22CA7D0F"
+				type: "item"
+				item: "ironfurnaces:obsidian_furnace"
+			}]
+			rewards: [
+				{
+					id: "175BF66C98C1883F"
+					type: "item"
+					item: "ironfurnaces:upgrade_obsidian2"
+				}
+				{
+					id: "3E7D22C62E5519E8"
+					type: "item"
+					item: "ironfurnaces:upgrade_obsidian"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["71FB2B4D7D275399"]
+			id: "7589AA6BC4DAD18D"
+			tasks: [{
+				id: "6A1110BB9FC3F9A8"
+				type: "item"
+				item: "ironfurnaces:crystal_furnace"
+			}]
+			rewards: [{
+				id: "061022E857070D32"
+				type: "item"
+				item: "ironfurnaces:upgrade_crystal"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			dependencies: [
+				"7589AA6BC4DAD18D"
+				"38BB173BD517854A"
+			]
+			id: "3E93709899B038E6"
+			tasks: [{
+				id: "5807BF34FA95B650"
+				type: "item"
+				item: "ironfurnaces:netherite_furnace"
+			}]
+			rewards: [{
+				id: "7C08ED493B72C3B9"
+				type: "item"
+				item: "ironfurnaces:upgrade_netherite"
+			}]
+		}
+		{
+			title: "Blast furnace augment"
+			x: 1.0d
+			y: 1.5d
+			description: ["Makes your furnace a blast furnace"]
+			dependencies: ["71FB2B4D7D275399"]
+			id: "0D71A46A49922144"
+			tasks: [{
+				id: "540FE0B2506A7433"
+				type: "item"
+				item: "ironfurnaces:augment_blasting"
+			}]
+			rewards: [{
+				id: "2A809C2DC609D483"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			title: "Smoker augment"
+			x: 2.0d
+			y: 2.0d
+			description: ["Makes your furnace a smoker"]
+			dependencies: ["0D71A46A49922144"]
+			id: "77FA8FDBD155BBD1"
+			tasks: [{
+				id: "7FD01ACBC5CA78D0"
+				type: "item"
+				item: "ironfurnaces:augment_smoking"
+			}]
+			rewards: [{
+				id: "439F1183F64736ED"
+				type: "item"
+				item: "minecraft:smoker"
+			}]
+		}
+		{
+			title: "Speedy cooking"
+			x: 0.0d
+			y: 2.0d
+			description: ["Doubles the coal usage but reduce the time needed to cook by 50%"]
+			dependencies: ["0D71A46A49922144"]
+			id: "76309FCF0427360C"
+			tasks: [{
+				id: "4C117EF25406616C"
+				type: "item"
+				item: "ironfurnaces:augment_speed"
+			}]
+			rewards: [{
+				id: "38ED49A52019FDC7"
+				type: "item"
+				item: "minecraft:coal_block"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			description: ["Makes the fuel more efficient but cooking slower"]
+			dependencies: [
+				"77FA8FDBD155BBD1"
+				"76309FCF0427360C"
+			]
+			id: "77FC2CF1AC55EC51"
+			tasks: [{
+				id: "4E123239A1A66D78"
+				type: "item"
+				item: "ironfurnaces:augment_fuel"
+			}]
+			rewards: [{
+				id: "32F206455DD712D0"
+				type: "item"
+				item: "minecraft:coal_block"
+			}]
+		}
+		{
+			icon: "ironfurnaces:upgrade_silver2"
+			x: 1.0d
+			y: -2.0d
+			description: ["Every upgrade is need 2x because you always get one as quest reward and i want to do this at least little bit challenging"]
+			dependencies: ["71FB2B4D7D275399"]
+			id: "70F2DB525CE8B5D5"
+			tasks: [{
+				id: "5B8AB97AF7E5F999"
+				type: "checkmark"
+				title: "Furnace upgrades"
+			}]
+		}
+		{
+			title: "Stone to Iron backpack upgrade"
+			x: 0.0d
+			y: -3.0d
+			description: ["Stone to Copper upgrade"]
+			dependencies: ["70F2DB525CE8B5D5"]
+			id: "08003B217676CA14"
+			tasks: [{
+				id: "6E6975B9C5D076C8"
+				type: "item"
+				item: "ironfurnaces:upgrade_copper"
+				count: 2L
+			}]
+			rewards: [{
+				id: "2C8C848A5A566783"
+				type: "item"
+				item: "ironfurnaces:upgrade_copper"
+			}]
+		}
+		{
+			title: "Copper to Iron upgrade"
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["08003B217676CA14"]
+			id: "040D4F15D5D175EF"
+			tasks: [{
+				id: "3AF5D85F6DD8D739"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron2"
+				count: 2L
+			}]
+			rewards: [{
+				id: "4799CDA52AD56623"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron2"
+			}]
+		}
+		{
+			title: "Iron to silver upgrade"
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["040D4F15D5D175EF"]
+			id: "31D74D4A5E164BBA"
+			tasks: [{
+				id: "19EB15B3D1FACB12"
+				type: "item"
+				item: "ironfurnaces:upgrade_silver2"
+				count: 2L
+			}]
+			rewards: [{
+				id: "1B019A8F4FC7A26B"
+				type: "item"
+				item: "ironfurnaces:upgrade_silver2"
+			}]
+		}
+		{
+			title: "Silver to Gold upgrade"
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["31D74D4A5E164BBA"]
+			id: "5A40994C132C22ED"
+			tasks: [{
+				id: "3C7B9D86CB1A9691"
+				type: "item"
+				item: "ironfurnaces:upgrade_gold2"
+				count: 2L
+			}]
+			rewards: [{
+				id: "40E3526ECAE65267"
+				type: "item"
+				item: "ironfurnaces:upgrade_gold2"
+			}]
+		}
+		{
+			title: "Gold to Diamond upgrade"
+			x: 1.0d
+			y: -4.0d
+			dependencies: ["5A40994C132C22ED"]
+			id: "6EF0E0502122ACFE"
+			tasks: [{
+				id: "0F027D612E683B56"
+				type: "item"
+				item: "ironfurnaces:upgrade_diamond"
+				count: 2L
+			}]
+			rewards: [{
+				id: "1064DDFB02438048"
+				type: "item"
+				item: "ironfurnaces:upgrade_diamond"
+			}]
+		}
+		{
+			title: "Diamond to emerald upgrade"
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["6EF0E0502122ACFE"]
+			id: "472C0B62CDD5E410"
+			tasks: [{
+				id: "3C67B768D27E6E94"
+				type: "item"
+				item: "ironfurnaces:upgrade_emerald"
+				count: 2L
+			}]
+			rewards: [{
+				id: "087DCB611D53A35F"
+				type: "item"
+				item: "ironfurnaces:upgrade_emerald"
+			}]
+		}
+		{
+			title: "Diamond to crystal upgrade"
+			x: 0.0d
+			y: -5.0d
+			dependencies: [
+				"6EF0E0502122ACFE"
+				"472C0B62CDD5E410"
+			]
+			id: "53ACE461A673BFC5"
+			tasks: [{
+				id: "3A08C407EA879B01"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+				count: 2L
+			}]
+			rewards: [{
+				id: "69C615C4C548B57B"
+				type: "item"
+				item: "ironfurnaces:upgrade_crystal"
+			}]
+		}
+		{
+			title: "crystal to obsidian upgrade"
+			x: 1.0d
+			y: -5.0d
+			dependencies: ["53ACE461A673BFC5"]
+			id: "27140F1679DF82C3"
+			tasks: [{
+				id: "7F5E844606E314E5"
+				type: "item"
+				item: "ironfurnaces:upgrade_obsidian2"
+				count: 2L
+			}]
+			rewards: [{
+				id: "05EDFCEF98422FA2"
+				type: "item"
+				item: "ironfurnaces:upgrade_obsidian2"
+			}]
+		}
+		{
+			title: "Obsidian to netherite upgrade"
+			x: 2.0d
+			y: -5.0d
+			dependencies: [
+				"27140F1679DF82C3"
+				"09FA1069FDAAFD0A"
+			]
+			id: "10DE0B611313AED1"
+			tasks: [{
+				id: "726EA40E246ECB43"
+				type: "item"
+				item: "ironfurnaces:upgrade_netherite"
+				count: 2L
+			}]
+			rewards: [{
+				id: "5315EFAD9E0BCFC0"
+				type: "item"
+				item: "ironfurnaces:upgrade_netherite"
+			}]
+		}
+		{
+			title: "Emerald to obsidian upgrade"
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["472C0B62CDD5E410"]
+			id: "09FA1069FDAAFD0A"
+			tasks: [{
+				id: "768AF9089140C602"
+				type: "item"
+				item: "ironfurnaces:upgrade_obsidian"
+				count: 2L
+			}]
+			rewards: [{
+				id: "04944E86E5567E25"
+				type: "item"
+				item: "ironfurnaces:upgrade_obsidian"
+			}]
+		}
+		{
+			title: "Touch the rainbow"
+			x: 4.0d
+			y: 0.5d
+			description: ["Craft the ultimate furnace"]
+			dependencies: [
+				"3E93709899B038E6"
+				"7589AA6BC4DAD18D"
+			]
+			id: "553AE7047BE0B6F0"
+			tasks: [{
+				id: "39625299DEE828CE"
+				type: "item"
+				item: "ironfurnaces:million_furnace"
+			}]
+			rewards: [{
+				id: "04C117A9AD2DACBF"
+				type: "item"
+				item: "ironfurnaces:rainbow_coal"
+			}]
+		}
+	]
+}
